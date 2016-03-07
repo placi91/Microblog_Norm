@@ -49,7 +49,7 @@ public class Jaccard {
 			
 			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.tokenized"));
 			while ((line = br.readLine()) != null) {
-				System.out.println(s++);
+				System.out.println(s++);//
 				if (s > 1500000)
 					break;
 				if (line.contains("tetszett egy videó ( @youtube ):") || line.contains("egy videója ( @youtube ):") 
