@@ -137,28 +137,27 @@ public class Jaccard {
 			}
 			HashMap<String, Word> IVwords = new HashMap<String, Word>();
 			HashMap<String, Word> OVwords = new HashMap<String, Word>();
-			//HashSet<String> s = new HashSet<>();
 			
-			for (Entry<String, Word> inn : words.entrySet()) {
-				if (!oov.containsKey(inn.getKey())) {
-					IVwords.put(inn.getKey(), inn.getValue());
-				} else if (oov.get(inn.getKey())
-						&& (inn.getKey().equals("VMIT")
-								|| inn.getKey().equals("VMIKOR")
-								|| inn.getKey().equals("VMELYIK")
-								|| inn.getKey().equals("LTAM")
-								|| inn.getKey().equals("SZTEM")
-								|| inn.getKey().equals("VHOGY")
-								|| inn.getKey().equals("BIOSZ")
-								|| inn.getKey().equals("SZIAA")
-								|| inn.getKey().equals("OKOSTELEFON")
-								|| inn.getKey().equals("LÉGYSZI")
-								|| inn.getKey().equals("VHOL")
-								|| inn.getKey().equals("APPOT")
-								|| inn.getKey().equals("APPOK")
-								|| inn.getKey().equals("APPON")
-								|| inn.getKey().equals("APPBÓL") || inn.getKey().equals("APPBAN"))) {
-					OVwords.put(inn.getKey(), inn.getValue());
+			for (Entry<String, Word> w : words.entrySet()) {
+				if (!oov.containsKey(w.getKey())) {
+					IVwords.put(w.getKey(), w.getValue());
+				} else if (oov.get(w.getKey())
+						&& (w.getKey().equals("VMIT")
+								|| w.getKey().equals("VMIKOR")
+								|| w.getKey().equals("VMELYIK")
+								|| w.getKey().equals("LTAM")
+								|| w.getKey().equals("SZTEM")
+								|| w.getKey().equals("VHOGY")
+								|| w.getKey().equals("BIOSZ")
+								|| w.getKey().equals("SZIAA")
+								|| w.getKey().equals("OKOSTELEFON")
+								|| w.getKey().equals("LÉGYSZI")
+								|| w.getKey().equals("VHOL")
+								|| w.getKey().equals("APPOT")
+								|| w.getKey().equals("APPOK")
+								|| w.getKey().equals("APPON")
+								|| w.getKey().equals("APPBÓL") || w.getKey().equals("APPBAN"))) {
+					OVwords.put(w.getKey(), w.getValue());
 				}
 			}
 
@@ -209,8 +208,7 @@ public class Jaccard {
 
 					ivContext.addAll(oovContext);
 
-					double jaccard = ((double) common.size())
-							/ ivContext.size();
+					double jaccard = ((double) common.size())/ ivContext.size();
 					System.out.println("jaccard: " + jaccard);
 
 					ivContext.clear();
@@ -223,8 +221,7 @@ public class Jaccard {
 					Arrays.sort(max, new Comparator<Word>() {
 						@Override
 						public int compare(Word arg0, Word arg1) {
-							return Double.compare(arg1.getJaccard(),
-									arg0.getJaccard());
+							return Double.compare(arg1.getJaccard(), arg0.getJaccard());
 						}
 					});
 				}
@@ -233,8 +230,7 @@ public class Jaccard {
 				bw.write(out.getKey());
 				for (Word word : max) {
 					bw.write("\t" + word.getWord() + "\t" + word.getJaccard());
-					System.out.println("\t" + word.getWord() + "\t"
-							+ word.getJaccard());
+					System.out.println("\t" + word.getWord() + "\t" + word.getJaccard());
 				}
 				bw.newLine();
 				bw.flush();

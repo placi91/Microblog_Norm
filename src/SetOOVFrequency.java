@@ -14,7 +14,7 @@ public class SetOOVFrequency {
 
 	public static void main(String[] args) {
 
-		HashMap<String, Integer> words = new HashMap<>();
+		HashMap<String, Integer> freqWords = new HashMap<>();
 		List<Word> oov = new ArrayList<>();
 		
 		try {
@@ -24,13 +24,13 @@ public class SetOOVFrequency {
 					String[] parts = line.split(" ");
 					int freq = Integer.parseInt(parts[1]);
 					if(freq > 40) {
-						words.put(parts[0], freq);
+						freqWords.put(parts[0], freq);
 					}
 			}
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
-				if(words.containsKey(line)) {
-					oov.add(new Word(line, words.get(line)));
+				if(freqWords.containsKey(line) && line.length() > 3) {
+					oov.add(new Word(line, freqWords.get(line)));
 				}
 
 			}
@@ -53,7 +53,6 @@ public class SetOOVFrequency {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(words.size());
 		System.out.println(oov.size());
 	}
 
