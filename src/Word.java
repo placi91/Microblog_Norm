@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 public class Word {
 
 	private String word;
+	private String cluster;
 	private int frequent;
 	private double jaccard = 0.0;
 	private HashSet<Integer> contextSet = new HashSet<>();
@@ -48,6 +49,14 @@ public class Word {
 
 	public void setJaccard(double jaccard) {
 		this.jaccard = jaccard;
+	}
+
+	public String getCluster() {
+		return cluster;
+	}
+
+	public void setCluster(String cluster) {
+		this.cluster = cluster;
 	}
 
 	@Override

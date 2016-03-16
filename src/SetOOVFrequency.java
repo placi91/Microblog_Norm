@@ -29,6 +29,7 @@ public class SetOOVFrequency {
 			}
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
+				if(!freqWords.containsKey(line)) System.out.println("WARNING");
 				if(freqWords.containsKey(line) && line.length() > 3) {
 					oov.add(new Word(line, freqWords.get(line)));
 				}

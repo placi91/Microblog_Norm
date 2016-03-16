@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
@@ -49,35 +50,22 @@ public class Jaccard {
 			
 			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.tokenized"));
 			while ((line = br.readLine()) != null) {
-				System.out.println(s++);//
-				if (s > 1500000)
-					break;
-				if (line.contains("tetszett egy videó ( @youtube ):") || line.contains("egy videója ( @youtube ):") 
-					|| line.startsWith("rt ")) {
-					continue;
-				}
-				
-				line = line.toUpperCase();
+				System.out.println(s++);
+				line = line.toLowerCase();
 				String[] parts = line.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
-					if (parts[i].contains("HTTP") || parts[i].startsWith("#")) {
+					if (parts[i].contains("http")) {
 						parts[i] = "";
-					} else if(parts[i].startsWith("@")) {
-						parts[i] = "@MENTION";
-					}
-					//parts[i] = parts[i].replaceAll("[^\\p{IsAlphabetic}0-9]", "");
+					} 
 				}
 				for (int i = 0; i < parts.length; ++i) {
 					String word = parts[i].trim();
-					if (word.isEmpty() || word.equals("@MENTION")) {
+					if (word.isEmpty() || word.startsWith("#") || word.startsWith("@")) {
 						continue;
 					}
 
 					Matcher m = pattern.matcher(word);
 					if (m.find()) {
-						if (word.length() < 4) {
-							continue;
-						}
 						Word w;
 						if (words.containsKey(word)) {
 							w = words.get(word);
@@ -91,7 +79,7 @@ public class Jaccard {
 						++right;
 						int length = 0;
 						while ((left >= 0 || right < parts.length) && length < 6) {
-							if (left >= 0 && !parts[left].isEmpty() && parts[left].length() > 2) {
+							if (left >= 0 && !parts[left].isEmpty()) {
 								String string = parts[left];
 								if(lemmas.containsKey(string)){
 									string = lemmas.get(string);
@@ -99,11 +87,11 @@ public class Jaccard {
 								if (!contextWords.containsKey(string)) {
 									w.add((Integer) contextWords.size());
 									contextWords.put(string, contextWords.size());
-								} else {
+								} else if(!w.getContextSet().contains(contextWords.get(string))){
 									w.add(contextWords.get(string));
 								}
 							}
-							if (right < parts.length && !parts[right].isEmpty() && parts[right].length() > 2) {
+							if (right < parts.length && !parts[right].isEmpty()) {
 								String string = parts[right];
 								if(lemmas.containsKey(string)){
 									string = lemmas.get(string);
@@ -111,7 +99,7 @@ public class Jaccard {
 								if (!contextWords.containsKey(string)) {
 									w.add((Integer) contextWords.size());
 									contextWords.put(string, contextWords.size());
-								} else {
+								} else if(!w.getContextSet().contains(contextWords.get(string))){
 									w.add(contextWords.get(string));
 								}
 							}
@@ -122,52 +110,90 @@ public class Jaccard {
 					}
 				}
 			}
-			lemmas = null;
+			br.close();
+			lemmas.clear();
+			
+			HashMap<String, HashMap<String, Integer>> clusters = new HashMap<>();
+			br = new BufferedReader(new FileReader("clusters.txt"));
+			String clusterName = null;
+			while ((line = br.readLine()) != null) {
+				if(line.isEmpty()) {
+					continue;
+				}
+				String[] parts = line.split(" ");
+				if(line.contains("cluster:")) {
+					clusterName = parts[1].trim();
+					clusters.put(clusterName, new HashMap<String, Integer>());
+				} else {
+					HashMap<String, Integer> cluster = clusters.get(clusterName);
+					if(!clusters.containsKey(clusterName)) {
+						System.err.println("WARNING");
+					}
+					cluster.put(parts[0], Integer.parseInt(parts[1]));
+				}
+			}
+			br.close();
+			
+			/*for (Entry<String, HashMap<String, Integer>> cluster : clusters.entrySet()) {
+				for (Entry<String, Integer> word : cluster.getValue().entrySet()) {
+				}
+			}*/
+			
 			HashMap<String, Boolean> oov = new HashMap<>();
 			
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
+				line = line.toLowerCase();
 				oov.put(line.trim(), false);
 			}
-
-			br = new BufferedReader(new FileReader("mostCommonOOV.txt"));
-			while ((line = br.readLine()) != null) {
-				String[] parts = line.split(" ");
-				oov.put(parts[0].trim(), true);
-			}
-			HashMap<String, Word> IVwords = new HashMap<String, Word>();
-			HashMap<String, Word> OVwords = new HashMap<String, Word>();
+			br.close();
 			
+			br = new BufferedReader(new FileReader("norm.txt"));
+			while ((line = br.readLine()) != null) {
+				//String[] parts = line.split(" ");
+				line = line.toLowerCase();
+				oov.put(line.trim(), true);
+			}
+			br.close();
+			
+			HashMap<String, Word> OVwords = new HashMap<>();
+			HashMap<String, HashMap<String, Word>> IVwords = new HashMap<>();
+			int n = 0;
 			for (Entry<String, Word> w : words.entrySet()) {
+				boolean found = false;
 				if (!oov.containsKey(w.getKey())) {
-					IVwords.put(w.getKey(), w.getValue());
-				} else if (oov.get(w.getKey())
-						&& (w.getKey().equals("VMIT")
-								|| w.getKey().equals("VMIKOR")
-								|| w.getKey().equals("VMELYIK")
-								|| w.getKey().equals("LTAM")
-								|| w.getKey().equals("SZTEM")
-								|| w.getKey().equals("VHOGY")
-								|| w.getKey().equals("BIOSZ")
-								|| w.getKey().equals("SZIAA")
-								|| w.getKey().equals("OKOSTELEFON")
-								|| w.getKey().equals("LÉGYSZI")
-								|| w.getKey().equals("VHOL")
-								|| w.getKey().equals("APPOT")
-								|| w.getKey().equals("APPOK")
-								|| w.getKey().equals("APPON")
-								|| w.getKey().equals("APPBÓL") || w.getKey().equals("APPBAN"))) {
+					HashMap<String, Word> map = new HashMap<>();
+					map.put(w.getKey(), w.getValue());
+					String cname = null;
+					for (Entry<String, HashMap<String, Integer>> c : clusters.entrySet()) {
+						if(c.getValue().containsKey(w.getKey())) {
+							found = true;
+							cname = c.getKey();
+							break;
+						} 
+					}
+					IVwords.put(cname, map);
+				} else if (oov.get(w.getKey())) {
+					for (Entry<String, HashMap<String, Integer>> c : clusters.entrySet()) {
+						if(c.getValue().containsKey(w.getKey())) {
+							w.getValue().setCluster(c.getKey());
+							found = true;
+							break;
+						} 
+					}
 					OVwords.put(w.getKey(), w.getValue());
 				}
+				if(found) {
+					System.err.println(w.getKey() + " FOUND");
+					++n;
+				}
 			}
-
-			words.clear();
+			words = null;
 			System.gc();
+			System.err.println(n);
 
-			s = 1;
-			System.out.println("Writing to jaccard.txt");
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream("jaccard.txt"), "UTF8"));
+			/*System.out.println("Writing to jaccard.txt");
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("jaccard.txt"), "UTF8"));
 			s = 1;
 			int z = 1;
 
@@ -176,12 +202,11 @@ public class Jaccard {
 			Set<Integer> common = new HashSet<>();
 
 			for (Entry<String, Word> out : OVwords.entrySet()) {
-				Word[] max = new Word[10];
+				Word[] max = new Word[5];
 				for (int i = 0; i < max.length; ++i) {
 					max[i] = new Word("empty", 0);
 				}
 				oovContext.addAll(out.getValue().getContextSet());
-
 				for (Entry<String, Word> inn : IVwords.entrySet()) {
 					Word iv = inn.getValue();
 					double size;
@@ -193,30 +218,24 @@ public class Jaccard {
 					if (size <= 0.1) {
 						continue;
 					}
-
 					ivContext.addAll(iv.getContextSet());
 					common.addAll(oovContext);
-
 					common.retainAll(ivContext);
-
 					if (common.size() == 0) {
 						continue;
 					}
-
-					System.out.println(s + " oov " + out.getKey());
+					System.out.println(s++ + " oov " + out.getKey());
 					System.out.println(z++ + " iv " + inn.getKey());
 
 					ivContext.addAll(oovContext);
-
 					double jaccard = ((double) common.size())/ ivContext.size();
 					System.out.println("jaccard: " + jaccard);
-
 					ivContext.clear();
 					common.clear();
-
-					if (jaccard > max[9].getJaccard()) {
-						max[9].setJaccard(jaccard);
-						max[9].setWord(iv.getWord());
+					
+					if (jaccard > max[4].getJaccard()) {
+						max[4].setJaccard(jaccard);
+						max[4].setWord(iv.getWord());
 					}
 					Arrays.sort(max, new Comparator<Word>() {
 						@Override
@@ -226,7 +245,6 @@ public class Jaccard {
 					});
 				}
 				z = 1;
-				++s;
 				bw.write(out.getKey());
 				for (Word word : max) {
 					bw.write("\t" + word.getWord() + "\t" + word.getJaccard());
@@ -236,7 +254,7 @@ public class Jaccard {
 				bw.flush();
 				oovContext.clear();
 			}
-			bw.close();
+			bw.close();*/
 
 		} catch (IOException e) {
 			e.printStackTrace();
