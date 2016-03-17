@@ -13,15 +13,13 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 
-public class Copy {
+public class PruneTweets {
 
 	public static void main(String[] args) {
 
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.tokenized"));
-			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned.txt"));
 			HashSet<String> lines = new HashSet<>();
-			HashMap<String, Integer> lines2 = new HashMap<>();
 			String line;
 			while ((line = br.readLine()) != null) {
 				if (line.startsWith("rt ")) {
@@ -32,12 +30,16 @@ public class Copy {
 				} 
 				
 			}
+			br.close();
+			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned.txt"));
 			for (String line2 : lines) {
 				String[] parts = line2.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
 					if(parts[i].startsWith("@")) {
 						parts[i] = "@mention";
 					} else if((parts[i].contains("...") || parts[i].contains("…")) && i >= parts.length - 3) {
+						parts[i] = "";
+					} else if(parts[i].contains("http")) {
 						parts[i] = "";
 					}
 					String s = parts[i];
@@ -68,7 +70,6 @@ public class Copy {
 				out.newLine();
 				out.flush();
 			}
-			br.close();
 			out.close();
 			
 			} catch (Exception e) {

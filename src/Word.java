@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 public class Word {
 
 	private String word;
-	private String cluster;
+	private String cluster = null;
 	private int frequent;
 	private double jaccard = 0.0;
 	private HashSet<Integer> contextSet = new HashSet<>();
