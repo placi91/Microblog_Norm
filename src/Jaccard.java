@@ -21,22 +21,23 @@ public class Jaccard {
 		
 		HashMap<String, Integer> contextWords = new HashMap<>();
 		HashMap<String, Word> words = new HashMap<>();
-		HashMap<String, String> lemmas = new HashMap<>();
 		
 		Pattern pattern = Pattern.compile("\\p{IsAlphabetic}+");
 		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.lemmas"));
+			BufferedReader br = new BufferedReader(new FileReader("paths"));
+			HashMap<String, HashMap<String, Integer>> clusters = new HashMap<>();
+			HashSet<String> clusterSet = new HashSet<>();
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] parts = line.split("\t");
-				if(parts[2].equals("WARNING") || (parts[0].equals(parts[2]) && parts.length == 3)) {
-					continue;
-				}
-
-				if(!parts[0].equals(parts[2])) {
-					lemmas.put(parts[0], parts[2]);
-				}
+				clusterSet.add(parts[1]);
+				String clusterName = parts[0];
+				if(!clusters.containsKey(clusterName)) {
+					clusters.put(clusterName, new HashMap<String, Integer>());
+				} 
+				HashMap<String, Integer> cluster = clusters.get(clusterName);
+				cluster.put(parts[1], Integer.parseInt(parts[2]));
 			}
 			br.close();
 			
@@ -54,7 +55,9 @@ public class Jaccard {
 					if (word.isEmpty() || word.startsWith("#") || word.startsWith("@")) {
 						continue;
 					}
-
+					if(!clusterSet.contains(word)) {
+						continue;
+					}
 					Matcher m = pattern.matcher(word);
 					if (m.find()) {
 						Word w;
@@ -72,9 +75,6 @@ public class Jaccard {
 						while ((left >= 0 || right < parts.length) && length < 6) {
 							if (left >= 0 && !parts[left].isEmpty()) {
 								String string = parts[left];
-								if(lemmas.containsKey(string)){
-									string = lemmas.get(string);
-								}
 								if (!contextWords.containsKey(string)) {
 									w.add((Integer) contextWords.size());
 									contextWords.put(string, contextWords.size());
@@ -84,9 +84,6 @@ public class Jaccard {
 							}
 							if (right < parts.length && !parts[right].isEmpty()) {
 								String string = parts[right];
-								if(lemmas.containsKey(string)){
-									string = lemmas.get(string);
-								}
 								if (!contextWords.containsKey(string)) {
 									w.add((Integer) contextWords.size());
 									contextWords.put(string, contextWords.size());
@@ -102,31 +99,8 @@ public class Jaccard {
 				}
 			}
 			br.close();
-			lemmas.clear();
-			
-			HashMap<String, HashMap<String, Integer>> clusters = new HashMap<>();
-			br = new BufferedReader(new FileReader("clusters.txt"));
-			String clusterName = null;
-			while ((line = br.readLine()) != null) {
-				if(line.isEmpty()) {
-					continue;
-				}
-				String[] parts = line.split(" ");
-				if(line.contains("cluster:")) {
-					clusterName = parts[1].trim();
-					clusters.put(clusterName, new HashMap<String, Integer>());
-				} else {
-					HashMap<String, Integer> cluster = clusters.get(clusterName);
-					if(!clusters.containsKey(clusterName)) {
-						System.err.println("WARNING");
-					}
-					cluster.put(parts[0], Integer.parseInt(parts[1]));
-				}
-			}
-			br.close();
 			
 			HashMap<String, Boolean> oov = new HashMap<>();
-			
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
@@ -194,44 +168,57 @@ public class Jaccard {
 					max[i] = new Word("empty", 0);
 				}
 				oovContext.addAll(out.getValue().getContextSet());
-				HashMap<String, Word> inVocWords = IVwords.get(cluster);
-				for (Entry<String, Word> in : inVocWords.entrySet()) {
-					Word iv = in.getValue();
-					double size;
-					if (oovContext.size() < iv.getContextSet().size()) {
-						size = ((double) oovContext.size()) / iv.getContextSet().size();
-					} else {
-						size = ((double) iv.getContextSet().size()) / oovContext.size();
-					}
-					if (size <= 0.04) {
+				for (Entry<String, HashMap<String, Word>> c : IVwords.entrySet()) {
+					int ham = hamming(c.getKey().toCharArray(), cluster.toCharArray());
+					double a = 1.0;
+					if( ham > 1) {
 						continue;
 					}
-					ivContext.addAll(iv.getContextSet());
-					common.addAll(oovContext);
-					common.retainAll(ivContext);
-					if (common.size() == 0) {
-						continue;
-					}
-					System.out.println(s++ + " oov " + out.getKey());
-					System.out.println(z++ + " iv " + in.getKey());
-
-					ivContext.addAll(oovContext);
-					double jaccard = ((double) common.size())/ ivContext.size();
-					System.out.println("jaccard: " + jaccard);
-					ivContext.clear();
-					common.clear();
-					
-					if (jaccard > max[4].getJaccard()) {
-						max[4].setJaccard(jaccard);
-						max[4].setWord(iv.getWord());
-					}
-					Arrays.sort(max, new Comparator<Word>() {
-						@Override
-						public int compare(Word arg0, Word arg1) {
-							return Double.compare(arg1.getJaccard(), arg0.getJaccard());
+					if(ham != 0) a = 1.0/(((double)1.0+ham));
+					HashMap<String, Word> inVocWords = IVwords.get(c.getKey());
+					for (Entry<String, Word> in : inVocWords.entrySet()) {
+						Word iv = in.getValue();
+						System.out.println(s++ + " oov " + out.getKey());
+						System.out.println(z++ + " iv " + in.getKey());
+						double size;
+						if (oovContext.size() < iv.getContextSet().size()) {
+							size = ((double) oovContext.size()) / iv.getContextSet().size();
+						} else {
+							size = ((double) iv.getContextSet().size()) / oovContext.size();
 						}
-					});
+						if (size <= 0.04) {
+							continue;
+						}
+						ivContext.addAll(iv.getContextSet());
+						common.addAll(oovContext);
+						common.retainAll(ivContext);
+						if (common.size() == 0) {
+							continue;
+						}
+						System.out.println(s++ + " oov " + out.getKey());
+						System.out.println(z++ + " iv " + in.getKey());
+
+						ivContext.addAll(oovContext);
+						double jaccard = ((double) common.size())/ ivContext.size();
+						jaccard = a * jaccard;
+						System.out.println("jaccard: " + jaccard);
+						ivContext.clear();
+						common.clear();
+						
+						if (jaccard > max[4].getJaccard()) {
+							max[4].setJaccard(jaccard);
+							max[4].setWord(iv.getWord());
+						}
+						Arrays.sort(max, new Comparator<Word>() {
+							@Override
+							public int compare(Word arg0, Word arg1) {
+								return Double.compare(arg1.getJaccard(), arg0.getJaccard());
+							}
+						});
+					}
+					
 				}
+
 				z = 1;
 				bw.write(out.getKey());
 				for (Word word : max) {
@@ -249,5 +236,17 @@ public class Jaccard {
 		}
 
 	}
+	
+    public static int hamming(char[] left, char[] right) {
+        int distance = 0;
+        if(left.length != right.length) distance = 1;
+        int length = left.length < right.length ? left.length : right.length;
+        for (int i = 0; i < length; i++) {
+            if (left[i] != right[i]) {
+                distance++;
+            }
+        }
+        return distance;
+    }
 
 }

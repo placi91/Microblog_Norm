@@ -34,12 +34,6 @@ public class GetWordsFromTweet {
 			String line;
 			while ((line = br.readLine()) != null) {
 				System.out.println(s++);
-				
-				if (line.contains("tetszett egy videó ( @youtube ):") || line.contains("egy videója ( @youtube ):") 
-					|| line.startsWith("rt ")) {
-					continue;
-				}
-				
 				line = line.toUpperCase();
 				String[] parts = line.split(" ");
 				for (int i = 0; i < parts.length; ++i) {

@@ -25,30 +25,50 @@ public class PruneTweets {
 				if (line.startsWith("rt ")) {
 					line = line.replaceFirst("rt ", "");
 				}
+				line = line.replaceAll("@[\\p{IsAlphabetic}0-9_]+", "@mention");
 				if(!lines.contains(line)) {
 					lines.add(line);
 				} 
-				
 			}
 			br.close();
+			
+			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.lemmas"));
+			HashMap<String, String> lemmas = new HashMap<>();
+			while ((line = br.readLine()) != null) {
+				String[] parts = line.split("\t");
+				if(parts[2].equals("WARNING") || (parts[0].equals(parts[2]) && parts.length == 3)) {
+					continue;
+				}
+				if(!parts[0].equals(parts[2])) {
+					lemmas.put(parts[0], parts[2]);
+				}
+			}
+			br.close();
+	
+			br = new BufferedReader(new FileReader("accents.txt"));
+			HashMap<String, String> accents = new HashMap<>();
+			while ((line = br.readLine()) != null) {
+				String[] parts = line.split(" ");
+				accents.put(parts[0], parts[1]);
+			}
+			br.close();
+
 			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned.txt"));
 			for (String line2 : lines) {
 				String[] parts = line2.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
-					if(parts[i].startsWith("@")) {
-						parts[i] = "@mention";
-					} else if((parts[i].contains("...") || parts[i].contains("…")) && i >= parts.length - 3) {
+					if((parts[i].contains("...") || parts[i].contains("…")) && i >= parts.length - 3) {
 						parts[i] = "";
 					} else if(parts[i].contains("http")) {
 						parts[i] = "";
 					}
-					String s = parts[i];
-					if(!s.equals(parts[i])) {
-						System.out.println(line2);
-						System.out.println(s);
-						System.out.println(parts[i]);
-						System.out.println();
+					if(accents.containsKey(parts[i])){
+						parts[i] = accents.get(parts[i]);
 					}
+					if(lemmas.containsKey(parts[i])){
+						parts[i] = lemmas.get(parts[i]);
+					}
+
 					if(!parts[i].contains("http"))
 						parts[i] = parts[i].replaceAll(":+ *-*/+", ":/");
 					
@@ -57,10 +77,12 @@ public class PruneTweets {
 					parts[i] = parts[i].replaceAll(":+ *-*\\|+", ":|");
 					parts[i] = parts[i].replaceAll(":+ *-*o+", ":o");
 					parts[i] = parts[i].replaceAll(":+ *-*d+", ":d");
+					parts[i] = parts[i].replaceAll(":+ *-*s+", ":s");
+					parts[i] = parts[i].replaceAll(":+ *-*p+", ":p");
 					parts[i] = parts[i].replaceAll(":+ *-*\\(+", ":(");
 					parts[i] = parts[i].replaceAll(":+ *-*\\)+", ":)");
+					parts[i] = parts[i].replaceAll(";+ *-*\\)+", ";)");
 					parts[i] = parts[i].replaceAll("x+d+", "xd");
-					
 					
 					if(!parts[i].isEmpty())
 						out.write(parts[i]);
@@ -75,9 +97,6 @@ public class PruneTweets {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		
-		
 	}
-	
 
 }
