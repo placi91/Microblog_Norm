@@ -110,9 +110,9 @@ public class Jaccard {
 			
 			br = new BufferedReader(new FileReader("norm.txt"));
 			while ((line = br.readLine()) != null) {
-				//String[] parts = line.split(" ");
 				line = line.toLowerCase();
-				oov.put(line.trim(), true);
+				String[] parts = line.split(" ");
+				oov.put(parts[0].trim(), true);
 			}
 			br.close();
 			
@@ -151,7 +151,7 @@ public class Jaccard {
 			System.gc();
 
 			System.out.println("Writing to jaccard.txt");
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("jaccard.txt"), "UTF8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("jaccard.txt"), "UTF-8"));
 			s = 1;
 			int z = 1;
 
@@ -171,7 +171,7 @@ public class Jaccard {
 				for (Entry<String, HashMap<String, Word>> c : IVwords.entrySet()) {
 					int ham = hamming(c.getKey().toCharArray(), cluster.toCharArray());
 					double a = 1.0;
-					if( ham > 1) {
+					if( ham > 0) {
 						continue;
 					}
 					if(ham != 0) a = 1.0/(((double)1.0+ham));

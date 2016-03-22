@@ -2,15 +2,8 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 
 public class PruneTweets {
@@ -68,19 +61,36 @@ public class PruneTweets {
 					if(lemmas.containsKey(parts[i])){
 						parts[i] = lemmas.get(parts[i]);
 					}
+					String s = parts[i];
+					if(i > 1 && parts[i].equals("):") && parts[i-1].equals("@mention") && parts[i-2].equals("(")) {
+						parts[i] = ")";
+					}
 
 					if(!parts[i].contains("http"))
 						parts[i] = parts[i].replaceAll(":+ *-*/+", ":/");
 					
+					if(!parts[i].matches("\\d+(?::\\d+){1,2}")) {
+						parts[i] = parts[i].replaceAll(":+ *-*3+", ":3");
+					}
+					
+					parts[i] = parts[i].replaceAll("\\)+ *-*:+", ":(");
 					parts[i] = parts[i].replaceAll("\\(+ *-*:+", ":)");
-					parts[i] = parts[i].replaceAll(":+ *-*\\\\+", ":\\\\");
+					parts[i] = parts[i].replaceAll("\\(+ *-*;+", ";)");
+					parts[i] = parts[i].replaceAll("/+ *-*:+", ":/");
+					parts[i] = parts[i].replaceAll("\\|+ *-*:+", ":|");
+					parts[i] = parts[i].replaceAll("o+ *-*:+", ":o");
+					parts[i] = parts[i].replaceAll("p+ *-*:+", ":p");
+					parts[i] = parts[i].replaceAll("d+ *-*:+", ":d");
+					parts[i] = parts[i].replaceAll("s+ *-*:+", ":s");
+					
+					parts[i] = parts[i].replaceAll(":+ *-*\\\\+", ":/");
 					parts[i] = parts[i].replaceAll(":+ *-*\\|+", ":|");
 					parts[i] = parts[i].replaceAll(":+ *-*o+", ":o");
 					parts[i] = parts[i].replaceAll(":+ *-*d+", ":d");
 					parts[i] = parts[i].replaceAll(":+ *-*s+", ":s");
 					parts[i] = parts[i].replaceAll(":+ *-*p+", ":p");
 					parts[i] = parts[i].replaceAll(":+ *-*\\(+", ":(");
-					parts[i] = parts[i].replaceAll(":+ *-*\\)+", ":)");
+					parts[i] = parts[i].replaceAll(":+ *-* *\\)+", ":)");
 					parts[i] = parts[i].replaceAll(";+ *-*\\)+", ";)");
 					parts[i] = parts[i].replaceAll("x+d+", "xd");
 					

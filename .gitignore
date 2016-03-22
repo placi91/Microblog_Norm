@@ -45,3 +45,18 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/bin
+/brown-clusters
+/clusters.txt
+/accents.txt
+/lib
+/suggestions.txt
+/getOOV.sh
+/hun_tweets_2015_10_2016_02.lemmas
+/hun_tweets_2015_10_2016_02.tokenized
+/hun_tweets_2015_10_2016_02.txt
+/tweets_pruned.txt
+/tweets.txt
+/oov.txt
+/jaccard.txt
+/mostCommonOOV.txt
