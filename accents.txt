@@ -399,8 +399,6 @@ mosdoba mosdóba
 stacio stáció
 ajtocsapkodassal ajtócsapkodással
 eloel előél
-okoseszköze okőseszköze
-okoseszközt okőseszközt
 egyedü egyedű
 latogatast látogatást
 nemjarok nemjárók
@@ -821,7 +819,6 @@ parasportolók párasportolók
 túlszámlázassal túlszámlázássál
 szakacsnak szakácsnak
 hatlapjat hátlapját
-okoskesztyűt okőskesztyűt
 kolbasz kolbász
 masolatban másolatban
 jatekoddal játékoddal
@@ -935,7 +932,6 @@ tanulason tanuláson
 csoknak csóknak
 övetkezik övétkezik
 elult elült
-okosruhák okősruhák
 bajtala bajtála
 tanulasra tanulásra
 deutsche deutsché
@@ -984,7 +980,6 @@ tanulasba tanulásba
 alomason alomásón
 dokumentalva dokumentálva
 oltozzunk öltözzünk
-okoskukákat okőskukákat
 majsztoriba májsztoriba
 pakisztani pakisztáni
 elhangzo elhangzó
@@ -1324,10 +1319,8 @@ idezes idézés
 idezet idézet
 eltün éltűn
 nyelvu nyelvű
-okostelefonjaik okőstelefonjaik
 letoltheto letölthető
 örülö örülő
-okostelefonjait okőstelefonjait
 cukorfogyasztast cukorfogyasztást
 felmentest felmentést
 muveszur műveszűr
@@ -1445,18 +1438,11 @@ hurkakolbaszt hurkakolbászt
 lakcimvaltozast lakcímváltozást
 hovégi hővégi
 hangszigetel hangszigetél
-sumákolom sumákolóm
-telod telőd
 ismeteltek ismételtek
 ismeteltem ismételtem
 ismetelten ismételten
-telok telők
-telom telőm
-telon telőn
 felfuggesztem felfüggesztem
 cuppogos cuppogós
-telos télős
-telot telőt
 orakkal órákkal
 jofele jóféle
 tesomék tesómék
@@ -2307,7 +2293,6 @@ bizniszelő bizniszélő
 premora prémóra
 kiváncsiság kíváncsiság
 ijeszto ijesztő
-okosjátékban okősjátékban
 hirdessuk hirdessük
 akarhogy akárhogy
 felnagyitjak felnagyítják
@@ -3070,12 +3055,10 @@ lazulas lazulás
 megtalalod megtalálod
 megtalalok megtalálok
 megtalalom megtalálom
-okostelefonunkra okőstelefonunkra
 zsurinek zsűrinek
 infovideo infóvideó
 krisztirol krisztiről
 megtalalja megtalálja
-okostelefonunkon okőstelefonunkon
 aszkabani ászkabáni
 gyözöm győzöm
 oltoznek öltöznek
@@ -3100,7 +3083,6 @@ benyik bényik
 apahoz apához
 fogogok főgőgök
 lefagyas lefagyás
-okostelefonunkat okőstelefonunkat
 stressztol stressztől
 mellole mellőle
 probaljanak próbáljanak
@@ -3450,7 +3432,6 @@ hősok hősök
 balkarban bálkarban
 bízon bízón
 esok esők
-okostelefon okőstelefon
 masrol másról
 esos esős
 esot esőt
@@ -4522,7 +4503,6 @@ krisztiant krisztiánt
 talalkoztunk találkoztunk
 kategoria kategória
 gyogyszerrel gyógyszerrel
-teloszámát telőszámát
 tatumnal tatumnál
 sirashoz síráshoz
 atalakitsuk átalakítsuk
@@ -4570,10 +4550,8 @@ szinezne színezne
 szinezni színezni
 elhulyult elhülyült
 fajl fájl
-okosautók okősautók
 becsult becsült
 faim fáim
-okosautót okősautót
 becsuld becsüld
 becsuli becsüli
 állalok állálok
@@ -4616,18 +4594,14 @@ gyeremek gyéremék
 fazz fázz
 muzsikajat muzsikáját
 transzporter transzportér
-teloszámom telőszámom
 aprilisig áprilisig
 koszonjuk köszönjük
-teloszámod telőszámod
 hetrol hétről
-thaliák tháliák
 elokeszitonek előkészítőnek
 mohosz mohősz
 masszazsan masszázsán
 bocsasd bocsásd
 bocsass bocsáss
-ólnevelt ólnévélt
 munkalehetöség munkalehetőség
 felnyirasd felnyírasd
 egeszsegemnek egészségemnek
@@ -4952,7 +4926,6 @@ etelmergezest ételmérgezést
 hibasa hibása
 törölközö törölköző
 racsolok rácsölők
-okoskütyüje okőskütyüje
 csorokkal csórókkal
 beállításárol beállításáról
 koncentralj koncentrálj
@@ -5331,7 +5304,6 @@ matkon matkón
 koszontik köszöntik
 újságiró újságíró
 gurucson gurucsőn
-okoskönyve okőskönyve
 bebeszeltem bebeszéltem
 szajrol szájról
 visszanezegettem visszanézegettem
@@ -5612,7 +5584,6 @@ lovoldozom lövöldözöm
 gyonyorusegek gyönyörűségek
 gyonyorusegem gyönyörűségem
 oregapat öregapát
-okostégla okőstégla
 oregapas öregapás
 gyonyoruseges gyönyörűséges
 gyonyoruseget gyönyörűséget
@@ -6379,7 +6350,6 @@ megunnepeltem megünnepeltem
 beszelgetesekbe beszélgetésekbe
 szivosabb szívósabb
 kaliberu kaliberű
-okostéglák okőstéglák
 szektadba szektádba
 vilagito világító
 szabadkőmüves szabadkőműves
@@ -6406,7 +6376,6 @@ koz köz
 petelei peteléi
 ridikul ridikül
 begyurva begyúrva
-okostelefonosoknak okőstelefonosoknak
 biliarddal biliárddal
 párostársát párőstársát
 norvegia norvégia
@@ -6873,7 +6842,6 @@ atlendulsz átlendülsz
 haribol hariből
 lóe lóé
 hattered háttered
-okoslakást okőslakást
 hatterem hátterem
 hatteret hátteret
 logomentes logómentes
@@ -7406,14 +7374,9 @@ dalmus dalműs
 vilagunk világunk
 kedvu kedvű
 földönkívülie földönkívülié
-okostévéd okőstévéd
-okostévéi okőstévéi
-okostévék okőstévék
 leonét léónét
-okostévén okőstévén
 nézetkülönbségü nézetkülönbségű
 ebreszt ébreszt
-okostévét okőstévét
 kényeszteted kényésztéted
 szuperkarácsony szúpérkarácsony
 kedvü kedvű
@@ -7974,7 +7937,6 @@ felprobalni felpróbálni
 reggelizotarsakat reggelizőtársakat
 csizmaban csizmában
 postaladajaba postaládájába
-okosbőröndre okősbőröndre
 feltekenynek féltékenynek
 gorcsolok görcsölök
 lokottek lököttek
@@ -9382,7 +9344,6 @@ hajcsavaroval hajcsavaróval
 tobogan tobogán
 enteriör enteriőr
 gyogyulasnak gyógyulásnak
-okostelefonért okőstelefonért
 inditsam indítsam
 behanyok behányok
 termobögrét termőbögrét
@@ -10733,14 +10694,9 @@ konkluzió konklúzió
 sashalomon sashalómon
 tematlan témátlan
 feherítő fehérítő
-okosórát okősórát
 kiragtam kirágtam
 töben tőben
-okosórád okősórád
-okosórák okősórák
-okosórám okősórám
 velencebe velencébe
-okosórán okősórán
 evunket évünket
 vésztöi vésztői
 kifekudt kifeküdt
@@ -11366,7 +11322,6 @@ mokat mókát
 hibatlanra hibátlanra
 parizsimon párizsimon
 leghajo léghajó
-okospizsamádat okőspizsamádat
 gyuloljek gyűlöljek
 fegyverekel fegyverékél
 onokkel önökkel
@@ -11387,7 +11342,6 @@ kedvezmenyesen kedvezményesen
 molesztaljon molesztáljon
 csapattarsamnak csapattársamnak
 parharcban párharcban
-okoseszköz okőseszköz
 violettajukat violettájukat
 tetszikelitek tétszikelitek
 fuera fúéra
@@ -11501,7 +11455,6 @@ irásokat írásokat
 beleorulni beleörülni
 tipro tipró
 gegeszettel gégészettel
-okostermosztát okőstermosztát
 hetvégén hétvégén
 bankolók bánkólók
 sajtóértesü sajtóértésű
@@ -11619,7 +11572,6 @@ csillognek csillognék
 merendo merendő
 felkerul felkerül
 lelektani lélektani
-okostojaska okőstojáska
 alompar alompár
 kollegamnak kollégámnak
 pizzam pizzám
@@ -12232,7 +12184,6 @@ beszamoloja beszámolója
 olvasoim olvasóim
 boldogitalak boldogítalak
 stresszelesem stresszélesem
-okosirodát okősirodát
 aradoztam áradoztam
 csaladostul családostul
 osszejohet összejöhet
@@ -12499,7 +12450,6 @@ ijen íjén
 olodum ólodúm
 nyavalygos nyavalygós
 ijet íjét
-okostelefonomat okőstelefonomat
 mosolyodrol mosolyodról
 olvasashoz olvasáshoz
 kosztasz kosztász
@@ -12675,7 +12625,6 @@ megkezdjuk megkezdjük
 negykezlab négykézláb
 fargoból fargöból
 ivosev ívősév
-okostelefonokat okőstelefonokat
 keménymaggal kéménymaggal
 fotomasina fotómasina
 megerő megérő
@@ -12720,7 +12669,6 @@ megelt megélt
 kozepisiben középisiben
 halántékcson halántékcsőn
 megeld megéld
-okostelefonokra okőstelefonokra
 biciklisüldözés biciklisüldőzés
 csengohang csengőhang
 egésszen égésszén
@@ -12734,7 +12682,6 @@ szivathatna szívathatna
 felreussem félreüssem
 alteronnal altérónnal
 szivathatom szívathatom
-okostelefonokon okőstelefonokon
 parameterekkel paraméterekkel
 kettovel kettővel
 asvanyvizben ásványvízben
@@ -12899,8 +12846,6 @@ marhaval marhával
 agynemutol ágyneműtől
 alomert alomért
 osszeakarnak összeakarnak
-insi ínsí
-telotokra telőtokra
 parkapcsolat párkapcsolat
 funkciójáva funkciójává
 inul ínul
@@ -13149,7 +13094,6 @@ iras írás
 kedvetlenul kedvetlenül
 olvasasrol olvasásról
 munkamert munkámért
-okostelefonodat okőstelefonodat
 razon rázón
 tesitanarotokat tesitanárotokat
 orekke őrékké
@@ -13171,7 +13115,6 @@ irja írja
 szakallvagom szakállvágóm
 mogottunk mögöttünk
 irie írié
-okostelefonodon okőstelefonodon
 ujraertelmezem újraértelmezem
 ajandekoztam ajándékoztam
 bölcsödei bölcsődei
@@ -13219,7 +13162,6 @@ szoketol szókétól
 mozgasra mozgásra
 uresnek üresnek
 faradekonnya fáradékonnyá
-okostelefonodra okőstelefonodra
 bebim bébim
 bebik bébik
 autóbu autóbú
@@ -13831,7 +13773,6 @@ cimén címén
 koltekezeseim költekezéseim
 fenykardja fénykardja
 kutyaknal kutyáknál
-okoskonyha okőskonyha
 ruhadban ruhádban
 haborgo háborgó
 kutyaknak kutyáknak
@@ -14970,7 +14911,6 @@ csajokert csajokért
 patyinál pátyinál
 kattanas kattanás
 lemuvelt leművelt
-okoshőmérőben okőshőmérőben
 partizan partizán
 ermen érmen
 ermes érmes
@@ -15181,7 +15121,6 @@ barataimba barátaimba
 nelkuloz nélkülöz
 lobonccal lóbonccal
 bertus bértus
-okoshűtője okőshűtője
 mindharmuknak mindhármuknak
 kiralysagom királyságom
 ultrakkal ultrákkal
@@ -15590,7 +15529,6 @@ ertik értik
 horrorejszakabol horroréjszakából
 lemegyunk lemegyünk
 jeloljon jelöljön
-okostanteremért okőstanteremért
 racsimpaszkodtam rácsimpaszkodtam
 kiontottem kiöntöttem
 nanasi nánási
@@ -16142,7 +16080,6 @@ földmüvelési földművelési
 batorsagomon bátorságomon
 eskuvomet esküvőmet
 versenyautokat versenyautókat
-okosórámra okősórámra
 korlatlan korlátlan
 szazadszorra századszorra
 meggyogyitott meggyógyított
@@ -16180,7 +16117,6 @@ doboscsere dobőscsere
 gattis gáttis
 anyjaban anyjában
 ertől értől
-okosórának okősórának
 megmondas megmondás
 felesegevel feleségével
 csinalhat csinálhat
@@ -16257,7 +16193,6 @@ bobiskolo bóbiskoló
 ördögösködhetek ördögősködhetek
 kapcsolnad kapcsolnád
 maximalis maximális
-okosórámat okősórámat
 emlekeidbol emlékeidből
 jolien jolién
 gyülöm gyűlöm
@@ -16391,8 +16326,6 @@ hajoban hajóban
 karatesek karatések
 romancokba románcokba
 pirinyonak pirinyónak
-okosóráján okősóráján
-okosóráját okősóráját
 hispania hispánia
 tokoli tököli
 szuperképességeim szúpérképességeim
@@ -16555,7 +16488,6 @@ anyamek anyámék
 megoregedni megöregedni
 labunk lábunk
 cigipapirt cigipapírt
-telokonyv telőkönyv
 puskagyartasba puskagyártásba
 kami kámi
 kenesben kenésben
@@ -16582,7 +16514,6 @@ atruhazom átruházom
 kase kasé
 baciut baciút
 kamú kámú
-okosórához okősórához
 manapsag manapság
 ponilopopo pónilópopó
 fickorol fickóról
@@ -16631,7 +16562,6 @@ nagyimekhoz nagyimékhoz
 egeszsegesnek egészségesnek
 johetett jöhetett
 csinalnunk csinálnunk
-okosórákba okősórákba
 kamnak kámnak
 megallitja megállítja
 gyorit győrit
@@ -16642,7 +16572,6 @@ tésztasalimat tésztasálimát
 rakerdeznel rákérdeznél
 rakerdeznek rákérdeznek
 jaszain jászain
-okosórákat okősórákat
 magassarkujat magassarkúját
 villámverte villámvérté
 vaniliavillam vaníliavillám
@@ -16798,7 +16727,6 @@ gyüjti gyűjti
 pihenesek pihenések
 batthyany batthyány
 begubozik begubózik
-okosórájuk okősórájuk
 repulnenek repülnének
 zarán zárán
 zarát zárát
@@ -16807,7 +16735,6 @@ szuleinkre szüleinkre
 kaposvari kaposvári
 betetdalait betétdalait
 lestuk lestük
-okosizzó okősizzó
 idozites időzítés
 meggyulolnom meggyűlölnöm
 özösségi őzösségi
@@ -16930,7 +16857,6 @@ kampos kampós
 bevasaroltunk bevásároltunk
 lombardóról lombárdóról
 ajanlana ajánlana
-okosórádat okősórádat
 ajanlani ajánlani
 felnöt félnőt
 arnyos árnyős
@@ -16961,7 +16887,6 @@ multimilliardos multimilliárdos
 betara bétára
 felelosek felelősek
 razolas rázólás
-okosórából okősórából
 docba dócba
 bátorságtöretlenül bátorságtőrétlenül
 uresfeju üresfejű
@@ -17186,7 +17111,6 @@ kobani kőbáni
 otosre ötösre
 szarjaba szárjába
 tanciztunk táncíztűnk
-okosedény okősedény
 kiat kiát
 kobasz köbász
 erdekesebb érdekesebb
@@ -17464,7 +17388,6 @@ atkuldenek átküldenek
 arkolunk árkolunk
 tulorazunk túlórázunk
 húgyuti húgyúti
-okoskarkötője okőskarkötője
 atérzem átérzem
 ciganyaval cigányával
 benaztak bénáztak
@@ -18256,7 +18179,6 @@ elobujni előbújni
 felbon félbon
 letepi letépi
 megfekudt megfeküdt
-okoshutot okőshűtőt
 harmast hármast
 kancel kancél
 bluzban blúzban
@@ -19263,7 +19185,6 @@ csaladkep családkép
 lene lené
 zabalnivaloja zabálnivalója
 biztositsam biztosítsam
-okoskészülékre okőskészülékre
 semmibol semmiből
 lepe lépe
 lepo lepő
@@ -19308,8 +19229,6 @@ utogettem ütögettem
 utogettel ütögettél
 levö levő
 parasztvakitást parasztvakítást
-okoskészüléken okőskészüléken
-okoskészülékek okőskészülékek
 jogatol jogától
 jokkal jókkal
 megtanulnek megtanulnék
@@ -19785,7 +19704,6 @@ hajtas hajtás
 martensson marténssón
 zenetarat zenetárat
 megkostoljam megkóstoljam
-okostelefonosok okőstelefonosok
 csaladtagjara családtagjára
 rugdosnam rugdosnám
 letelepedesi letelepedési
@@ -20115,7 +20033,6 @@ elvesztesekor elvesztésekor
 tavoli távoli
 paribus paribús
 asszen asszén
-okoskamerája okőskamerája
 hírü hírű
 onmagamnak önmagamnak
 elvállt élvállt
@@ -20401,7 +20318,6 @@ szovetseghez szövetséghez
 megvalósitandó megvalósítandó
 vedekezesben védekezésben
 studiózni stúdiózni
-okostalálmány okőstalálmány
 szakorvo szakőrvő
 feljetek féljetek
 kamugep kamugép
@@ -20430,7 +20346,6 @@ lelegzetem lélegzetem
 fujast fújást
 kinézzel kinézzél
 haziorvost háziorvost
-okoskamerák okőskamerák
 millioan millióan
 meglepoen meglepően
 szentigaz szentigáz
@@ -20586,7 +20501,6 @@ ritusnak rítusnak
 arokba árokba
 vernarancsos vérnarancsos
 lederben ledérben
-okosórával okősórával
 femdom fémdóm
 bulibaro bulibáró
 telefonert telefonért
@@ -20792,7 +20706,6 @@ eltorni eltörni
 elszivta elszívta
 koalak koalák
 díszitett díszített
-okosóráról okősóráról
 japánbol japánból
 tankockapocsban tankóckapocsban
 eltorik eltörik
@@ -21274,7 +21187,6 @@ tisztaznam tisztáznám
 lakassom lakássom
 carolinát cárólinát
 lehangoltsag lehangoltság
-okoskígyó okőskígyó
 orangyalom őrangyalom
 nemhircsarda nemhírcsárda
 kitoltottem kitöltöttem
@@ -21667,7 +21579,6 @@ szepsegeben szépségében
 hianyzott hiányzott
 listaba listába
 kovethetnek követhetnek
-okosmérleg okősmérleg
 kudarcodet kudarcodét
 kelenfoldom kelenföldöm
 kelenfoldon kelenföldön
@@ -21691,7 +21602,6 @@ törvénytelenkednek törvénytelenkédnek
 allenen allénén
 bevasarolok bevásárolok
 osztogatjak osztogatják
-okoskuka okőskuka
 jozansagommal józanságommal
 mugellói műgéllói
 penisz pénisz
@@ -21967,8 +21877,6 @@ japanoktol japánoktól
 pultoslányt pultőslányt
 ocsikem öcsikém
 japántol japántól
-okoshűtők okőshűtők
-okoshűtőt okőshűtőt
 szerelöt szerelőt
 orbannál őrbánnál
 zsidokra zsidókra
@@ -22692,7 +22600,6 @@ rezgö rezgő
 felkeny félkény
 figyelemet figyelemét
 tonett tónett
-okoskesztyű okőskesztyű
 vadnan vadnán
 barbitol bárbitól
 futnank futnánk
@@ -22817,7 +22724,6 @@ megvertuk megvertük
 argentum árgéntűm
 palacsintakent palacsintaként
 kapszulaban kapszulában
-okosabroncs okősabroncs
 celebekre célebekre
 meglotte meglőtte
 internette internetté
@@ -23181,7 +23087,6 @@ tancineni tancinéni
 noelnek nőélnek
 jarassuk járassuk
 stroman stróman
-okoslámparendszer okőslámparendszer
 ifjusag ifjúság
 útso útsó
 elöadás előadás
@@ -23426,7 +23331,6 @@ agerbe ágérbe
 expoban expóban
 nightmarionne nightmarionné
 tudnek tűdnek
-okosnő okősnő
 evbol évből
 napaliban napalibán
 halalosan halálosan
@@ -23694,7 +23598,6 @@ kapnam kapnám
 rohogtuk röhögtük
 kapnek kapnék
 lakasnak lakásnak
-okoskukákkal okőskukákkal
 melegitunk melegítünk
 szerencsetlennel szerencsétlennel
 szerencsetlennek szerencsétlennek
@@ -23711,7 +23614,6 @@ resolutionom résólútionom
 pszichologiarol pszichológiáról
 eltunnek eltűnnek
 lassitja lassítja
-okosöv okősöv
 semmijen semmijén
 ambrosra ambrósra
 herevere herevére
@@ -23889,9 +23791,7 @@ iranyito irányító
 eséllye eséllyé
 osszepotolnank összepótolnánk
 dölnék dőlnék
-telotokokat telőtokokat
 vedekezeset védekezését
-teloznek télőznek
 kankan kánkán
 drogeriák drogériák
 előmeccs élőmeccs
@@ -24171,7 +24071,6 @@ marpedig márpedig
 feljott feljött
 legkeverest légkeverést
 megadast megadást
-okosszemüveggel okősszemüveggel
 realise reálisé
 goclever góclévér
 kameraja kamerája
@@ -24333,7 +24232,6 @@ meozásra meózásra
 hamara hámara
 rapmaker rapmákér
 meglagyitana meglágyítana
-telotokomat telőtokomat
 hamasz hámász
 golazo gólázó
 anyucikad anyucikád
@@ -24573,7 +24471,6 @@ repulőtől repülőtől
 hogolyoztunk hógolyóztunk
 fenekukbe fenekűkbe
 meetingel meetingél
-okosébresztő okősébresztő
 baratsagomat barátságomat
 iranyulo irányuló
 iranyult irányult
@@ -24658,7 +24555,6 @@ erolkodom erőlködöm
 erolkodok erőlködök
 vonalzoval vonalzóval
 egyetembol egyetemből
-telozunk télőzünk
 kibirható kibírható
 legyakta légyakta
 beferek beférek
@@ -25913,7 +25809,6 @@ morinát mórinát
 virtuoz virtuóz
 forrosag forróság
 tavolodtam távolodtam
-okoskulcstartó okőskulcstartó
 motivalatlan motiválatlan
 teliesseg téliesség
 kozremukodest közreműködést
@@ -26358,12 +26253,9 @@ hűsitő hűsítő
 valasztojogot választójogot
 egeszbiztos égészbiztos
 leszurom leszúrom
-teloszamom telőszámom
 csapatkent csapatként
-teloszamot telőszámot
 megeltunk megéltünk
 vakácionak vakációnak
-teloszamod telőszámod
 everestre évérestre
 erosodni erősödni
 musée műséé
@@ -26401,7 +26293,6 @@ kezdetü kezdetű
 emberol emberól
 kijelentesemmel kijelentésemmel
 tuzprobat tűzpróbát
-teloszamat telőszámat
 sorfesztival sorfesztivál
 megtekintes megtekintés
 orszagonkent országonként
@@ -26518,7 +26409,6 @@ villantas villantás
 belassitva belassítva
 szuksegetek szükségetek
 kecskemeten kecskeméten
-okosportált okősportált
 munkatarsainak munkatársainak
 akaroimnak akaróimnak
 olvasasával olvasásával
@@ -27032,7 +26922,6 @@ orak órák
 oram órám
 orai órai
 oras órás
-okosfogkefe okősfogkefe
 rovidebbek rövidebbek
 orat órát
 kutyahoz kutyához
@@ -27316,7 +27205,6 @@ filmharmoniai filmharmóniai
 lovaskent lovasként
 osztalyozva osztályozva
 barbieval barbiéval
-okosóráért okősóráért
 randult rándult
 csuszkalas csúszkálás
 pszichologusnal pszichológusnál
@@ -27325,7 +27213,6 @@ vedelmi védelmi
 reszekben részekben
 gemboly gémboly
 nepszavazasi népszavazási
-okostelot okőstelőt
 szulinapjarol szülinapjáról
 vagymozzanat vágymozzanat
 sikereinke sikereinké
@@ -27899,7 +27786,6 @@ fenyofat fenyőfát
 brigadot brigádot
 idomenibe idoménibe
 hasznalatahoz használatához
-okostetkó okőstetkó
 optimalis optimális
 kutyakra kutyákra
 mindkettoert mindkettőért
@@ -28383,7 +28269,6 @@ feleltunk feleltünk
 foszereplovel főszereplővel
 csapad csapád
 csapas csapás
-okosjövő okősjövő
 hétvegere hétvégére
 ellentete ellentéte
 gyatran gyatrán
@@ -29677,7 +29562,6 @@ kiskutyamnak kiskutyámnak
 beleloknem belelökném
 szanal szanál
 kuglofja kuglófja
-legokos legókos
 gimnaziumot gimnáziumot
 bepacoltam bepácoltam
 barátoknal barátoknál
@@ -30318,7 +30202,6 @@ azokrol azokról
 allítólag állítólag
 müszive műszíve
 lalikam lalikám
-okoskulacs okőskulacs
 kellenel kellenél
 automat autómat
 automba autómba
@@ -30857,7 +30740,6 @@ atengedett átengedett
 morzsaval morzsával
 munkajuk munkájuk
 kirekeszto kirekesztő
-teloszamlat telőszámlat
 ajulva ájulva
 bannere banneré
 épitö építő
@@ -31216,7 +31098,6 @@ kulonkiadas különkiadás
 magikus mágikus
 dorinaval dórinával
 győzö győző
-okososzlopunkra okősoszlopunkra
 öziéve őziévé
 lemeszarolnam lemészárolnám
 hataratkelo határátkelő
@@ -31704,7 +31585,6 @@ korte körte
 vilagosban világosban
 ezustot ezüstöt
 márko márkó
-okoslány okőslány
 edzestarsaim edzéstársaim
 futarszolgattal futárszolgáttal
 cserediakprogramba cserediákprogramba
@@ -31885,7 +31765,6 @@ megürultek megürültek
 szomora szómora
 szupercuki szúpercüki
 panik pánik
-okosórájának okősórájának
 panir panír
 valtosofor váltósofőr
 cipomnek cipőmnek
@@ -32109,7 +31988,6 @@ mamaert mamáért
 resztvevoknek résztvevőknek
 havazas havazás
 osztalyozzak osztályozzak
-okospofi okőspofi
 dianáról diánáról
 kozel közel
 kozep közép
@@ -32168,7 +32046,6 @@ parna párna
 penznel pénznél
 ertekeli értékeli
 ertekeld értékeld
-okospont okőspont
 toriel töriél
 simitva simítva
 furdetett fürdetett
@@ -32469,7 +32346,6 @@ francias franciás
 talalkozzak találkozzak
 legendnek legéndnek
 logoját logóját
-okosórájával okősórájával
 vegtere végtére
 beoltoztetnem beöltöztetnem
 nemtanulok nemtanulók
@@ -32492,7 +32368,6 @@ penzrol pénzről
 jelbeszeddel jelbeszéddel
 utszelen útszélen
 utszelep útszelep
-okosórájáról okősórájáról
 kommunikalni kommunikálni
 kapaszkodhatnek kapaszkodhatnék
 szepsegukkel szépségükkel
@@ -32574,7 +32449,6 @@ logolok lógólok
 kenyezteti kényezteti
 ramenosek rámenősek
 felolvaso felolvasó
-okoskütyükkel okőskütyükkel
 heringkent heringként
 kenyeztess kényeztess
 soforjeit sofőrjeit
@@ -33768,7 +33642,6 @@ pofaznanak pofáznának
 tarsadalom társadalom
 rosé rósé
 roza róza
-okosórájából okősórájából
 ellatjak ellátják
 leszakitotta leszakította
 videomhoz videómhoz
@@ -34130,7 +34003,6 @@ kulcsraké kulcsráké
 definialnam definiálnám
 valtottunk váltottunk
 ruhe rühe
-okosmobilt okősmobilt
 lekessem lekéssem
 hátraarcol hátraarcól
 allatkertes állatkertes
@@ -34757,7 +34629,6 @@ tajkártyám tájkártyám
 barátomrol barátomról
 franciaországga franciaországgá
 csende csendé
-okosdokkolóval okősdokkolóval
 jatékhoz játékhoz
 beállitásai beállításai
 dijazottak díjazottak
@@ -35216,7 +35087,6 @@ irogassanak írogassanak
 parotok párotok
 kisérletezni kísérletezni
 érfel érfél
-okoshűtő okőshűtő
 probababanak próbababának
 betutipust betűtípust
 mamanak mamának
@@ -35770,7 +35640,6 @@ olaszkent olaszként
 szobelitol szóbelitől
 keszülnek készülnek
 frászbukos frászbukós
-okososzlopot okősoszlopot
 logikussag logikusság
 miliciák milíciák
 mutálodo mutálódó
@@ -37217,7 +37086,6 @@ katyusa kátyúsa
 bombe bőmbe
 legyszike légyszike
 lampast lámpást
-okosruha okősruha
 ejjelre éjjelre
 szotarban szótárban
 gyokerekbol gyökerekből
@@ -37340,7 +37208,6 @@ kicsereltuk kicseréltük
 olelkezos ölelkezős
 tancoktatast táncoktatást
 határellenörzést határellenőrzést
-okostel okőstél
 olelkezni ölelkezni
 talival tálival
 bocsatottam bocsátottam
@@ -37367,7 +37234,6 @@ tomegbe tömegbe
 csuke csuké
 birhatod bírhatod
 tomegen tömegen
-okoskütyük okőskütyük
 dzsesszikaval dzsesszikával
 pécsröl pécsről
 terroristak terroristák
@@ -37461,7 +37327,6 @@ jahvetoknál jahvétoknál
 megbekelek megbékélek
 izgatotta izgatottá
 felkapaszkodot félkapaszkodót
-okosotthonok okősotthonok
 csettintesedre csettintésedre
 kicsereltem kicseréltem
 kicsereltek kicseréltek
@@ -37622,7 +37487,6 @@ magassarkujaban magassarkújában
 kiherelnel kiherélnél
 maskulonben máskülönben
 kiherelnem kiherélnem
-okosház okősház
 készitéséhez készítéséhez
 egedul egedül
 cedevitától cédévitától
@@ -37700,10 +37564,7 @@ hetre hétre
 kotozom kötözöm
 motivacional motivációnál
 feltortek feltörtek
-pále pálé
-telo telő
 izgulnank izgulnánk
-telu telű
 teka téka
 kerdezoskodik kérdezősködik
 szepiteni szépíteni
@@ -39416,7 +39277,6 @@ piafot piafőt
 kocosan kócosan
 elengedese élengedése
 archeres archerés
-okostelepülés okőstelepülés
 aldni áldni
 egyszerűe egyszerűé
 motormarkakat motormarkákát
@@ -40143,7 +40003,6 @@ mennyiségü mennyiségű
 megujulni megújulni
 bamulhattam bámulhattam
 utcakon utcakőn
-teloim telőim
 angyon ángyon
 reneszansz reneszánsz
 asztaltarsaim asztaltársaim
@@ -40256,13 +40115,11 @@ szantorini szántoríni
 tankolas tankolás
 borondombe bőröndömbe
 épitik építik
-telonk telőnk
 fotoert fotóért
 induloval indulóval
 megerdemelte megérdemelte
 otthonaba otthonába
 elhizás elhízás
-telora télóra
 vegszokent végszóként
 borondomet bőröndömet
 épitem építem
@@ -40360,7 +40217,6 @@ lennyel lénnyel
 sutije sütije
 néptáncolt néptáncölt
 ujat újat
-okostelefonoddal okőstelefonoddal
 szegyentelenek szégyentelenek
 budösek büdösek
 buzlok bűzlök
@@ -40478,7 +40334,6 @@ fotojat fotóját
 kornyekeig környékéig
 szerszámoskoffert szerszámőskoffert
 eheztettem éheztettem
-okostelefonodban okőstelefonodban
 elmeseljuk elmeséljük
 leanyzom leányzóm
 hungaria hungária
@@ -40633,7 +40488,6 @@ szellemtö szellemtő
 racingnél rácingnél
 torolhetnem törölhetnem
 torolhetnek törölhetnek
-okoseszközökkel okőseszközökkel
 jofelenek jófélének
 extazis extázis
 rendszamú rendszámú
@@ -40641,7 +40495,6 @@ legundoritobb legundorítóbb
 jojot jojót
 idoszaka időszaka
 rendszama rendszáma
-okosgyerek okősgyerek
 varosmajorba varősmajorba
 sportfogadasi sportfogadási
 stirolik stírölik
@@ -40861,7 +40714,6 @@ ulök ülök
 barátnom barátnőm
 raffaellot ráffaellőt
 kidiszitettem kidíszítettem
-okosszex okősszex
 fotoját fotóját
 kérdeznel kérdeznél
 hazugsaga hazugsága
@@ -41343,11 +41195,9 @@ elolenyeket élőlényeket
 egeted égeted
 megszuntetni megszüntetni
 egetem égetem
-okostelo okőstelő
 unalombol unalomból
 meglepodnenek meglepődnének
 gyümölcsel gyümölcsél
-okostele okőstele
 idiótaval idiótával
 haromfele háromfelé
 holdraszállás holdrászállás
@@ -41465,7 +41315,6 @@ elsökböl elsőkből
 szepitsek szépítsek
 reklamozta reklámozta
 mosoport mosóport
-okostelefonodból okőstelefonodból
 csongettek csöngettek
 kisfiunak kisfiúnak
 nézöd néződ
@@ -41574,7 +41423,6 @@ emberségfelleti emberségfélléti
 csodakrol csodákról
 felvasarolja felvásárolja
 jotet jótét
-okosizzókkal okősizzókkal
 decemberert decemberért
 nomore nőmóré
 decemberere decemberére
@@ -41827,7 +41675,6 @@ megszólitásaim megszólításaim
 szivatjátok szívatjátok
 korabbanra kőrabbánra
 házasságu házasságú
-okosautóval okősautóval
 lesifotot lésífotót
 foglalkozasert foglalkozásért
 ferjuket férjüket
@@ -43061,7 +42908,6 @@ szunetbol szünetből
 gyengeit gyengéit
 szilon szilón
 termeszetfilmen természetfilmen
-okostévéden okőstévéden
 betakaroztam betakaróztam
 hirlevél hírlevél
 hatlap hátlap
@@ -43845,7 +43691,6 @@ kivannok kívánnók
 kivannom kívánnom
 beleneztel belenéztél
 dortúrára dórtúrára
-okosfegyverekkel okősfegyverekkel
 eltaszitják eltaszítják
 szoszoztam szószoztam
 vennenek vennének
@@ -45850,7 +45695,6 @@ megdorzsoltem megdörzsöltem
 politizalok politizálok
 szeretest szeretést
 övegírás övégírás
-okosvagy okősvágy
 korgasabol korgásából
 peperos péperős
 igasságot igásságot
@@ -46020,7 +45864,6 @@ nagykepunek nagyképűnek
 torikonyve törikönyve
 bejohetsz bejöhetsz
 áldo áldó
-okoseszközöket okőseszközöket
 bolcsen bölcsen
 bolcset bölcset
 angeloban angelóban
@@ -46466,7 +46309,6 @@ kulfoldiek külföldiek
 elveszited elveszíted
 korbenezel körbenézel
 elveszitem elveszítem
-okostelefonjainkat okőstelefonjainkat
 kierunk kiérünk
 oktobertől októbertől
 raporgok rápörgök
@@ -46571,7 +46413,6 @@ legvidamabbnak legvidámabbnak
 süle sülé
 autokorret autókorrét
 bolcsot bölcsőt
-okostelefonjainkon okőstelefonjainkon
 brnoból brnóból
 mártírkodnom mártírkódnőm
 bantja bántja
@@ -46617,7 +46458,6 @@ beteljesultek beteljesültek
 pofajukba pofájukba
 pofajukat pofájukat
 veszpremben vészprémben
-okoslottó okőslottó
 egetnek égetnek
 egetnem égetnem
 sürű sűrű
@@ -46803,7 +46643,6 @@ atvaltozni átváltozni
 szegyellos szégyellős
 ciganyokat cigányokat
 temafoglalot témafoglalót
-okosóra okősóra
 inteznie intéznie
 hiszu hiszű
 kozmetikaztatsz kozmetikáztatsz
@@ -47111,8 +46950,6 @@ predikalnak prédikálnak
 telefonnyomkodast telefonnyomkodást
 felcsatolhatost félcsatolhatóst
 gento géntó
-telódan télódán
-telódat télódát
 ballestrem bállestrém
 ázas ázás
 jovokepemet jövőkepémet
@@ -47588,7 +47425,6 @@ salata saláta
 mintaval mintával
 tarkonyos tárkonyos
 szempar szempár
-okostelefonunktól okőstelefonunktól
 elinditanek elindítanék
 kisirta kisírta
 megdontottuk megdöntöttük
@@ -47984,7 +47820,6 @@ elonnyel előnnyel
 megbeszelesen megbeszélésen
 kapitanyra kapitányra
 koolaj kőolaj
-okosbögre okősbögre
 reszunk részünk
 elirtad elírtad
 elirtam elírtam
@@ -48218,7 +48053,6 @@ unnepelyes ünnepélyes
 diktatorok diktátorok
 pistitol pistitől
 igyekszunk igyekszünk
-okoságy okőságy
 villaban villában
 meretben méretben
 előajándékot élőajándékot
@@ -48375,7 +48209,6 @@ felcsíki félcsíki
 fazva fázva
 eroltetettek erőltetettek
 eroltetetten erőltetetten
-teloztunk télőztűnk
 boldogságosságos boldogságosságős
 lefrissulni lefrissülni
 beleuti beleüti
@@ -49339,7 +49172,6 @@ telefonszamodat telefonszámodat
 eljegyzetlen éljegyzetlen
 rituále rituálé
 rágyujtanek rágyújtanék
-telóra télóra
 vegletekig végletekig
 gyengult gyengült
 ibranyi ibrányi
@@ -49350,7 +49182,6 @@ szallitokkal szállítókkal
 sírasok sírások
 felhivja felhívja
 szuperkocsit szúpérkocsit
-okostelefonlencsék okőstelefonlencsék
 enedet énedet
 felhivok felhívok
 felhivom felhívom
@@ -49410,7 +49241,6 @@ dicsertek dicsértek
 gyültek gyűltek
 köcsöge köcsögé
 turistakat turistákat
-okoszoknik okőszoknik
 koncertmarato koncertmarató
 gyogyszerre gyógyszerre
 feluveg félüveg
@@ -49791,7 +49621,6 @@ megvettunk megvettünk
 felresikerult félresikerült
 számitok számítok
 reszrehajlo részrehajló
-okostévékre okőstévékre
 laktozerzekenyseg laktózérzékenység
 ünnepeksorán ünnepéksorán
 pressoban préssóban
@@ -49951,7 +49780,6 @@ uzlethazhoz üzletházhoz
 vandor vándor
 irányitva irányítva
 tomiekat tomiékat
-okostévéken okőstévéken
 helyerol helyéről
 szamahoz számához
 masikbol másikból
@@ -50069,7 +49897,6 @@ datolyat datolyát
 hasmenos hasménős
 gepbol gépből
 kozbejott közbejött
-okoskamerákkal okőskamerákkal
 kutyaztam kutyáztam
 korforgasbol körforgásból
 bucko buckó
@@ -50178,7 +50005,6 @@ lakáso lakásó
 gepard gepárd
 felhasznalonev felhasználónév
 kerdesnek kérdésnek
-okostévéjét okőstévéjét
 kétszinüségedtől kétszínűségedtől
 legkozeleb légközéleb
 osszevonjuk összevonjuk
@@ -50327,7 +50153,6 @@ torzsvasarloi torzsvasárlói
 torlodott torlódott
 csaladlatogatas családlátogatás
 fajtaba fajtába
-okostévé okőstévé
 telefonozast telefonozást
 csuszkalassal csúszkálással
 körülöt körülőt
@@ -50817,7 +50642,6 @@ bulvarhirt bulvárhírt
 szemoldok szemöldök
 bulat búlat
 rajztanarom rajztanárom
-okosmunka okősmunka
 repülőtére repülőtéré
 muveltsegi műveltségi
 főteré főtéré
@@ -50830,7 +50654,6 @@ feletkeztünk felétkeztünk
 megfelelesbol megfelelésből
 bunbe bűnbe
 ismeröseiteket ismerőseiteket
-okosváros okősváros
 ginagina ginágina
 kinyirt kinyírt
 vedelmenel védelménél
@@ -50909,7 +50732,6 @@ repatortahoz répatortához
 doktornenihez doktornénihez
 lokenek lókének
 beleszamitjuk beleszámítjuk
-okostelefonunkkal okőstelefonunkkal
 bunyo bunyó
 feldobalnak feldobálnak
 archivum archívum
@@ -51705,7 +51527,6 @@ iskoladnak iskoládnak
 atcsalogatni átcsalogatni
 szekhelye székhelye
 oszkar őszkar
-okoscuccok okőscuccok
 bébiszittere bébiszitteré
 cipelhettuk cipelhettük
 kozepest közepest
@@ -52141,7 +51962,6 @@ kerekvagasban kerékvágásban
 karacsonyfák karácsonyfák
 goldért góldért
 aszadot ászadót
-okosórákhoz okősórákhoz
 megbaratkozni megbarátkozni
 szinlelni színlelni
 probálj próbálj
@@ -53019,7 +52839,6 @@ furodtek fürödtek
 kivartam kivártam
 furodtem fürödtem
 hugomék húgomék
-okosmobilok okősmobilok
 szintetizatoros szintetizátoros
 mordorból mórdórból
 fuldugot füldugót
@@ -53441,14 +53260,11 @@ maganeletedbe magánéletedbe
 barany bárány
 fajtol fajtól
 jósors jósőrs
-okoseszközön okőseszközön
-okoseszközök okőseszközök
 fajtad fajtád
 meghatarozatlan meghatározatlan
 repülövel repülővel
 meszarlas mészárlás
 fonfarának főnfarának
-okostelefonjával okőstelefonjával
 rendörség rendőrség
 ijesszuk ijesszük
 nemzedeket nemzedéket
@@ -53528,7 +53344,6 @@ mufogsor műfogsor
 elokelo előkelő
 demont démont
 demoni démoni
-okosórákkal okősórákkal
 dotkom dötköm
 demona démona
 leerettsegiztem leérettségiztem
@@ -53727,7 +53542,6 @@ ismerkedjunk ismerkedjünk
 aldjon áldjon
 elerzekenyulnom elérzékenyülnöm
 tusfurdőddel tusfürdőddel
-okoseszközre okőseszközre
 hozzajarulas hozzájárulás
 arpad árpád
 blatterre blattérre
@@ -53757,10 +53571,8 @@ edesanyatokat édesanyátokat
 tokeltes tókeltés
 viragokat virágokat
 jelolgetnek jelölgetnek
-okosórája okősórája
 frankrol frankról
 milliardbol milliárdból
-okosóráknak okősóráknak
 felorankent félóránként
 focicsapatahoz focicsapatához
 quijotei quijotéi
@@ -53790,7 +53602,6 @@ szelektalni szelektálni
 belepoket belepöket
 kevessel kevéssel
 alapjaba alapjába
-okosóránk okősóránk
 karaokenek karaokének
 festmenyem festményem
 festmenyed festményed
@@ -54039,13 +53850,11 @@ kikapcsolodas kikapcsolódás
 hozzatartozokat hozzátartozókat
 koaszonom kőaszónőm
 dühöngö dühöngő
-okostelefonjának okőstelefonjának
 félreertheti félreértheti
 csoporttarsammal csoporttársammal
 hatarra határra
 energiaitalert energiaitalért
 meloztunk melóztunk
-okoseszközei okőseszközei
 készulve készülve
 evosszegzoben évösszegzőben
 fajnia fájnia
@@ -54121,7 +53930,6 @@ osztasaban osztásában
 hatsoszandekbol hátsószándékból
 részeletekről részéletekről
 artas ártás
-okostelefonokhoz okőstelefonokhoz
 látszodjon látszódjon
 szallhatok szállhatok
 megjeloltelek megjelöltelek
@@ -54332,8 +54140,6 @@ evadnyito évadnyitó
 kondibajaros kondibajárős
 legkiakasztobb legkiakasztóbb
 leberer lébérér
-okoskarkötőm okőskarkötőm
-okoskarkötőt okőskarkötőt
 leszaromnak leszarómnak
 motivalja motiválja
 felkerulnek felkerülnek
@@ -54514,7 +54320,6 @@ visitasz visítasz
 saluto sálütő
 lapatal lápatál
 alapvetoen alapvetően
-okostelefonja okőstelefonja
 profiljat profilját
 baratnomeknek barátnőméknek
 baratnomeknel barátnőméknél
@@ -54537,18 +54342,12 @@ borondben bőröndben
 daltonos daltónős
 daltonom daltónőm
 daltonok daltónők
-okostelefonon okőstelefonon
-okostelefonom okőstelefonom
-okostelefonos okőstelefonos
-okostelefonod okőstelefonod
-okostelefonok okőstelefonok
 sapitol sapitól
 lesifotókat lésífotókat
 elbeszelesmod elbeszélésmód
 torontoi torontói
 sokorói sókórói
 gitarod gitárod
-okostelefonra okőstelefonra
 csepered csépered
 arvíz árvíz
 gitaron gitáron
@@ -54566,11 +54365,9 @@ rampában rámpában
 anyosod anyósod
 zsebszosz zsebszósz
 vednökök védnökök
-okosszemüvegeknek okősszemüvegeknek
 szuzessegedert szüzességedért
 vanba vánba
 megertjuk megértjük
-okostelefonokban okőstelefonokban
 remekul remekül
 vétojog vétójog
 arzen arzén
@@ -54581,7 +54378,6 @@ szobatarsat szobatársat
 papplan papplán
 szobatarsam szobatársam
 feherjezel fehérjézel
-okostelefonba okőstelefonba
 ebedloben ebédlőben
 szobatarsad szobatársad
 kaszaltam kaszáltam
@@ -54625,7 +54421,6 @@ evesre evésre
 valyi vályi
 tuloktulok tuloktülök
 dicserjetek dicsérjetek
-telodhoz telődhöz
 horuszt hórüszt
 keruljunk kerüljünk
 penzesek pénzesek
@@ -54887,7 +54682,6 @@ honoré honőré
 kiméljetek kíméljetek
 pecsiekkel pécsiekkel
 betontombbel betontömbbel
-okoskártya okőskártya
 honour hónőúr
 lefekves lefekvés
 varva várva
@@ -54934,7 +54728,6 @@ marhaporkolt marhapörkólt
 asafa asáfa
 idoutazas időutazás
 odaerni odaérni
-okostelefonoknak okőstelefonoknak
 felvetelizokrol felvételizőkről
 mandulagyulladasom mandulagyulladásom
 krisztinakrol krisztinákról
@@ -55072,7 +54865,6 @@ vasmu vasmű
 csacsikákat csacsikákát
 lecives lécíves
 taskajaval táskájával
-telodrol telődről
 irobot íróbot
 lemuvelni leművelni
 korrigalva korrigálva
@@ -55104,7 +54896,6 @@ nyelvnyujtos nyelvnyújtós
 moderalni moderálni
 űrvizilabda űrvízilabda
 papirmaszkban papírmaszkban
-okostelefonokkal okőstelefonokkal
 eredményne eredményné
 kalozokat kalózokat
 ovódások óvódások
@@ -55139,14 +54930,12 @@ láztol láztól
 bezarnam bezárnám
 rapelése rapélése
 bezarnak bezárnak
-okostévéje okőstévéje
 öregrockerek őrégrockerek
 elcsábitasz elcsábítasz
 kifarasztott kifárasztott
 fogyókúrast fogyókúrást
 romanoknak románoknak
 apjanak apjának
-okostévéit okőstévéit
 athuzom áthúzom
 athuzos áthúzós
 távirányitók távirányítók
@@ -55161,7 +54950,6 @@ onutalati ónutálati
 búboskemencét búbőskemencét
 enekeseket énekeseket
 balhekat balhékat
-okostévére okőstévére
 lebenul lebénul
 idiomas idiómás
 kilatoba kilátóba
@@ -55809,7 +55597,6 @@ szarvasporkolt szarvaspörkólt
 borsofozelek borsófőzelék
 fuggonyom függönyöm
 értékitélete értékítélete
-okosautója okősautója
 vasruddal vasrúddal
 elnezek elnézek
 elnezem elnézem
@@ -56272,7 +56059,6 @@ rendöre rendőre
 rendöri rendőri
 ragyujtani rágyújtani
 tüszös tüszős
-okostelefont okőstelefont
 állitási állítási
 bekejeles békejeles
 bekejelet békejelet
@@ -56527,7 +56313,6 @@ távoltartására távöltartására
 tejszines tejszínes
 jatekrendu játékrendű
 pénztárgéppe pénztárgéppé
-okoskütyü okőskütyü
 dontetlen döntetlen
 belives belíves
 atvaltani átváltani
@@ -57530,7 +57315,6 @@ iranyitod irányítod
 bamulom bámulom
 bamulok bámulok
 szürkem szürkém
-okoscipőben okőscipőben
 dolorosát dőlőrósát
 jonnunk jönnünk
 kirohogom kiröhögöm
@@ -57797,7 +57581,6 @@ barátjaval barátjával
 denesnek dénesnek
 planeta planéta
 ramozdult rámozdult
-okosgyűrű okősgyűrű
 gangelek gangélek
 legyeleket légyéleket
 galeriat galériát
@@ -57841,7 +57624,6 @@ eltantoritja eltántorítja
 feltornazom feltornázom
 relativ relatív
 technikabol technikából
-okosmérleggel okősmérleggel
 huzottam húzottam
 kajakrol kajakról
 megmozditom megmozdítom
@@ -57881,7 +57663,6 @@ felebrednem felébrednem
 felebrednek felébrednek
 lustasag lustaság
 atjon átjön
-okostelefonoktól okőstelefonoktól
 erossen erőssén
 erossek erőssék
 buszosbácsi buszősbácsi
@@ -58019,7 +57800,6 @@ eltompitanak eltompítanak
 latszok látszok
 latszom látszom
 apaskodik apáskodik
-okostelefonokról okőstelefonokról
 nyelvesz nyelvész
 alairni aláírni
 haminda háminda
@@ -58225,7 +58005,6 @@ utcakban utcákban
 angliaba angliába
 szerekesztettél szerékésztettél
 lejonnie lejönnie
-okosmobilban okősmobilban
 hatasara hatására
 vasuti vasúti
 szarletet szárletét
@@ -58320,7 +58099,6 @@ kismeretut kisméretűt
 tovabbtanulasi továbbtanulási
 probálkozásba próbálkozásba
 ebredesrol ébredésről
-okostelefonoknál okőstelefonoknál
 oltozohoz öltözőhöz
 szaporitani szaporítani
 kipihentunk kipihentünk
@@ -58909,7 +58687,6 @@ helyettesites helyettesítés
 frissult frissült
 tarhaza tárháza
 méretü méretű
-telohatterem telőhátterem
 belülröl belülről
 argento árgéntó
 allatmenhely állatmenhely
@@ -58920,10 +58697,8 @@ ocsarold ócsárold
 megértöbb megértőbb
 kikászálodni kikászálódni
 visszamenoleg visszamenőleg
-telohattered telőháttered
 rokatunder rókatündér
 közvetités közvetítés
-okostelefonjaiban okőstelefonjaiban
 özhelybajnok őzhelybajnok
 eletkeptelenseget életképtelenséget
 kardigan kardigán
@@ -59385,8 +59160,6 @@ vigjatekos vígjátékos
 vigjatekok vígjátékok
 lesajnaloan lésajnálóan
 helyunket helyünket
-negye négye
-telofont telőfont
 kidobaltam kidobáltam
 jószar jószár
 turelem türelem
@@ -59778,7 +59551,6 @@ rendeszeres rendészeres
 barhogy bárhogy
 barattal baráttal
 rendorok rendőrök
-okosórájára okősórájára
 rendoros rendőrös
 örforradalom őrforradalom
 kormol körmöl
@@ -61815,7 +61587,6 @@ osztalybulink osztálybulink
 majakba majákba
 focimnel föcimnél
 hazugsagait hazugságait
-okoskarkotom okőskarkötőm
 hazugsagaid hazugságaid
 ismetlessel ismétléssel
 tanariba tanáriba
@@ -62179,7 +61950,6 @@ leadnam leadnám
 jovomre jövőmre
 sminkelos sminkelős
 pizsamaban pizsamában
-okosotthonokat okősotthonokat
 benzinkutnal benzinkútnál
 menhelyrol menhelyről
 osztalyfonoki osztályfőnoki
@@ -63145,9 +62915,7 @@ kuldes küldés
 alapitonak alapítónak
 vegzo végző
 gluck glück
-okoslámpát okőslámpát
 megsertodnenek megsértődnének
-okoslámpák okőslámpák
 turheto tűrhető
 pohar pohár
 lokott lökött
@@ -64311,7 +64079,6 @@ kézművesseg kézművesség
 nehezkes nehézkes
 szakkozeprol szakközépről
 beertol beertől
-telonkrol telőnkről
 válaszaimbol válaszaimból
 eltaszit eltaszít
 felismereted félismereted
@@ -64425,7 +64192,6 @@ kinezetetol kinézetétől
 rozmarin rozmárin
 babauszas babaúszás
 zabalok zabálok
-okosportál okősportál
 gergobol gergőből
 ertektelennek értéktelennek
 elazott elázott
@@ -64614,7 +64380,6 @@ szerzodott szerződött
 bezarja bezárja
 koreográfiat koreográfiát
 szarelmes szárelmés
-okosmunkáról okősmunkáról
 bezarni bezárni
 bezarna bezárna
 bloglovinos bloglovinős
@@ -64923,14 +64688,12 @@ boldogsaga boldogsága
 kiserteties kísérteties
 beregelve beregélve
 nenémet nénémet
-okoslámpája okőslámpája
 nehezere nehezére
 folvidit fölvidít
 hulyeseghez hülyeséghez
 voltbol voltból
 hatszázassal hátszázassal
 tuleleshez tűleléshez
-okostelefonjainál okőstelefonjainál
 babatokat babátokat
 pultoscsajok pultőscsajok
 konyvtol könyvtől
@@ -65045,7 +64808,6 @@ vicceskek vicceskék
 izuleti ízületi
 csofarmert csőfarmert
 teologiai teológiai
-okosotthona okősotthona
 filozofiámat filozófiámat
 horvat horvát
 filet filét
@@ -65140,7 +64902,6 @@ korosztaly korosztály
 tizenevesek tizenévesek
 szuperokos szúpérokos
 allapotomban állapotomban
-okoskonnektorral okőskonnektorral
 szivegykét szívegykét
 garantalni garantálni
 urlenyekrol űrlényekről
@@ -65162,7 +64923,6 @@ bodocsos bodócsos
 targyalok tárgyalok
 nemlehetek nemléhetek
 szetrobbanni szétrobbanni
-okostelefonjairól okőstelefonjairól
 viztornyot víztornyot
 sipeki sípéki
 leventetol leventétől
@@ -65406,7 +65166,6 @@ börfejű bőrfejű
 tuzelsz tüzelsz
 tancosokra táncosokra
 osszerakva összerakva
-okoslakásban okőslakásban
 fejlödtem fejlődtem
 fejlödtek fejlődtek
 osszehordanak összehordanak
@@ -66073,7 +65832,6 @@ lezerek lézerek
 lezerel lézerél
 vizipisztollyal vízipisztollyal
 zilalt zilált
-okosalkalmazás okősalkalmazás
 tokmindegy tökmindegy
 kinlodik kínlódik
 koszonhettunk köszönhettünk
@@ -66096,7 +65854,6 @@ vitorlaztunk vitorláztunk
 zeneadon zeneadón
 sulimbol sulimból
 szemellenzot szemellenzőt
-okosmelltartó okősmelltartó
 igéretröl ígéretről
 omegánál ómegánál
 lepkeket lepkéket
@@ -66208,7 +65965,6 @@ előtesztet élőtesztet
 incink íncink
 diktatorikus diktatórikus
 jókivánságok jókívánságok
-okoslámpáját okőslámpáját
 tünhetett tűnhetett
 mellozve mellőzve
 csúcsrajáratáshoz csúcsrájáratáshoz
@@ -66271,7 +66027,6 @@ sebbol sebből
 marsalko marsálkő
 akarmikorra akármikorra
 uszkáló úszkáló
-okoskarpántot okőskarpántot
 pazmanyra pázmányra
 orditananak ordítanának
 mellozni mellőzni
@@ -66555,7 +66310,6 @@ vilaghaboru világháború
 krumplipuret krumplipürét
 teoriagyartasok teóriagyártások
 mezöny mezőny
-okosgyűrűje okősgyűrűje
 kezkremednek kézkrémednek
 sportolo sportoló
 valoszinutlen valószínűtlen
@@ -66605,7 +66359,6 @@ kattogasaval kattogásával
 kezelheto kezelhető
 eroteljesen erőteljesen
 visszateritve visszaterítve
-telodon telődön
 ulohely ülőhely
 zsofika zsófika
 koszonolevelet köszönőlevelet
@@ -66688,7 +66441,6 @@ fogvedojevel fogvédőjével
 megemliteni megemlíteni
 telenoros telenőrós
 evfordulo évforduló
-telohoz telőhöz
 csinalhatunk csinálhatunk
 szántot szántót
 boydrama boydráma
@@ -66809,7 +66561,6 @@ pasikrol pasikról
 levideozott levideózott
 aratura aratúra
 hulyultek hülyültek
-telorol telőről
 hulyultem hülyültem
 fogszabalyzot fogszabályzót
 fogszabalyzos fogszabályzós
@@ -66972,7 +66723,6 @@ kirandulni kirándulni
 tekerjunk tekerjünk
 kirandulos kirándulós
 huszeves húszéves
-telotok telőtök
 védöföld védőföld
 manian mánián
 focioran fociórán
@@ -67202,7 +66952,6 @@ nepbetegseg népbetegség
 szarmazasu származású
 osszeszedlek összeszedlek
 hazasodtunk hazásodtunk
-telomon telőmön
 mostohabatyam mostohabátyám
 kesztyuben kesztyűben
 csomagolasa csomagolása
@@ -67220,7 +66969,6 @@ hajatmosok hajátmosók
 nyugimasszazs nyugimasszázs
 baloghne baloghné
 abrandozom ábrándozom
-okosfilctoll okősfilctoll
 otosoket ötösöket
 kezdodni kezdődni
 kezdodne kezdődne
@@ -67461,7 +67209,6 @@ betegallomany betegállomány
 olelhetsz ölelhetsz
 agyrol agyról
 torteneteben történetében
-telokarit telőkarit
 effektelés effektélés
 doboter dobótér
 szupernováját szupernóváját
@@ -68166,7 +67913,6 @@ pajtasaim pajtásaim
 müsorvezetője műsorvezetője
 évszadban évszádban
 semmikepp semmiképp
-telodat télódát
 uzsonnázos uzsonnázós
 elerhetoek elérhetőék
 nemetorat németórát
@@ -68199,7 +67945,6 @@ gyozodtem győződtem
 ellenfelnek ellenfélnek
 kemóra kémóra
 fogacskaval fogacskával
-telobol telőből
 korcsolyazaskor korcsolyázáskor
 gyorshajtas gyorshajtás
 kommunikalt kommunikált
@@ -69307,7 +69052,6 @@ orszagnak országnak
 utolerte utolérte
 segiteseg segítéség
 sastre sastré
-okoskutya okőskutya
 böribe bőribe
 gondolaz gondoláz
 cserkeszhaznal cserkeszháznál
@@ -69651,7 +69395,6 @@ vegigjatszani végigjátszani
 nivós nívós
 koltoztel költöztél
 koltoztek költöztek
-okoskodjuk okőskódjuk
 sasori sasőri
 szökö szökő
 igazitsatok igazítsatok
@@ -69784,8 +69527,6 @@ laner láner
 nyalnam nyalnám
 ásokba ásókba
 nyalnek nyalnék
-okoskukák okőskukák
-okoskukát okőskukát
 törödjek törődjek
 gyurjak gyúrjak
 rakospalotai rákospalotai
@@ -71426,7 +71167,6 @@ mákosgubának mákősgubának
 rozsabors rózsabors
 kiabalnak kiabálnak
 kiabalnal kiabálnál
-ételos ételős
 tadzsik tádzsik
 gorgess görgess
 ivosevék ívősévék
@@ -71934,7 +71674,6 @@ vegyel vegyél
 testverek testvérek
 testverei testvérei
 testvered testvéred
-okoszokni okőszokni
 hazabol hazából
 fizikarol fizikáról
 felugyelo felügyelő
@@ -72222,7 +71961,6 @@ felveteliben felvételiben
 talalkozorol találkozóról
 akciozva akciózva
 reszleteznem részleteznem
-csucstelora csúcstélóra
 cindert cindért
 nagyvilagba nagyvilágba
 barcsuval barcsúval
@@ -72977,7 +72715,6 @@ leforraztam leforráztam
 hampire hámpíré
 ortopon őrtopon
 koztot köztót
-okoseszközeit okőseszközeit
 klinikara klinikára
 megszolalsz megszólalsz
 felidegelt félidegélt
@@ -73658,7 +73395,6 @@ elkerekedet élkerekedet
 tarva tárva
 leghat léghát
 legham léghám
-telomhoz telőmhöz
 kicserelem kicserélem
 tarto tartó
 gazdaságtudom gazdaságtudóm
@@ -73801,9 +73537,7 @@ ajtajaban ajtajában
 barinommel barinőmmel
 aban abán
 osszeverlek összeverlek
-telotöltőért telőtöltőért
 figurákka figurákká
-legjei légjei
 novelhetnenk növelhetnénk
 itelunk ítélünk
 millioval millióval
@@ -73818,7 +73552,6 @@ tatto tattó
 parfum parfüm
 remusz rémusz
 careca cáréca
-gépkoc gépkóc
 dalazoveges dalázóvéges
 analfabetakat analfabétákat
 harconi harcóni
@@ -74215,7 +73948,6 @@ parrol párról
 itelnek ítélnek
 szemenek szemének
 agyu agyú
-telomrol telőmről
 tetelemet tételemet
 monohoz monóhoz
 szisztemat szisztémát
@@ -74242,7 +73974,6 @@ kasleder kaslédér
 szivaravato szivaravató
 jegyszedo jegyszedő
 hozzatartozik hozzátartozik
-okoskarkötő okőskarkötő
 keretu keretű
 meglepeteskent meglepetésként
 reszletezni részletezni
@@ -74786,7 +74517,6 @@ szerzunk szerzünk
 izing ízing
 rajongoiknak rajongóiknak
 fosztogatas fosztogatás
-okosfejhallgató okősfejhallgató
 ramulsz rámúlsz
 szuperrangadóval szúpérrangadóval
 ludláb lúdláb
@@ -74833,7 +74563,6 @@ szemevel szemével
 partea pártea
 legcsatornaval légcsatornával
 baratsaganak barátságának
-okosotthon okősotthon
 fatyuk fatyúk
 legzes légzés
 legvár légvár
@@ -75508,7 +75237,6 @@ setaltal sétáltál
 setaltam sétáltam
 ehesnek éhesnek
 serpenyomet serpenyőmet
-okossisakkal okőssisakkal
 idöszakra időszakra
 etteremnel étteremnél
 fogkrem fogkrém
@@ -76128,7 +75856,6 @@ apaknak apáknak
 elkerem elkérem
 elkerek elkérek
 vadallatok vadállatok
-okosvárosok okősvárosok
 körülirtad körülírtad
 kinanak kínának
 novellaim novelláim
@@ -76548,7 +76275,6 @@ idegesitőcsaj idegesítőcsaj
 hobbiagysebesz hobbiagysebész
 osszetudnek összetudnék
 lejtön lejtőn
-okosmatricával okősmatricával
 megtalalnom megtalálnom
 reszecskem részecském
 kloszi klöszi
@@ -76951,7 +76677,6 @@ bepotoljam bepótoljam
 bepotoljal bepótoljál
 bepotoljak bepótoljak
 beklyozd béklyózd
-feketelovag fékételövág
 hulyeskedes hülyéskedés
 eroltetni erőltetni
 égesemail égésemail
@@ -77313,7 +77038,6 @@ ritaval ritával
 kormanyablak kormányablak
 vásárlasból vásárlásból
 lovagiassag lovagiasság
-okostelora okőstélóra
 epitoanyagot építőanyagot
 szinevel színével
 vesszuk vesszük
@@ -77384,7 +77108,6 @@ kedvelesbol kedvelésből
 teljesitmeny teljesítmény
 pengeket pengéket
 gyözelem győzelem
-okostelefonról okőstelefonról
 szirtegnapjai szírtegnapjai
 mindenkineek mindenkinéék
 normalisabb normálisabb
@@ -77449,7 +77172,6 @@ szembesulnom szembesülnöm
 haziallatotok háziállatotok
 leolvashatoak léölvashatóak
 buba búba
-okostelefonunk okőstelefonunk
 erösebek erősebek
 felcipoben félcipőben
 bubu búbú
@@ -77734,7 +77456,6 @@ megbocsatok megbocsátok
 deszkaztam deszkáztam
 gyönyorű gyönyörű
 sikitozok sikítozok
-okostelcsid okőstelcsid
 sikitozni sikítozni
 mérőke mérőké
 pityukaval pityukával
@@ -77784,7 +77505,6 @@ kinezete kinézete
 simulatorosok símulatórósok
 tanulo tanuló
 elinditotta elindította
-okostelefontól okőstelefontól
 legujabb legújabb
 osszenyomom összenyomom
 hazaszereto hazaszerető
@@ -77806,7 +77526,6 @@ bombazok bombázok
 ertesitesemet értesítésemet
 kardonnál kardónnál
 remenyseg reménység
-okosszemüveg okősszemüveg
 bombazni bombázni
 papillon papillőn
 hátulrol hátulról
@@ -77828,7 +77547,6 @@ szallast szállást
 onodera ónodéra
 olyanoktol olyanoktól
 kotetbol kötetből
-okosotthonokhoz okősotthonokhoz
 gyúróstabi gyúróstábi
 igenyfelmeres igényfelmerés
 lebit lébit
@@ -77930,8 +77648,6 @@ hazakisért hazakísért
 terkepet térképet
 rolikam rolikám
 varázsloval varázslóval
-okostelefonnal okőstelefonnal
-okostelefonnak okőstelefonnak
 pedale pedálé
 nemtudtad nemtudtád
 asitas ásítás
@@ -77940,10 +77656,8 @@ nemtudtam nemtudtám
 nemtudtak nemtudták
 eluldoz elüldöz
 szorakoztunk szórakoztunk
-okostelefonját okőstelefonját
 jövődel jövődél
 acsiért ácsiért
-okostelefonján okőstelefonján
 szófosasa szófősasa
 chiptunet chiptünet
 tehetsegkutatoban tehetségkutatóban
@@ -78151,7 +77865,6 @@ kiolvashato kiolvasható
 celebnő célebnő
 ovonök óvónők
 szerkentyüvel szerkentyűvel
-okostelefonjai okőstelefonjai
 melleidrol melleidről
 fohos főhős
 hazajovet hazajövet
@@ -78207,7 +77920,6 @@ celebes célebes
 ugyho ügyhó
 csirabogar csírabogár
 ugyin ügyin
-okostelefonjuk okőstelefonjuk
 ugyis úgyis
 megbuktatnam megbuktatnám
 spajzba spájzba
@@ -78639,7 +78351,6 @@ kocsogom köcsögöm
 kocsogok köcsögök
 irányitóért irányítóért
 kocsogot köcsögöt
-fatelom fatelőm
 huzhatom húzhatom
 huzhatok húzhatok
 legszívmelengetőbb légszívmelengetőbb
@@ -78905,7 +78616,6 @@ fülle füllé
 kalla kállá
 elforgatas elforgatás
 cimű című
-okosházból okősházból
 lencsesin lencsesín
 művésznonek művésznőnek
 halalhiret halálhírét
@@ -79019,7 +78729,6 @@ gyongyozik gyöngyözik
 forro forró
 orege örege
 forra fórra
-okostelefonhoz okőstelefonhoz
 heliumos héliumos
 csavoba csávóba
 lepedot lepedőt
@@ -79107,7 +78816,6 @@ tulajdonu tulajdonú
 fosse főssé
 letagathatod létagáthatód
 gyogyorusegem gyógyőrűségem
-okosautó okősautó
 egyedulallo egyedülálló
 csikeragu csíkérágú
 futurama fűtűráma
@@ -79177,7 +78885,6 @@ döntöbejutasért döntőbejutasért
 leszo lesző
 leszi leszí
 veszprem vészprém
-okostelefonból okőstelefonból
 hatasszunetet hatásszünetet
 letar letár
 fogmeni fogméni
@@ -79798,7 +79505,6 @@ fiukák fiúkák
 menzárol menzáról
 ideirni ideírni
 penzkeresési pénzkeresési
-okostelefonjaira okőstelefonjaira
 ablaknal ablaknál
 ideirom ideírom
 kivasaroltam kivásároltam
@@ -80465,7 +80171,6 @@ irastol írástól
 eloveteles elővetélés
 zombitol zombitól
 szekrennyel szekrénnyel
-okostelefo okőstelefő
 löttem lőttem
 löttek lőttek
 pletykakat pletykákat
@@ -80892,7 +80597,6 @@ eleén éléén
 eline éliné
 elind élind
 elina élina
-szkriptelés szkriptélés
 omlanek omlanék
 elarulnam elárulnám
 elarulnal elárulnál
