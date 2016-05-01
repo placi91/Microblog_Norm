@@ -27,7 +27,6 @@ public class GetWordsFromTweet {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> words = new HashMap<>();
-		Pattern pattern = Pattern.compile("\\p{IsAlphabetic}+");
 		int s = 1;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.tokenized"));
@@ -37,19 +36,11 @@ public class GetWordsFromTweet {
 				line = line.toUpperCase();
 				String[] parts = line.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
-					if (parts[i].contains("HTTP") || parts[i].startsWith("#") || parts[i].startsWith("@")) {
-						parts[i] = "";
-					} 
-					parts[i] = parts[i].replaceAll("[^\\p{IsAlphabetic}0-9-]", "");
-				}
-				for (int i = 0; i < parts.length; ++i) {
 					String word = parts[i].trim();
-					if (word.isEmpty()) {
+					if (word.contains("HTTP") || word.startsWith("#") || word.startsWith("@") || word.isEmpty()) {
 						continue;
 					}
-
-					Matcher m = pattern.matcher(word);
-					if (m.find()) {
+					if (word.matches("[A-ZÍÉÁŰÚŐÓÜÖ]+")) {
 						if (word.length() < 4) {
 							continue;
 						}
@@ -58,9 +49,7 @@ public class GetWordsFromTweet {
 						} else {
 							words.put(word, 1);
 						}
-
 					}
-
 				}
 			}
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words.txt"), "UTF8"));

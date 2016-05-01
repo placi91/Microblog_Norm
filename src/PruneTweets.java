@@ -4,6 +4,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class PruneTweets {
@@ -21,7 +23,9 @@ public class PruneTweets {
 				line = line.replaceAll("@[\\p{IsAlphabetic}0-9_]+", "@mention");
 				if(!lines.contains(line)) {
 					lines.add(line);
-				} 
+				} else {
+					System.out.println(line);
+				}
 			}
 			br.close();
 			
@@ -45,8 +49,8 @@ public class PruneTweets {
 				accents.put(parts[0], parts[1]);
 			}
 			br.close();
-
-			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned.txt"));
+			Pattern pattern = Pattern.compile("[a-zA-ZíÍéÉáÁűŰúÚőŐóÓüÜöÖ]|:\\)|:\\(|:3|;\\)|:\\||:/");
+			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned_without_lemmas.txt"));
 			for (String line2 : lines) {
 				String[] parts = line2.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
@@ -55,21 +59,37 @@ public class PruneTweets {
 					} else if(parts[i].contains("http")) {
 						parts[i] = "";
 					}
+					boolean hashtag = false;
+					if(parts[i].startsWith("#")) {
+						hashtag = true;
+						parts[i] = parts[i].substring(1);
+					}
 					if(accents.containsKey(parts[i])){
 						parts[i] = accents.get(parts[i]);
 					}
 					if(lemmas.containsKey(parts[i])){
 						parts[i] = lemmas.get(parts[i]);
 					}
+					if(hashtag) {
+						parts[i] = "#" + parts[i];
+					}
+					
 					String s = parts[i];
 					if(i > 1 && parts[i].equals("):") && parts[i-1].equals("@mention") && parts[i-2].equals("(")) {
 						parts[i] = ")";
 					}
 
-					if(!parts[i].contains("http"))
+					if(!parts[i].contains("http")) {
 						parts[i] = parts[i].replaceAll(":+ *-*/+", ":/");
+						parts[i] = parts[i].replaceAll("o+ *-*:+", ":o");
+						parts[i] = parts[i].replaceAll("p+ *-*:+", ":p");
+						parts[i] = parts[i].replaceAll("d+ *-*:+", ":d");
+						parts[i] = parts[i].replaceAll("s+ *-*:+", ":s");
+					}
 					
-					if(!parts[i].matches("\\d+(?::\\d+){1,2}")) {
+					if(parts[i].matches("\\d+(?::\\d+){1,2}")) {
+						parts[i] = "time:time";
+					} else {
 						parts[i] = parts[i].replaceAll(":+ *-*3+", ":3");
 					}
 					
@@ -78,10 +98,6 @@ public class PruneTweets {
 					parts[i] = parts[i].replaceAll("\\(+ *-*;+", ";)");
 					parts[i] = parts[i].replaceAll("/+ *-*:+", ":/");
 					parts[i] = parts[i].replaceAll("\\|+ *-*:+", ":|");
-					parts[i] = parts[i].replaceAll("o+ *-*:+", ":o");
-					parts[i] = parts[i].replaceAll("p+ *-*:+", ":p");
-					parts[i] = parts[i].replaceAll("d+ *-*:+", ":d");
-					parts[i] = parts[i].replaceAll("s+ *-*:+", ":s");
 					
 					parts[i] = parts[i].replaceAll(":+ *-*\\\\+", ":/");
 					parts[i] = parts[i].replaceAll(":+ *-*\\|+", ":|");
@@ -89,15 +105,24 @@ public class PruneTweets {
 					parts[i] = parts[i].replaceAll(":+ *-*d+", ":d");
 					parts[i] = parts[i].replaceAll(":+ *-*s+", ":s");
 					parts[i] = parts[i].replaceAll(":+ *-*p+", ":p");
+					
+					parts[i] = parts[i].replaceAll(";+ *-*o+", ":o");
+					parts[i] = parts[i].replaceAll(";+ *-*d+", ":d");
+					parts[i] = parts[i].replaceAll(";+ *-*s+", ":s");
+					parts[i] = parts[i].replaceAll(";+ *-*p+", ":p");
+					parts[i] = parts[i].replaceAll(";+ *-*\\)+", ";)");
 					parts[i] = parts[i].replaceAll(":+ *-*\\(+", ":(");
 					parts[i] = parts[i].replaceAll(":+ *-* *\\)+", ":)");
-					parts[i] = parts[i].replaceAll(";+ *-*\\)+", ";)");
 					parts[i] = parts[i].replaceAll("x+d+", "xd");
 					
-					if(!parts[i].isEmpty())
-						out.write(parts[i]);
-					if(i != parts.length-1)
-						out.write(" ");
+					Matcher m = pattern.matcher(parts[i]);
+					if(!m.find()) {
+						continue;
+					}
+					
+					if(!parts[i].isEmpty()) {
+						out.write(parts[i] + " ");
+					}
 				}
 				out.newLine();
 				out.flush();
