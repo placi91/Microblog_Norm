@@ -17,14 +17,13 @@ public class PruneTweets {
 			HashSet<String> lines = new HashSet<>();
 			String line;
 			while ((line = br.readLine()) != null) {
+				line = line.toLowerCase();
 				if (line.startsWith("rt ")) {
 					line = line.replaceFirst("rt ", "");
 				}
 				line = line.replaceAll("@[\\p{IsAlphabetic}0-9_]+", "@mention");
 				if(!lines.contains(line)) {
 					lines.add(line);
-				} else {
-					System.out.println(line);
 				}
 			}
 			br.close();
@@ -49,15 +48,23 @@ public class PruneTweets {
 				accents.put(parts[0], parts[1]);
 			}
 			br.close();
-			Pattern pattern = Pattern.compile("[a-zA-ZíÍéÉáÁűŰúÚőŐóÓüÜöÖ]|:\\)|:\\(|:3|;\\)|:\\||:/");
-			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned_without_lemmas.txt"));
+			
+			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned_accents_lemmas_put.txt"));
+			
 			for (String line2 : lines) {
+				line2 = line2.replaceAll("\\!+", "!");
+				line2 = line2.replaceAll("\\?+", "?");
+				line2 = line2.replaceAll("(\\?\\!)+\\?*", "?!");
+				line2 = line2.replaceAll("(\\!\\?)+\\!*", "?!");
 				String[] parts = line2.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
 					if((parts[i].contains("...") || parts[i].contains("…")) && i >= parts.length - 3) {
 						parts[i] = "";
+					} 
+					if(parts[i].contains("https")) {
+						parts[i] = "https";
 					} else if(parts[i].contains("http")) {
-						parts[i] = "";
+						parts[i] = "http";
 					}
 					boolean hashtag = false;
 					if(parts[i].startsWith("#")) {
@@ -74,7 +81,6 @@ public class PruneTweets {
 						parts[i] = "#" + parts[i];
 					}
 					
-					String s = parts[i];
 					if(i > 1 && parts[i].equals("):") && parts[i-1].equals("@mention") && parts[i-2].equals("(")) {
 						parts[i] = ")";
 					}
@@ -114,11 +120,6 @@ public class PruneTweets {
 					parts[i] = parts[i].replaceAll(":+ *-*\\(+", ":(");
 					parts[i] = parts[i].replaceAll(":+ *-* *\\)+", ":)");
 					parts[i] = parts[i].replaceAll("x+d+", "xd");
-					
-					Matcher m = pattern.matcher(parts[i]);
-					if(!m.find()) {
-						continue;
-					}
 					
 					if(!parts[i].isEmpty()) {
 						out.write(parts[i] + " ");

@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.PrintStream;
 
-public class CopyTweets {
+public class ReplaceAccents {
 
 	public static void main(String[] args) {
 

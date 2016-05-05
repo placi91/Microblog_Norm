@@ -23,19 +23,18 @@ public class SetOOVFrequency {
 			while ((line = br.readLine()) != null) {
 					String[] parts = line.split(" ");
 					int freq = Integer.parseInt(parts[1]);
-					if(freq > 40) {
+					if(freq >= 30) {
 						freqWords.put(parts[0], freq);
 					}
 			}
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
-				if(!freqWords.containsKey(line)) System.out.println("WARNING");
 				if(freqWords.containsKey(line) && line.length() > 3) {
 					oov.add(new Word(line, freqWords.get(line)));
 				}
 
 			}
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("mostCommonOOV.txt"), "UTF8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("most_common_oov.txt"), "UTF8"));
 			Collections.sort(oov, new Comparator<Word>() {
 				@Override
 				public int compare(Word arg0, Word arg1) {

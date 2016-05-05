@@ -29,7 +29,7 @@ public class GetWordsFromTweet {
 		HashMap<String, Integer> words = new HashMap<>();
 		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.tokenized"));
+			BufferedReader br = new BufferedReader(new FileReader("tweets_pruned_accents_lemmas_put.txt"));
 			String line;
 			while ((line = br.readLine()) != null) {
 				System.out.println(s++);
@@ -52,7 +52,7 @@ public class GetWordsFromTweet {
 					}
 				}
 			}
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words.txt"), "UTF8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words_lemmas_put.txt"), "UTF8"));
 			for (Entry<String, Integer> out : words.entrySet()) {
 				bw.write(out.getKey() + " " + out.getValue());
 		    	bw.newLine();
