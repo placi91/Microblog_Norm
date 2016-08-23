@@ -25,8 +25,8 @@ public class Jaccard {
 		Pattern pattern = Pattern.compile("\\p{IsAlphabetic}+");
 		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("paths"));
-			HashMap<String, HashMap<String, Integer>> clusters = new HashMap<>();
+			BufferedReader br = new BufferedReader(new FileReader("paths_only_letters"));
+			HashMap<String, HashSet<String>> clusters = new HashMap<>();
 			HashSet<String> clusterSet = new HashSet<>();
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -34,10 +34,10 @@ public class Jaccard {
 				clusterSet.add(parts[1]);
 				String clusterName = parts[0];
 				if(!clusters.containsKey(clusterName)) {
-					clusters.put(clusterName, new HashMap<String, Integer>());
+					clusters.put(clusterName, new HashSet<String>());
 				} 
-				HashMap<String, Integer> cluster = clusters.get(clusterName);
-				cluster.put(parts[1], Integer.parseInt(parts[2]));
+				HashSet<String> cluster = clusters.get(clusterName);
+				cluster.add(parts[1]);
 			}
 			br.close();
 			
@@ -46,13 +46,8 @@ public class Jaccard {
 				System.out.println(s++);
 				String[] parts = line.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
-					if (parts[i].contains("http")) {
-						parts[i] = "";
-					} 
-				}
-				for (int i = 0; i < parts.length; ++i) {
 					String word = parts[i].trim();
-					if (word.isEmpty() || word.startsWith("#") || word.startsWith("@")) {
+					if (word.isEmpty() || word.startsWith("#") || word.startsWith("@") || word.contains("http")) {
 						continue;
 					}
 					if(!clusterSet.contains(word)) {
@@ -121,8 +116,8 @@ public class Jaccard {
 			for (Entry<String, Word> w : words.entrySet()) {
 				if (!oov.containsKey(w.getKey())) {
 					String cname = null;
-					for (Entry<String, HashMap<String, Integer>> c : clusters.entrySet()) {
-						if(c.getValue().containsKey(w.getKey())) {
+					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
+						if(c.getValue().contains(w.getKey())) {
 							cname = c.getKey();
 							break;
 						} 
@@ -137,8 +132,8 @@ public class Jaccard {
 					}
 					
 				} else if (oov.get(w.getKey())) {
-					for (Entry<String, HashMap<String, Integer>> c : clusters.entrySet()) {
-						if(c.getValue().containsKey(w.getKey())) {
+					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
+						if(c.getValue().contains(w.getKey())) {
 							w.getValue().setCluster(c.getKey());
 							break;
 						} 
