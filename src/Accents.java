@@ -23,22 +23,26 @@ public class Accents {
 		accents.put('o', new HashSet<Character>(Arrays.asList('ó', 'ő', 'ö')));
 		accents.put('ö', new HashSet<Character>(Arrays.asList('ő')));
 		accents.put('ü', new HashSet<Character>(Arrays.asList('ű')));
+		accents.put('ô', new HashSet<Character>(Arrays.asList('ő', 'ó')));
+		accents.put('û', new HashSet<Character>(Arrays.asList('ű', 'ú')));
 		
 		String line;
 		while ((line = br.readLine()) != null) {
-			if(!line.startsWith("&"))
+			if(!line.startsWith("&")) {
 				continue;
+			}
 			line = line.toLowerCase();
 			String[] parts = line.split(" ");
 			char[] str = parts[1].toCharArray();
 			String rightSuggestion = null;
-			for (int i = parts.length - 1; i >= 4; i--) {
+			for (int i = 4; i < parts.length; ++i) {
 				String suggestionStr = parts[i];
 				if(suggestionStr.contains(",")) {
 					suggestionStr = suggestionStr.replace(",", "").trim();
 				}
-				if(str.length != suggestionStr.length())
+				if(str.length != suggestionStr.length()) {
 					continue;
+				}
 				char[] suggestion = suggestionStr.toCharArray();
 				boolean isRight = true;
 				for (int j = 0; j < suggestion.length; j++) {
@@ -50,6 +54,7 @@ public class Accents {
 				}
 				if(isRight) {
 					rightSuggestion = suggestionStr;
+					break;
 				}
 			}
 			if(rightSuggestion != null) {
