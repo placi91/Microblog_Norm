@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.regex.Matcher;
@@ -49,7 +51,7 @@ public class PruneTweets {
 			}
 			br.close();
 			
-			BufferedWriter out = new BufferedWriter(new FileWriter("tweets_pruned_accents_lemmas_put.txt"));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("tweets_pruned_accents_lemmas_put.txt"), "UTF-8"));
 			
 			for (String line2 : lines) {
 				line2 = line2.replaceAll("\\!+", "!");

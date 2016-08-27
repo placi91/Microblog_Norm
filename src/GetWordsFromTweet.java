@@ -52,7 +52,7 @@ public class GetWordsFromTweet {
 					}
 				}
 			}
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words_lemmas_put.txt"), "UTF8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words.txt"), "UTF8"));
 			for (Entry<String, Integer> out : words.entrySet()) {
 				bw.write(out.getKey() + " " + out.getValue());
 		    	bw.newLine();
