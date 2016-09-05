@@ -60,69 +60,70 @@ public class PruneTweets {
 				line2 = line2.replaceAll("(\\!\\?)+\\!*", "?!");
 				String[] parts = line2.split(" ");
 				for (int i = 0; i < parts.length; ++i) {
-					if((parts[i].contains("...") || parts[i].contains("…")) && i >= parts.length - 3) {
-						parts[i] = "";
-					} 
-					if(parts[i].contains("http")) {
-						parts[i] = "http";
+					String word = parts[i];
+					if ((word.contains("...") || word.contains("…")) && i >= parts.length - 3) {
+						word = "";
+					}
+					if (word.contains("http")) {
+						word = "http";
 					}
 					boolean hashtag = false;
-					if(parts[i].startsWith("#")) {
+					if (word.startsWith("#")) {
 						hashtag = true;
-						parts[i] = parts[i].substring(1);
+						word = word.substring(1);
 					}
-					if(accents.containsKey(parts[i])){
-						parts[i] = accents.get(parts[i]);
+					if (accents.containsKey(word)) {
+						word = accents.get(word);
 					}
-					if(lemmas.containsKey(parts[i])){
-						parts[i] = lemmas.get(parts[i]);
+					if (lemmas.containsKey(word)) {
+						word = lemmas.get(word);
 					}
-					if(hashtag) {
-						parts[i] = "#" + parts[i];
-					}
-					
-					if(i > 1 && parts[i].equals("):") && parts[i-1].equals("@mention") && parts[i-2].equals("(")) {
-						parts[i] = ")";
+					if (hashtag) {
+						word = "#" + word;
 					}
 
-					if(!parts[i].contains("http")) {
-						parts[i] = parts[i].replaceAll(":+ *-*/+", ":/");
-						parts[i] = parts[i].replaceAll("o+ *-*:+", ":o");
-						parts[i] = parts[i].replaceAll("p+ *-*:+", ":p");
-						parts[i] = parts[i].replaceAll("d+ *-*:+", ":d");
-						parts[i] = parts[i].replaceAll("s+ *-*:+", ":s");
+					if (i > 1 && word.equals("):") && parts[i - 1].equals("@mention") && parts[i - 2].equals("(")) {
+						word = ")";
 					}
-					
-					if(parts[i].matches("\\d+(?::\\d+){1,2}")) {
-						parts[i] = "time:time";
+
+					if (!word.contains("http")) {
+						word = word.replaceAll(":+ *-*/+", ":/");
+						word = word.replaceAll("o+ *-*:+", ":o");
+						word = word.replaceAll("p+ *-*:+", ":p");
+						word = word.replaceAll("d+ *-*:+", ":d");
+						word = word.replaceAll("s+ *-*:+", ":s");
+					}
+
+					if (word.matches("\\d+(?::\\d+){1,2}")) {
+						word = "time:time";
 					} else {
-						parts[i] = parts[i].replaceAll(":+ *-*3+", ":3");
+						word = word.replaceAll(":+ *-*3+", ":3");
 					}
-					
-					parts[i] = parts[i].replaceAll("\\)+ *-*:+", ":(");
-					parts[i] = parts[i].replaceAll("\\(+ *-*:+", ":)");
-					parts[i] = parts[i].replaceAll("\\(+ *-*;+", ";)");
-					parts[i] = parts[i].replaceAll("/+ *-*:+", ":/");
-					parts[i] = parts[i].replaceAll("\\|+ *-*:+", ":|");
-					
-					parts[i] = parts[i].replaceAll(":+ *-*\\\\+", ":/");
-					parts[i] = parts[i].replaceAll(":+ *-*\\|+", ":|");
-					parts[i] = parts[i].replaceAll(":+ *-*o+", ":o");
-					parts[i] = parts[i].replaceAll(":+ *-*d+", ":d");
-					parts[i] = parts[i].replaceAll(":+ *-*s+", ":s");
-					parts[i] = parts[i].replaceAll(":+ *-*p+", ":p");
-					
-					parts[i] = parts[i].replaceAll(";+ *-*o+", ":o");
-					parts[i] = parts[i].replaceAll(";+ *-*d+", ":d");
-					parts[i] = parts[i].replaceAll(";+ *-*s+", ":s");
-					parts[i] = parts[i].replaceAll(";+ *-*p+", ":p");
-					parts[i] = parts[i].replaceAll(";+ *-*\\)+", ";)");
-					parts[i] = parts[i].replaceAll(":+ *-*\\(+", ":(");
-					parts[i] = parts[i].replaceAll(":+ *-* *\\)+", ":)");
-					parts[i] = parts[i].replaceAll("x+d+", "xd");
-					
-					if(!parts[i].isEmpty()) {
-						out.write(parts[i] + " ");
+
+					word = word.replaceAll("\\)+ *-*:+", ":(");
+					word = word.replaceAll("\\(+ *-*:+", ":)");
+					word = word.replaceAll("\\(+ *-*;+", ";)");
+					word = word.replaceAll("/+ *-*:+", ":/");
+					word = word.replaceAll("\\|+ *-*:+", ":|");
+
+					word = word.replaceAll(":+ *-*\\\\+", ":/");
+					word = word.replaceAll(":+ *-*\\|+", ":|");
+					word = word.replaceAll(":+ *-*o+", ":o");
+					word = word.replaceAll(":+ *-*d+", ":d");
+					word = word.replaceAll(":+ *-*s+", ":s");
+					word = word.replaceAll(":+ *-*p+", ":p");
+
+					word = word.replaceAll(";+ *-*o+", ":o");
+					word = word.replaceAll(";+ *-*d+", ":d");
+					word = word.replaceAll(";+ *-*s+", ":s");
+					word = word.replaceAll(";+ *-*p+", ":p");
+					word = word.replaceAll(";+ *-*\\)+", ";)");
+					word = word.replaceAll(":+ *-*\\(+", ":(");
+					word = word.replaceAll(":+ *-* *\\)+", ":)");
+					word = word.replaceAll("x+d+", "xd");
+
+					if (!word.isEmpty()) {
+						out.write(word + " ");
 					}
 				}
 				out.newLine();
