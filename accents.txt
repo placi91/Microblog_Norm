@@ -250,6 +250,7 @@ kavenkat kávénkat
 nikirol nikiről
 kostolva kóstolva
 kiváncsi kíváncsi
+tori töri
 irta írta
 irsz írsz
 kezunkbe kezünkbe
@@ -3411,7 +3412,6 @@ előfizut élőfizut
 eljohetunk eljöhetünk
 zugbarba zugbárba
 tepednek tépédnek
-taliztál tálíztál
 keménymagja kéménymagja
 belassitottak belassítottak
 világitanak világítanak
@@ -3564,7 +3564,6 @@ odusszeiat odüsszeiát
 belemerult belemerült
 idiotakkal idiótákkal
 gardony gárdony
-talizzon tálizzón
 szinjáték színjáték
 kitalalnek kitalálnék
 hangsulyt hangsúlyt
@@ -4022,8 +4021,7 @@ regit régit
 regio régió
 regin régin
 regik régik
-bárhool bárhóól
-telokarit telőkarit
+telokarit telókarit
 igergetesek ígérgetések
 barátnommel barátnőmmel
 szemeteslapattal szemeteslapáttal
@@ -4281,7 +4279,6 @@ végigkisérte végigkísérte
 tancra táncra
 kinyirja kinyírja
 orszőr őrszőr
-tancsi táncsí
 fogadtal fogadtál
 csodalko csődalkő
 problemaztam problémáztam
@@ -5229,10 +5226,6 @@ teriszony tériszony
 portre portré
 etrendembol étrendemből
 tesotok tesótok
-bioszok bioszók
-bioszom bioszóm
-bioszon bioszón
-bioszos bioszós
 nyeremenyt nyereményt
 evesbol evésből
 koromné kőromné
@@ -5248,7 +5241,6 @@ hekkerkollektíva hekkérkollektíva
 csorosag csőróság
 honorak honórák
 potoljatok pótoljatok
-bioszuk bioszúk
 tesoval tesóval
 kerdesbol kérdésből
 robotporszivo robotporszívó
@@ -5726,7 +5718,7 @@ tagdijjal tagdíjjal
 pantokat pántokat
 videofeltoltos videofeltöltős
 videozasra videózásra
-telotokra telőtokra
+telotokra telótokra
 lezarnak lezárnak
 rajatszottam rájátszottam
 dijatadora díjátadóra
@@ -6766,7 +6758,6 @@ felnagyitottam felnagyítottam
 kess késs
 kest kést
 keso késő
-talizunk tálízünk
 japanba japánba
 kesi kési
 tápoljuk tápóljuk
@@ -6963,7 +6954,6 @@ rappekkel rappékkel
 rozsaszínuek rózsaszínűek
 rigaban rigában
 könnyfak könnyfák
-taliztok tálíztok
 szamlalo számláló
 cammogjal cammogjál
 erdélyböl erdélyből
@@ -7027,7 +7017,6 @@ szeken széken
 szekem székem
 szeker szekér
 szeket széket
-taliztal tálíztál
 szeked széked
 karacsonynak karácsonynak
 kuldve küldve
@@ -7042,7 +7031,6 @@ javithassam javíthassam
 probáljátok próbáljátok
 dicsosegnek dicsőségnek
 sztriptizbárokban sztriptízbárokban
-tancsinobe táncsínőbe
 modijai módijai
 onvad önvád
 igyekezetnel igyekezetnél
@@ -7333,7 +7321,6 @@ legvidamabb legvidámabb
 karacsonyrol karácsonyról
 koszonesrol köszönésről
 leakciozod léakciózód
-talizhat tálízhát
 webdrama webdráma
 finalen finálén
 kideriteni kideríteni
@@ -7470,8 +7457,6 @@ keserut keserűt
 csoportjaban csoportjában
 emlekei emlékei
 emleked emléked
-taliznek tálíznek
-kingstone kingstoné
 emleket emléket
 esonek esőnek
 emlekek emlékek
@@ -10215,7 +10200,6 @@ felveteliztet felvételiztet
 szetunni szétunni
 növérkémként nővérkémként
 felveteliztel felvételiztél
-talira tálira
 szetunom szétunom
 sirógörcsöt sírógörcsöt
 beleolom beleölöm
@@ -10244,7 +10228,6 @@ olyantol olyantól
 hosnek hősnek
 vasutra vasútra
 tavolodjak távolodjak
-talija tálija
 szabadegyhazan szabadegyházán
 testverpar testvérpár
 kuzdenem küzdenem
@@ -10308,7 +10291,6 @@ nagyrecsere nagyrécsére
 bizakodo bizakodó
 csokijat csokiját
 tapinto tapintó
-föcitancsi föcitáncsí
 dologert dologért
 gardos gárdos
 tercer tercér
@@ -10610,7 +10592,6 @@ hordo hordó
 stagnalt stagnált
 pofekeles pöfékelés
 havazos havazós
-gémelésünket gémélésünket
 varónőket várónőket
 kuroda kűróda
 kapitannyal kapitánnyal
@@ -11177,7 +11158,6 @@ köhöz kőhöz
 lateregbol latérégből
 költö költő
 fougyeletes főügyeletes
-matektancsitok matektáncsítok
 mikent miként
 angliat angliát
 bealaztam bealáztam
@@ -12139,7 +12119,7 @@ kinezeten kinézeten
 kinezetem kinézetem
 terkep térkép
 leigazni leigázni
-telonkrol telőnkről
+telonkrol telónkról
 sefcsik séfcsík
 almatlan almátlan
 szintársulat színtársulat
@@ -12845,7 +12825,7 @@ nohabok nőhabok
 szuperképességű szúpérképességű
 halotál halótál
 futurat fűtúrát
-telotok telőtök
+telotok telótok
 fenyeinel fényeinél
 bublé búblé
 kiabranditobb kiábrándítóbb
@@ -12981,7 +12961,7 @@ rajzocskat rajzocskát
 tunhetnek tűnhetnek
 bantsd bántsd
 bantsa bántsa
-telorol telőről
+telorol telóról
 azvan ázván
 lesmarolt lesmárolt
 felajanlom felajánlom
@@ -13035,7 +13015,7 @@ ertektelen értéktelen
 mennyiseg mennyiség
 jolien jolién
 joliet joliét
-telotokomat telőtokomat
+telotokomat telótokomat
 szadra szádra
 fejle fejlé
 meggyoznom meggyőznöm
@@ -13277,7 +13257,7 @@ követötök követőtök
 delevingne délévingné
 megjosolom megjósolom
 felno felnő
-telotokokat telőtokokat
+telotokokat telótokokat
 szoismetles szóismétlés
 talalkozhatnek találkozhatnék
 helyukon helyükön
@@ -13369,7 +13349,7 @@ bazilikahoz bazilikához
 hubertust hűbértust
 elnökválaszáson elnökválaszásón
 elkerulhetetlen elkerülhetetlen
-telomon telőmön
+telomon telómon
 kotelezovel kötelezővel
 irhatja írhatja
 volányok vőlányok
@@ -13891,7 +13871,7 @@ elősáldozásra élősáldozásra
 osszedobom összedobom
 osszedobok összedobok
 ferege féregé
-telohoz telőhöz
+telohoz telóhoz
 puskaja puskája
 megbeszelunk megbeszélünk
 mustarmagnyi mustármagnyi
@@ -14040,7 +14020,7 @@ melyebben mélyebben
 megbeszeltem megbeszéltem
 megbeszeltek megbeszéltek
 elfoglaltsag elfoglaltság
-telodon telődön
+telodon telódon
 videoval videóval
 idegenszerü idegenszerű
 oregapas öregapás
@@ -14168,7 +14148,7 @@ megkonnyezem megkönnyezem
 kardigant kardigánt
 burus bürüs
 tudöm tüdőm
-telobol telőből
+telobol telóból
 mehalja méhalja
 szemtakaros szemtakarós
 rapterapia rapterápia
@@ -14203,7 +14183,7 @@ suliidobe suliidőbe
 pokhalos pókhálós
 elvarazsoltam elvarázsoltam
 kincstol kincstől
-telodat télódát
+telodat telódat
 butit butít
 csokát csókát
 feloltoztetni felöltöztetni
@@ -14604,7 +14584,6 @@ megszunese megszűnése
 cikkekenek cikkekének
 hanyszor hányszor
 gegerak gegérák
-útso útsó
 esok esők
 esos esős
 esot esőt
@@ -16358,7 +16337,7 @@ asustól asüstól
 safarinak sáfárinak
 polonal pólónál
 polonak pólónak
-telohattered telőháttered
+telohattered telóháttered
 polomra pólómra
 távoltartási távöltartási
 kivülről kívülről
@@ -16376,7 +16355,7 @@ ravenni rávenni
 pozerkodok pózérkódok
 tudatomnal tudatomnál
 zámbo zámbó
-telohatterem telőhátterem
+telohatterem telóhátterem
 kostolnám kóstolnám
 oliebol óliéból
 elneve élnévé
@@ -19301,7 +19280,6 @@ masolni másolni
 hizelgo hízelgő
 masolom másolom
 hatszorhét hátszőrhét
-üzik űzik
 bathoryekkal báthoryékkal
 kurvammal kűrvámmal
 elvekonyodas elvékonyodás
@@ -19560,7 +19538,6 @@ félreertheti félreértheti
 fehernemu fehérnemű
 meozásra meózásra
 gorbuljunk görbüljünk
-baritali baritáli
 faszkajaval faszkájával
 jelolik jelölik
 nevelotanar nevelőtanár
@@ -19657,8 +19634,8 @@ mazsolazgatva mazsolázgatva
 felorditottam felordítottam
 akarkim akárkim
 akarkit akárkit
-osztalyfonoki osztályfőnoki
-osztalyfonoke osztályfonóké
+osztalyfonoki osztályfőnöki
+osztalyfonoke osztályfőnöké
 repcsiszakerto repcsiszakértó
 allatvedo állatvédő
 azókról ázókról
@@ -20415,7 +20392,7 @@ elohozni előhozni
 elegansa elegánsa
 konzolvilagba konzolvilágba
 szemszogbol szemszögből
-osztalytalit osztálytálit
+osztalytalit osztálytalit
 testverosztaly testvérosztály
 selejtezo selejtező
 nezhetjuk nézhetjük
@@ -20436,8 +20413,6 @@ ertetlenkedni értetlenkedni
 felhalmozodott felhalmozódott
 legnek légnek
 hasfajasomnak hasfajásómnak
-osztálytalin osztálytálin
-osztálytalit osztálytálit
 legakkurátosabb légakkurátosabb
 foldrajbol földrajból
 doganal dogánál
@@ -21653,11 +21628,9 @@ zoldbableves zöldbableves
 bajtala bajtála
 tesomekkal tesómékkal
 ugyveddel ügyvéddel
-hanguzin hangúzin
 cipoknel cipőknél
 ujonc újonc
 azoktol azoktól
-hanguzit hangúzit
 villasreggelit villásreggelit
 morzsaja morzsája
 szivtöl szívtől
@@ -22139,7 +22112,6 @@ kanae kanáé
 kanan kanán
 kanal kanál
 kanak kanák
-bioszosokkal bioszósokkal
 kocsagvolgynek kócsagvölgynek
 kupakuzeneted kupaküzeneted
 legozgatsz legózgatsz
@@ -25526,8 +25498,7 @@ müsorból műsorból
 eletemrol életemről
 teka téka
 szalrol szálról
-telu telű
-telo telő
+telo teló
 pále pálé
 rendelessel rendeléssel
 gabornak gábornak
@@ -26262,7 +26233,6 @@ románcoltál románcóltál
 szaz száz
 szan szán
 szaj száj
-szal szál
 szam szám
 oriasmacit óriásmacit
 jonast jónást
@@ -26285,7 +26255,6 @@ tankerrel tankérrel
 diosgyor diósgyőr
 nyamnyilak nyámnyilák
 voroskereszt vöröskereszt
-uzival úzival
 sraccal sráccal
 tragediaja tragédiája
 szoc szőc
@@ -26374,7 +26343,6 @@ betelefonalt betelefonált
 webhelynel webhelynél
 betelefonalo betelefonáló
 tökéletesitsd tökéletesítsd
-bioszokban bioszókban
 aluljárohoz aluljáróhoz
 androidbol androidból
 torákon tórákon
@@ -28371,7 +28339,6 @@ terde térde
 tesak tésák
 tesam tésám
 tesan tésán
-gémelünk gémélünk
 leteznek léteznek
 mondhatnatok mondhatnátok
 komolysag komolyság
@@ -29287,8 +29254,8 @@ megtalaltad megtaláltad
 akusztikaztak akusztikáztak
 tablofotozas tablófotózás
 tobbszori többszöri
-uzik űzik
-uzit úzit
+uzik üzi
+uzit üzit
 fulbevaloja fülbevalója
 osszeszedsz összeszedsz
 uzok úzok
@@ -29575,7 +29542,6 @@ lepcsonel lépcsőnél
 utra útra
 portfolió portfólió
 kicsipem kicsípem
-utso útsó
 emberbol emberből
 szavazoink szavazóink
 bedolnek bedőlnek
@@ -29590,7 +29556,6 @@ felhuzna felhúzna
 pezsgofurdobe pezsgőfürdőbe
 varázsloval varázslóval
 fekvos fékvős
-utsó útsó
 összegyüjtött összegyűjtött
 labfejemen lábfejemen
 labfejemet lábfejemet
@@ -30007,16 +29972,15 @@ kiallitás kiállítás
 benivel bénivel
 ujak újak
 telre télre
-telok telők
-telod telőd
+telok telók
+telod telód
 szuperpatkányt szúpérpatkányt
-telos télős
+telos telós
 maganszervizben magánszervizben
-telom telőm
-telon telőn
-hirtelem hírtelem
+telom telóm
+telon telón
 müsort műsort
-telot telőt
+telot telót
 idejeig idejéig
 szaniba szániba
 cicanadragba cicanadrágba
@@ -35730,7 +35694,7 @@ oled öled
 szornyuseg szörnyűség
 boncolhatnam boncolhatnám
 intezzuk intézzük
-olej óléj
+olej ölej
 olel ölel
 ebreszthetne ébreszthetne
 kamerara kamerára
@@ -35747,7 +35711,7 @@ tortenetnek történetnek
 kanato kanató
 jezuskának jézuskának
 benezni benézni
-teloszamlat telőszámlat
+teloszamlat telószámlát
 tuzijatekoznak tűzijátékoznak
 megszokottnal megszokottnál
 nyafogast nyafogást
@@ -35912,7 +35876,7 @@ fertötóra fertőtóra
 pofatlanabb pofátlanabb
 betekintes betekintés
 valaszcsapas válaszcsapás
-hazidogat házidőgát
+hazidogat házidogát
 ellapatolva ellapátolva
 ujranézed újranézed
 kozgazbol közgazból
@@ -36071,8 +36035,6 @@ kifujja kifújja
 fizikaoraja fizikaórája
 palok pálok
 nevvalasztassal névválasztással
-palos pálos
-taliztunk tálíztűnk
 bemesz bemész
 tarsasozunk társasozunk
 nyercbunda nyércbunda
@@ -36936,7 +36898,7 @@ koszorúslánykodjak koszorúslánykódjak
 pubrol pubról
 allitsatok állítsatok
 koltozest költözést
-telozunk télőzünk
+telozunk telózunk
 nának nánák
 legkeménye légkéménye
 velthez vélthez
@@ -37767,7 +37729,7 @@ kimagyarazni kimagyarázni
 tejeskave tejeskávé
 hazaterjenek hazatérjenek
 bolgarul bolgárul
-teloznek télőznek
+teloznek telóznék
 janosoknak jánosoknak
 huzott húzott
 dantenak danténak
@@ -41935,7 +41897,6 @@ milanhoz milánhoz
 föszereplöi főszereplői
 következtetére követkéztétére
 edzestervet edzéstervet
-bioszunk bioszúnk
 tökés tőkés
 ruhaimon ruháimon
 dumaáltatok dumaáltatók
@@ -43385,7 +43346,7 @@ tesitanarom tesitanárom
 belerepult belerepült
 órako órakő
 bödevel bődével
-csucstelora csúcstélóra
+csucstelora csúcstelóra
 megusztad megúsztad
 marike mariké
 megusztam megúsztam
@@ -43665,7 +43626,7 @@ kolleganőm kolléganőm
 kolleganőt kolléganőt
 ertelmi értelmi
 ertelme értelme
-osztalyfonok osztályfonók
+osztalyfonok osztályfőnök
 izlésével ízlésével
 fogashazban fogasházban
 szogesen szögesen
@@ -45494,7 +45455,6 @@ bejohetek bejöhetek
 megsajnalnak megsajnálnak
 erősembere érősembere
 birora bíróra
-autóstali autóstáli
 vizsgaink vizsgáink
 beger bégér
 hibaba hibába
@@ -45641,7 +45601,6 @@ gaalra gaálra
 nutellás nútéllás
 bejar bejár
 kisugarzom kisugárzom
-fórumtalira fórumtálira
 rantolásokra rántólásokra
 olelhetnekem ölelhetnékem
 kozost közöst
@@ -46523,7 +46482,6 @@ szerkesztesen szerkesztésen
 szerkesztesek szerkesztések
 barcába bárcába
 beszo besző
-gémert gémért
 szuletnie születnie
 bucsuztassuk búcsúztassuk
 szakszoveg szakszóvég
@@ -47688,7 +47646,7 @@ tesomért tesómért
 jogsimert jogsimért
 nettrol nettről
 megszolítom megszólítom
-osztalytali osztálytáli
+osztalytali osztálytali
 joistenert jóistenért
 anyacska anyácska
 negyzetmeteres négyzetméteres
@@ -48294,8 +48252,6 @@ honaponkent hónaponként
 kolombusz kőlombusz
 vásároltal vásároltál
 csipőmet csípőmet
-gémel gémél
-gémer gémér
 hoshimura hőshímura
 tatuinon tatuínon
 diazo diázó
@@ -49504,7 +49460,6 @@ versenyzestol versenyzéstől
 kedvemtol kedvemtől
 felmerest felmérést
 borzongásközeli borzongásközéli
-osztalytalizassagokat osztálytálizásságokat
 egypar egypár
 gondolhatot gondolhatót
 fajtajukbol fajtájukból
@@ -50617,7 +50572,6 @@ szerelo szerelő
 lapatkezueknek lapátkezűeknek
 ejjelem éjjelem
 ejjeles éjjeles
-talinak tálinak
 kirugta kirúgta
 galanékkal gálánékkal
 szereny szerény
@@ -50649,11 +50603,10 @@ hatasairol hatásairól
 kényszerírok kényszerírók
 elozmenyt előzményt
 belsommel belsőmmel
-csokollom csóköllom
 kirugom kirúgom
 tudasunkért tudásunkért
 soosneekat soósnéékat
-fuzet fűzet
+fuzet füzet
 centos centős
 sztrajkjat sztrájkját
 kirugni kirúgni
@@ -50744,7 +50697,6 @@ csokiscsigát csokiscsígát
 atállítottam átállítottam
 alairt aláírt
 epulet épület
-talinál tálinál
 erunk erünk
 koltozni költözni
 karomkodva káromkodva
@@ -51085,7 +51037,6 @@ veszettul veszettül
 hibaikkal hibáikkal
 haborognak háborognak
 unnepeltetek ünnepeltetek
-talival tálival
 meltatni méltatni
 raerzek ráérzek
 termeszetfilmen természetfilmen
@@ -51352,7 +51303,6 @@ literariában literáriában
 tartozasrol tartozásról
 menőke menőké
 húgyuti húgyúti
-taliról táliról
 elemeszt elemészt
 hetvegebol hétvégéből
 golyaavatora gólyaavatóra
@@ -51390,7 +51340,6 @@ megunneplem megünneplem
 hoditani hódítani
 vigan vígan
 nezelodni nézelődni
-talizom tálizom
 kirugja kirúgja
 pallasz pállasz
 hagatok hágatok
@@ -52253,7 +52202,6 @@ sporoltam spóroltam
 szülöttektől szülöttéktől
 pingvinelet pingvinélet
 anyukamek anyukámék
-taliban táliban
 uzengess üzengess
 szerzoi szerzői
 erett érett
@@ -52597,7 +52545,6 @@ tuszejtő túszejtő
 tremoloja trémólója
 karalabet karalábét
 olhetlek ölhetlek
-taliból táliból
 furulyazni furulyázni
 furulyazok furulyázok
 munkaholistákkal munkahólistákkal
@@ -52633,7 +52580,6 @@ eteren éteren
 napfeny napfény
 elkiabalni elkiabálni
 szetbontottam szétbontottam
-talihoz tálihoz
 mentáéknal mentáéknál
 amuldoztunk ámuldoztunk
 vérres vérrés
@@ -52679,7 +52625,6 @@ kávezom kávézom
 lillakra lillákra
 vulgaris vulgáris
 attudjak áttudjak
-közönségtali közönségtáli
 tancival táncival
 szalkarol szálkáról
 passzolot passzolót
@@ -52825,7 +52770,6 @@ pandorával pandórával
 hozzanyultam hozzányúltam
 teljesulnenek teljesülnének
 kozszferaban közszférabán
-napszemcsik napszemcsík
 repatortahoz répatortához
 idiotákkal idiótákkal
 mozinet mozinét
@@ -53100,7 +53044,6 @@ matekdogammal matekdogámmal
 zsírosdeszkát zsírősdeszkát
 duplaja duplája
 hozzaersz hozzáérsz
-házidogát házidőgát
 hernyogörények hernyógörények
 kolykoket kölyköket
 kivitelezes kivitelezés
@@ -54560,7 +54503,7 @@ nagymamanak nagymamának
 evangelistanak evangelistának
 atlagban átlagban
 bizonyitvany bizonyítvány
-telodrol telődről
+telodrol telódról
 elkezdodhet elkezdődhet
 arcpakolast arcpakolást
 szemkendo szemkendó
@@ -55293,7 +55236,7 @@ felkarvarták felkarvárták
 orulnetek örülnétek
 lefotoznam lefotóznám
 panterhez pánterhez
-telodhoz telődhöz
+telodhoz telódhoz
 ervekről érvekről
 muszakba műszakba
 szetkurtolni szétkürtölni
@@ -55406,7 +55349,7 @@ fözöműsor főzőműsor
 fagyállos fagyállós
 rolie rolié
 kornyikalni kornyikálni
-telotöltőért telőtöltőért
+telotöltőért telótöltőért
 kornyikalok kornyikálok
 lepodtel lepődtél
 lepodtem lepődtem
@@ -57731,7 +57674,6 @@ kiprovokalnak kiprovokálnak
 bünözöt bűnözőt
 sietsegembe sietségembe
 csomagolopapir csomagolópapír
-osztálytali osztálytáli
 norveg norvég
 adattáro adattáró
 skorpioval skorpióval
@@ -57848,7 +57790,6 @@ dedikalta dedikálta
 videosa videósa
 beleloktem belelöktem
 videost videóst
-komentelő kőméntelő
 videora videóra
 metromegallo metrómegálló
 megtamadnak megtámadnak
@@ -60031,9 +59972,6 @@ quebeci québeci
 kemenytisztito kéménytisztító
 hajvegegeimnel hajvégegeimnél
 elfekudtem elfeküdtem
-elékszel élékszél
-telofont telőfont
-elékszem élékszem
 hallgatosag hallgatóság
 filmetüdök filmetűdök
 katinkara katinkára
@@ -60410,8 +60348,6 @@ keszsegesek készségesek
 csizi csízi
 elparolgott elpárolgott
 uzenetben üzenetben
-ejercicios éjérciciős
-talizasra tálizásra
 fejlodnek fejlődnek
 csipő csípő
 hosszúmetélt hősszúmetélt
@@ -62387,7 +62323,7 @@ elvarnam elvárnám
 elvarnak elvárnak
 osszegzesbe összegzésbe
 hiresse híressé
-teloim telőim
+teloim telóim
 pirosbogyós pírősbogyós
 felveteleivel felvételeivel
 zenejuk zenéjük
@@ -62408,7 +62344,7 @@ mardarak mardarák
 koldulokról koldulókról
 kivartam kivártam
 kolcson kölcsön
-telonk telőnk
+telonk telónk
 jelenetunkben jelenetünkben
 rendörök rendőrök
 mákoslecsó mákőslecsó
@@ -62419,7 +62355,7 @@ venember vénember
 legrondabb legrondább
 alapoktol alapoktól
 mondolat mondólat
-telora télóra
+telora telóra
 giminel giminél
 munkaebedem munkaebédem
 pincernek pincérnek
@@ -62568,7 +62504,6 @@ idegesitem idegesítem
 idegesited idegesíted
 nemelyeknek némelyeknek
 vekonyak vékonyak
-igeen igéén
 tesztanak tésztának
 kifejezesehez kifejezéséhez
 keresünkben kérésünkben
@@ -63552,7 +63487,6 @@ szoveged szöveged
 elkeszulnom elkészülnöm
 eskuvos esküvős
 eskuvot esküvőt
-talizhatunk tálízhátunk
 paraúszóra páraúszóra
 szivesség szívesség
 költöien költőien
@@ -63930,7 +63864,7 @@ beszelgessen beszélgessen
 baratokbol barátokból
 szolhattatok szólhattatok
 szexualpszichologia szexuálpszichológia
-teloszamat telőszámat
+teloszamat telószámát
 hölgyel hölgyél
 vegigporgettem végigpörgettem
 erteku értékű
@@ -63985,10 +63919,10 @@ haldoklo haldokló
 kommunikalnak kommunikálnak
 hazza házzá
 baratokban barátokban
-teloszamom telőszámom
-teloszamot telőszámot
+teloszamom telószámom
+teloszamot telószámot
 zselezd zselézd
-teloszamod telőszámod
+teloszamod telószámod
 brassoiból brassóiból
 ujitanak újítanak
 legyozze legyőzze
@@ -64146,7 +64080,6 @@ kozmunkas közmunkás
 kozmunkat közmunkát
 rohogunk röhögünk
 everestjének évérestjének
-tanci tánci
 gondolkozas gondolkozás
 artistak artisták
 nemtetszett nemtétszett
@@ -64211,8 +64144,6 @@ rohogtok röhögtök
 normalt normált
 szigetfutast szigetfutást
 celzott célzott
-talit tálit
-talin tálin
 veszitsunk veszítsünk
 pecsett pécsett
 tizesekből tízesekből
@@ -67416,7 +67347,7 @@ behivott behívott
 szabaditottal szabadítottal
 sugarban sugárban
 januarban januárban
-teloztunk télőztűnk
+teloztunk telóztunk
 ujságpapírral újságpapírral
 bundazott bundázott
 legmelyebb legmélyebb
@@ -68593,7 +68524,7 @@ alvasrol alvásról
 telepatiaval telepátiával
 tobika tóbika
 megvartuk megvártuk
-teloszámát telőszámát
+teloszámát telószámát
 felsobbrenduseg felsőbbrendűség
 hazakiserem hazakísérem
 jovohetrol jövőhétről
@@ -68660,12 +68591,12 @@ vagatod vágatod
 vagatom vágatom
 csapatast csapatást
 kommentalta kommentálta
-teloszámod telőszámod
+teloszámod telószámod
 profilkeprol profilképről
 gálan gálán
 mozgolepcsot mozgólépcsőt
 amennyiert amennyiért
-teloszámom telőszámom
+teloszámom telószámom
 mozgolepcson mozgólépcsőn
 vagatni vágatni
 pillanokért pillanőkért
@@ -68918,7 +68849,6 @@ iratta íratta
 debutaltak debütáltak
 spinracinget spinrácinget
 revansmisszió revánsmisszió
-taliztatok tálíztatok
 iratva íratva
 alvasnak alvásnak
 alvasnal alvásnál
@@ -70008,7 +69938,6 @@ szulinapomon szülinapomon
 irodalomtudomanyra irodalomtudományra
 honositott honosított
 kutyamenhelyet kutyamenhelyét
-fatelom fatelőm
 idegeskedes idegeskedés
 tovabbgondolas továbbgondolás
 bejárosnak bejárósnak
@@ -70562,7 +70491,6 @@ felidegelt félidegélt
 rajongokat rajongókat
 sorkin sorkín
 kanapera kanapéra
-bioszokat bioszókat
 nemegeszen nemégeszén
 angyalkazunk angyalkázunk
 kitarto kitartó
@@ -71904,8 +71832,7 @@ totonak totónak
 vasalot vasalót
 alldogalt álldogált
 barátnőmtol barátnőmtől
-bioszozom bioszózöm
-osztalyfonokrol osztályfonókról
+osztalyfonokrol osztályfőnökről
 misaki misáki
 ugyeleten ügyeleten
 ugyeletes ügyeletes
@@ -72754,7 +72681,7 @@ alexanal alexánál
 erettsegem érettségem
 nenitol nénitől
 szinházi színházi
-telomrol telőmről
+telomrol telómról
 lehegoseg léhegőség
 idobe időbe
 jatekbol játékból
@@ -73274,7 +73201,7 @@ elettelennek élettelennek
 nepszerubb népszerűbb
 kerulunk kerülünk
 csaladanyák családanyák
-telomhoz telőmhöz
+telomhoz telómhoz
 fesulkodesig fésülködésig
 rozsdas rozsdás
 atöltözni átöltözni
@@ -73518,7 +73445,7 @@ padloba padlóba
 mindenkirol mindenkiről
 fehervari fehérvári
 akademia akadémia
-osztalytalira osztálytálira
+osztalytalira osztálytalira
 ismerösünknek ismerősünknek
 kapcsolodtam kapcsolódtam
 kapcsolodtak kapcsolódtak
@@ -75108,9 +75035,9 @@ magadot magadót
 elotorobe élőtörőbe
 osztalyfonokom osztályfőnököm
 etvagytalansag étvágytalanság
-osztalyfonokod osztályfonókód
+osztalyfonokod osztályfőnököd
 életszinvonal életszínvonal
-osztalyfonokot osztályfonókőt
+osztalyfonokot osztályfőnököt
 elsonek elsőnek
 elsonel elsőnél
 konyorges könyörgés
@@ -75414,7 +75341,7 @@ mukormet műkörmét
 mentalis mentális
 szelint szélínt
 kirohogjelek kiröhögjelek
-osztalyfonokin osztályfonókín
+osztalyfonokin osztályfőnökin
 fankorsag fánkőrság
 osztalyfonokit osztályfőnokit
 dorieknal dóriéknál
@@ -76562,7 +76489,6 @@ adaz ádáz
 halgatnak halgátnak
 fergeket férgeket
 adas adás
-telokonyv telőkönyv
 tortabol tortából
 berenybe berénybe
 nevadabol nevadából
@@ -77827,7 +77753,6 @@ részeletekről részéletekről
 birni bírni
 arcodbol arcodból
 ladakat ládákat
-klántali klántáli
 arabusul arabúsul
 faracuki farácüki
 eddiginel eddiginél
@@ -78266,8 +78191,6 @@ gyaloglok gyaloglók
 eredmenyeimet eredményeimet
 szemetladanak szemétládának
 aktualis aktuális
-stratusizmus stratusízműs
-feketelovag fékételövág
 minibar minibár
 alvozenenek alvózenének
 orditassal ordítással
@@ -80070,3 +79993,17 @@ rugtál rúgtál
 jótetünk jótétünk
 kesztet késztet
 megneztunk megnéztünk
+bnom bnőm
+es és
+ugy úgy
+uj új
+en én
+jo jó
+mas más
+ev év
+szo szó
+jol jól
+evi évi
+am ám
+ota óta
+igy így

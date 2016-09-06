@@ -1,32 +1,60 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map.Entry;
+import java.util.Set;
 
 public class Word {
 
 	private String word;
 	private String cluster = null;
+	private HashSet<String> pairs = null;
+	private boolean isCommon;
 	private int frequent;
 	private double jaccard = 0.0;
-	private HashSet<Integer> contextSet = new HashSet<>();
+	private double angle = 1000.0;
+	private HashMap<Integer, Integer> contextSet = new HashMap<>();
 
+	public Word() {
+		this.word = "empty";
+	}
+	
 	public Word(String word, int frequent) {
 		this.word = word;
 		this.frequent = frequent;
 	}
 	
-	public void add(Integer word) {
-		contextSet.add(word);
+	public Word(boolean isCommon, HashSet<String> pairs) {
+		this.isCommon = isCommon;
+		this.pairs = pairs;
+	}
+
+	public Word(boolean isCommon) {
+		this.isCommon = isCommon;
 	}
 	
-	public HashSet<Integer> getContextSet() {
+	public void addContext(Integer word) {
+		contextSet.put(word, 1);
+	}
+	
+	public void updateContext(Integer word) {
+		contextSet.put(word, contextSet.get(word) + 1);
+	}
+	
+	public boolean containsContext(Integer word) {
+		return contextSet.containsKey(word);
+	}
+	
+	public HashMap<Integer, Integer> getContextMap() {
 		return contextSet;
 	}	
-
+	
+	public Set<Integer> getContextSet() {
+		return contextSet.keySet();
+	}
+	
+	public int getContextFrequency(Integer word) {
+		return contextSet.get(word);
+	}
+	
 	public String getWord() {
 		return word;
 	}
@@ -50,6 +78,14 @@ public class Word {
 	public void setJaccard(double jaccard) {
 		this.jaccard = jaccard;
 	}
+	
+	public double getAngle() {
+		return angle;
+	}
+
+	public void setAngle(double angle) {
+		this.angle = angle;
+	}
 
 	public String getCluster() {
 		return cluster;
@@ -58,13 +94,27 @@ public class Word {
 	public void setCluster(String cluster) {
 		this.cluster = cluster;
 	}
+	
+	public HashSet<String> getPairs() {
+		return pairs;
+	}
+
+	public void setPairs(HashSet<String> pairs) {
+		this.pairs = pairs;
+	}
+
+	public boolean isCommon() {
+		return isCommon;
+	}
+
+	public void setCommon(boolean isCommon) {
+		this.isCommon = isCommon;
+	}
 
 	@Override
 	public String toString() {
 		return "Word [word=" + word + ", frequent=" + frequent + ", jaccard="
-				+ jaccard + ", contextSet=" + contextSet + "]";
+				+ jaccard +  ", angle=" + angle + ", contextSet=" + contextSet + "]";
 	}
-	
-	
-
 }
+
