@@ -79979,3 +79979,4 @@ evi évi
 am ám
 ota óta
 igy így
+amugy amúgy
