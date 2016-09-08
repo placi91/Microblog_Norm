@@ -31,17 +31,14 @@ rugasaim rúgásaim
 felvetelihez felvételihez
 barhol bárhol
 maganbeszelgeteset magánbeszélgetését
-vegasz végász
 kabatzsebben kabátzsebben
 ellenörizheti ellenőrizheti
 ijedtseg ijedtség
 tronrol trónról
 kozvetítek közvetítek
-vegasi végasi
 elszeretelek élszerételek
 bargyu bárgyú
 felkapalom felkapálom
-nutellásat nútellásat
 dijátadóra díjátadóra
 dijaztak díjaztak
 dijaztam díjaztam
@@ -56,7 +53,7 @@ gyerekrágot gyerekrágót
 idotartam időtartam
 jankoval jankóval
 ideernek ideérnek
-onutalo ónutaló
+onutalo önutaló
 kirugatom kirúgatom
 bogesevel bőgésével
 lazadok lázadok
@@ -65,8 +62,6 @@ lazadni lázadni
 felzabalom felzabálom
 felzabalna felzabálna
 nevnapi névnapi
-ugybirom ügybíróm
-ipad ipád
 felzabalni felzabálni
 szomszedasszonytol szomszédasszonytól
 elérhetöségét élérhetőségét
@@ -307,7 +302,6 @@ atoltoztem átöltöztem
 akarhany akárhány
 vizsgank vizsgánk
 átjátszo átjátszó
-szupererőtök szúpérerőtök
 krumplisutes krumplisütés
 verziojat verzióját
 lathatatlanna láthatatlanná
@@ -679,7 +673,6 @@ ohajtottam óhajtottam
 rajongo rajongó
 vaderré vadérré
 euforiába eufóriába
-szuperfontos szúpérfontos
 xaver xavér
 nemsok nemsók
 tőlet tőlét
@@ -892,7 +885,6 @@ gyogyszerreklam gyógyszerreklám
 angolositott angolosított
 idökröl időkről
 sütok sütők
-szupergruppnak szúpérgruppnak
 oráék óráék
 segedre segédre
 meghempergetunk meghempergetünk
@@ -916,7 +908,6 @@ valaszaim válaszaim
 szakitasok szakítások
 kivánlak kívánlak
 hivnának hívnának
-celebvilág célebvilág
 rákoczinak rákóczinak
 konnektorizet konnektorizét
 franciaknal franciaknál
@@ -1407,7 +1398,6 @@ kacaraszva kacarászva
 szerkeszto szerkesztő
 olvasot olvasót
 hajrat hajrát
-szupervasárnap szúpérvasárnap
 végéböl végéből
 zsuzsikam zsuzsikám
 automosokban autómosókban
@@ -1773,7 +1763,6 @@ irambant irambánt
 alhatnek alhatnék
 kungen kungén
 fotolexikon fotólexikon
-szupehősök szupéhősök
 nagylelkusegem nagylelkűségem
 nagylelkuseged nagylelkűséged
 folyadek folyadék
@@ -2168,7 +2157,6 @@ szerepjatekok szerepjátékok
 szerepjatekos szerepjátékos
 barthe barthé
 magunktol magunktól
-szupervályog szúpérvályog
 bartek barték
 orjongeni őrjöngeni
 mesterkepzes mesterképzés
@@ -2271,7 +2259,6 @@ lepodnenk lepődnénk
 aprilisi áprilisi
 noemberben nőemberben
 kapone kapóné
-szuperképességeink szúpérképességeink
 egetoset égetőset
 legvampirosabb légvámpírosabb
 kulturszalon kultúrszalon
@@ -2283,7 +2270,6 @@ okádéknal okádéknál
 nyafogasokat nyafogásokat
 pszichiátriara pszichiátriára
 idiotabbnal idiótábbnál
-szuperrangadóján szúpérrangadóján
 alulmulni alulmúlni
 íroszertartó írószertartó
 odalegelore ódalégélőre
@@ -2576,9 +2562,7 @@ szulinapozzatok szülinapozzatok
 lenyomorekozol lényomorékőzól
 orsos orsós
 gorcsolni görcsölni
-szuperfegyvere szúpérfegyvere
 gorcsolne görcsölne
-szuperfegyvert szúpérfegyvert
 fosatos fosatós
 ellensege ellensége
 urhab úrhab
@@ -2616,7 +2600,6 @@ fiubarat fiúbarát
 fogazast fogazást
 testreszemnel testrészemnél
 fájdalomtol fájdalomtól
-tancsinéni tancsínéni
 pérezzel pérezzél
 orvendeztetnek örvendeztetnek
 gyogyszereknek gyógyszereknek
@@ -2798,7 +2781,6 @@ helyhiany helyhiány
 meszi mészi
 likrolonak likrolónak
 jatszanom játszanom
-szuperautó szúpérautó
 elkenyeztetett elkényeztetett
 csuszva csúszva
 galeriaban galériában
@@ -2826,7 +2808,6 @@ markson marksón
 lemaffiafőn lémaffiafőn
 borotválkoztal borotválkoztál
 énnem énném
-szuperzöldség szúpérzöldség
 berletbe bérletbe
 nevettunk nevettünk
 folrobbant fölrobbant
@@ -2988,7 +2969,6 @@ forgatason forgatáson
 mikulasviraggal mikulásvirággal
 diszelgett díszelgett
 forgatasra forgatásra
-szuperműanyagból szúpérműanyagból
 tankönyveime tankönyveimé
 balatonkör bálatönkőr
 idegeskedésröl idegeskedésről
@@ -3131,7 +3111,6 @@ tanitasat tanítását
 mehetnel mehetnél
 szemoldokod szemöldököd
 nelkül nélkül
-szuperkutyás szúpérkutyás
 szemoldokot szemöldököt
 szemoldokok szemöldökök
 szemoldokom szemöldököm
@@ -3204,7 +3183,6 @@ szodogat szódogát
 szodogam szódogám
 eltünésért eltűnésért
 elitelte elítélte
-celebszerelmeit célebszerelmeit
 tegedet tégedet
 oroszkrém őrőszkrém
 kollegak kollégák
@@ -3318,7 +3296,6 @@ emlöim emlőim
 mazlistanak mázlistának
 petofi petőfi
 sebezhetove sebezhetővé
-szupertehetsége szúpértehetsége
 korberepulnem körberepülném
 marcelházi marcélházi
 kesobbin későbbin
@@ -3354,7 +3331,6 @@ szeppe széppé
 baratnomhoz barátnőmhöz
 invidia ínvídia
 otthonmaszturbalok otthonmaszturbálók
-szupererőben szúpérerőben
 konyveidet könyveidet
 zuhanyzos zuhanyzós
 telefono telefonó
@@ -3641,7 +3617,6 @@ utlevelkepemet útlevélkepémet
 segitsegere segítségére
 kavegep kávégép
 megtehessuk megtehessük
-szupersport szúpérsport
 segitsegert segítségért
 nutellába nútéllába
 varazsat varázsát
@@ -3673,7 +3648,6 @@ jook joók
 jony jóny
 jont jónt
 jona jóna
-szuperciklus szúpérciklus
 menez ménez
 legendajat legendáját
 szello szellő
@@ -3735,7 +3709,6 @@ orara órára
 kapkodnanak kapkodnának
 penztarosneni pénztárosnéni
 kinlodok kínlódok
-szupercsoda szúpércsoda
 fogkefemen fogkefémen
 elsosorban elsősorban
 brusszelen brüsszelen
@@ -4055,7 +4028,6 @@ szakacsno szakácsnő
 ausztriaval ausztriával
 lászlo lászló
 edzesnapok edzésnapok
-szupertriója szúpértriója
 fulbevaloimrol fülbevalóimról
 lakossaganak lakosságának
 latogassuk látogassuk
@@ -4219,7 +4191,6 @@ csinalnatok csinálnátok
 sörkostolót sörkóstolót
 bulifotok bulifotók
 szimulator szimulátor
-szuperhasznos szúpérhasznos
 hatekony hatékony
 csucstermek csúcstermek
 csufoltak csúfoltak
@@ -4306,8 +4277,6 @@ hajstilusa hajstílusa
 csodalja csodálja
 atrendeztem átrendeztem
 atrendeztek átrendeztek
-tancim tancím
-tancit táncit
 feliratkozóto feliratkozótó
 ebredestol ébredéstől
 maffiaval maffiával
@@ -4534,7 +4503,6 @@ izel ízel
 izem ízem
 izet izét
 ujsagolni újságolni
-tancsinénit tancsínénit
 póniujjazós póniujjázós
 ipsek ipsék
 benazott bénázott
@@ -4544,7 +4512,6 @@ megvettuk megvettük
 bögetni bőgetni
 esniuk esniük
 bannolás bánnőlás
-szuperfegyvereket szúpérfegyvereket
 nyugivan nyűgíván
 szerverkent szerverként
 hipoi hipói
@@ -4898,7 +4865,6 @@ celpont célpont
 bokaig bokáig
 szarithato szárítható
 bokaja bokája
-szuperalagútra szúpéralagútra
 loveset lóvését
 lovesem lövésem
 lovesek lóvésék
@@ -4948,7 +4914,6 @@ eletmodvaltashoz életmódváltáshoz
 angieke angiéké
 erzéseimre érzéseimre
 orövel őrövél
-szuperakku szúpérakku
 megerositesre megerősítésre
 lovetap lóvétáp
 ertettuk értettük
@@ -5302,7 +5267,6 @@ koronas koronás
 hetpecsetes hétpecsétes
 fazik fázik
 overálok övérálok
-szuperanyag szúpéranyag
 kárpotolhat kárpótolhat
 ragna rágna
 regione régióné
@@ -5759,7 +5723,6 @@ osszerakod összerakod
 nevesunk nevesünk
 osszerakni összerakni
 tartoja tartója
-szupercsini szúpércsíni
 dobozfetisrol dobozfétisről
 csonakban csónakban
 csoportjanak csoportjának
@@ -6261,7 +6224,6 @@ tetkos tetkós
 tetkot tetkót
 legidőszerübb legidőszerűbb
 tetkok tetkók
-szuperrendőrség szúpérrendőrség
 tetkom tetkóm
 tetkon tetkón
 pisztacia pisztácia
@@ -6314,7 +6276,6 @@ szokesegem szőkeségem
 latószög látószög
 tonin tónin
 hatarra határra
-nutellaba nútéllába
 nyelvtanbol nyelvtanból
 savanyut savanyút
 soronkívül sórönkívül
@@ -6353,7 +6314,6 @@ vasarnapban vasárnapban
 testfesteket testfestéket
 visszahivom visszahívom
 benazok bénázok
-müzik műzik
 mineek minéék
 tetjén tétjén
 redoxireakciokkal redoxireakciókkal
@@ -6465,7 +6425,6 @@ tájfujos tájfújós
 legozzunk legózzunk
 cimere címere
 diktatura diktatúra
-nutellabol nútélláböl
 kicsuszni kicsúszni
 elrancigaltak elráncigáltak
 tomni tömni
@@ -6560,7 +6519,6 @@ illuziobol illúzióból
 abbahagynad abbahagynád
 abbahagynam abbahagynám
 faire fairé
-szuperkombin szúpérkombin
 bromot brómot
 porbol porból
 ferunk férünk
@@ -7024,7 +6982,6 @@ forudolok főrúdölők
 lehetetlenul lehetetlenül
 penztarost pénztárost
 tragediabol tragédiából
-szuperlassítást szúpérlassítást
 goooooooool góóóóóóóóól
 szunetetek szünetetek
 javithassam javíthassam
@@ -7237,7 +7194,6 @@ tokeletest tökéletest
 bottyan bottyán
 ivszunk ívszúnk
 emlekeztessetek emlékeztessetek
-szuperbusza szúpérbusza
 kesemet kesémet
 nézéset nézését
 rakét rákét
@@ -7462,11 +7418,9 @@ esonek esőnek
 emlekek emlékek
 emlekem emlékem
 orditozo ordítozó
-celebmágnes célebmágnes
 hulladeknepseget hulladéknépséget
 kicsien kicsién
 betutipust betűtípust
-celebbel célebbel
 roviditesekre rövidítésekre
 minike miniké
 megsemmisitő megsemmisítő
@@ -7717,9 +7671,7 @@ akarnanak akarnának
 lediktalta lediktálta
 maoe maóé
 veszekedest veszekedést
-celebpár célebpár
 kadszelet kádszelet
-szuperfelbontású szúpérfelbontású
 dezsikere dézsikére
 maos maós
 szépsegem szépségem
@@ -7747,7 +7699,6 @@ segitsegedet segítségedet
 irnak írnak
 irnad írnád
 hüve hűvé
-szuperkamat szúpérkamat
 labat lábat
 irnam írnám
 irnal írnál
@@ -7971,7 +7922,6 @@ kutyaztam kutyáztam
 uvoltoztem üvöltöztem
 nyirfacukros nyírfacukros
 tovabbtanulos továbbtanulós
-celebnők célebnők
 szolitsalak szólítsalak
 megmut megműt
 huzzatok húzzatok
@@ -8030,7 +7980,6 @@ bokehgombas bókéhgombás
 naturt natúrt
 elitéli elítéli
 elitélt elítélt
-szuperkapus szúpérkapus
 megnez megnéz
 sajnald sajnáld
 ikertestvere ikertestvére
@@ -8216,7 +8165,6 @@ telepitenek telepítenek
 szekelyderzs székelyderzs
 ágybol ágyból
 szerzodese szerződése
-szupermobil szúpérmobil
 ellenere ellenére
 utnem ütném
 utnek ütnek
@@ -8588,7 +8536,6 @@ felertunk felértünk
 igenigenigen igenigenigén
 teveikről tevéikről
 arkoztunk árkoztunk
-szuperlassítás szúpérlassítás
 ajandekoddal ajándékoddal
 nevetesemrol nevetésemről
 alcatelt álcatélt
@@ -8604,7 +8551,6 @@ marveleset marvélését
 latogathatoak látogathatóak
 szülöktől szülőktől
 fiucskaval fiúcskával
-celebnek célebnek
 tobbieke többieké
 parazik parázik
 amikert amikért
@@ -8732,7 +8678,6 @@ radiatorom radiátorom
 radiatoron radiátoron
 vallasilag vallásilag
 marhalabszar marhalábszár
-szuperprogramra szúpérprogramra
 ugynokkel ügynökkel
 hulyesegekre hülyeségekre
 sörhűtönk sörhűtőnk
@@ -8740,7 +8685,6 @@ idealis ideális
 izomlazzal izomlázzal
 sokembernek sókémbérnek
 kötelezöen kötelezően
-vegasos végasos
 eszmeletlen eszméletlen
 csodárol csodáról
 joeról jóéról
@@ -8773,7 +8717,6 @@ borondom bőröndöm
 anyáméknal anyáméknál
 borondot bőröndöt
 hotaru hótárú
-celebszivató célebszívató
 megtiszteltetesnek megtiszteltetésnek
 arfolyam árfolyam
 siratos siratós
@@ -8974,7 +8917,6 @@ hitebol hitéből
 hasznaltal használtál
 hasznaltat használtat
 hasznaltan használtan
-szuperfrissítése szúpérfrissítése
 feltekenysegbol féltékenységből
 lové lóvé
 adatvesztes adatvesztés
@@ -9112,7 +9054,6 @@ metatron métatrón
 ráirni ráírni
 atjössz átjössz
 rendelobe rendelőbe
-szuperkoncertje szúpérkoncertje
 gerdaek gerdáék
 zonaban zónában
 gyokereket gyökereket
@@ -9323,7 +9264,6 @@ tobbseghez többséghez
 szazadik századik
 semmiröl semmiről
 mozgas mozgás
-szupernyaralás szúpérnyaralás
 olvasmanyaimat olvasmányaimat
 bealltam beálltam
 tobbitol többitől
@@ -9367,7 +9307,6 @@ lefogytal lefogytál
 turetszindromás tűrétszindrómás
 hutonk hűtőnk
 hitban hitbán
-szuperlézer szúpérlézer
 rendelkez rendélkéz
 nezzetek nézzetek
 apamtol apámtól
@@ -9578,17 +9517,12 @@ repulunk repülünk
 kototte kötötte
 alapfoku alapfokú
 hegymaszas hegymászás
-bubunak búbúnak
 szajuaknak szájúaknak
 eneklest éneklést
 bogrefulet bögrefület
 lesugtak lesúgtak
 cikkrol cikkről
 eneklesi éneklési
-semmijen semmijén
-simem símém
-simek símék
-simet símet
 letoltesnel létöltésnél
 humorerzeke humorérzeke
 hipogriffet hipógriffet
@@ -9601,7 +9535,6 @@ hasznallak használlak
 csirkektol csirkéktől
 kepzelodsz képzelődsz
 simat simát
-simam simám
 siman simán
 atkozott átkozott
 hutson hűtsön
@@ -9970,7 +9903,6 @@ hasznaljon használjon
 iratkozo iratkozó
 szerelemtol szerelemtől
 semminel semminél
-szupertraffipaxról szúpértraffipaxról
 orbánkormány őrbánkormány
 hosoda hősóda
 betartjak betartják
@@ -10396,7 +10328,6 @@ pincsike pincsiké
 viragarus virágárus
 fajdalmam fájdalmam
 fajdalmas fájdalmas
-tapipad tápipád
 puskairo puskaíró
 napsiról napsíról
 leloklek lelöklek
@@ -10917,7 +10848,6 @@ viragaihoz virágaihoz
 uzletekbe üzletekbe
 utvesztot útvesztőt
 utvesztos útvesztős
-celebekkel célebekkel
 köper kőper
 szoszolo szószoló
 gyozelmi győzelmi
@@ -10945,7 +10875,6 @@ tutun tütün
 retardaltak retardáltak
 gimen gímen
 alairtuk aláírtuk
-celebekből célebekből
 asztaltarsaim asztaltársaim
 megreformaltam megreformáltam
 megreformaltak megreformáltak
@@ -11503,7 +11432,6 @@ sarul sárul
 terseg térség
 olelkezni ölelkezni
 masszanak masszának
-szuperfényes szúpérfényes
 maniajabol mániájából
 diakokkal diákokkal
 leoljuk leöljük
@@ -11715,7 +11643,6 @@ egeszsegeset egészségeset
 egeszsegesen egészségesen
 revello révellő
 osztalytarsaid osztálytársaid
-celebeknél célebeknél
 henirol heniről
 osztalytarsaim osztálytársaim
 mamatol mamától
@@ -12034,8 +11961,6 @@ megszelidultek megszelídültek
 zabalhatnekom zabálhatnékom
 autoshow autóshow
 zuhannek zuhannék
-szupertehetség szúpértehetség
-celebeknek célebeknek
 atnyujtom átnyújtom
 enekkart énekkart
 lyukacskajan lyukacskáján
@@ -12062,7 +11987,6 @@ agyontetovalt agyontetovált
 attilaknak attiláknak
 hugocskám húgocskám
 csutortokig csütörtökig
-topceleb topcéleb
 golgen gólgén
 retinam retinám
 csutortokit csütörtökit
@@ -12100,11 +12024,7 @@ behalnal behalnál
 barmitol barmitól
 asszonyvero asszonyverő
 lavorban lavórban
-savov savöv
-savoi savói
-doró dóró
 titkairol titkairól
-szupervécén szúpérvécén
 olvasoproba olvasópróba
 utopisztikus utópisztikus
 gorcsoktol görcsöktől
@@ -12140,7 +12060,6 @@ faintos faintős
 csotány csótány
 ismeretle ismeretlé
 nyuszogjon nyüszögjön
-celebektől célebektől
 emberiseg emberiség
 baratocskam barátocskám
 miloi milói
@@ -12306,7 +12225,6 @@ banket bankét
 marokko marokkő
 bangát bángát
 sahne sahné
-celebekről célebekről
 banken bankén
 keztél kéztél
 mecsbe mécsbe
@@ -12437,11 +12355,9 @@ poknak póknak
 telódat télódát
 telódan télódán
 keddbol keddből
-szuperdizájnnal szúpérdizájnnal
 lejarassanak lejárassanak
 jogadas jogadás
 kezzel kézzel
-celebesküvő célebesküvő
 kieroszakoltam kierőszakoltam
 luciferbol luciferből
 alapitom alapítom
@@ -12534,7 +12450,6 @@ baromsaga baromsága
 borirol boriról
 parokkal párokkal
 akaroimat akaróimat
-szuperizgalmas szúpérizgalmas
 megrendelhetö megrendelhető
 mamahoz mamához
 huvelykujjaval hüvelykujjával
@@ -12782,7 +12697,6 @@ kövágószölösre kővágószőlősre
 kuldhetnel küldhetnél
 faba fába
 faag faág
-szuperakció szúpérakció
 bacsinal bácsinál
 bacsinak bácsinak
 halotól halótól
@@ -12799,7 +12713,6 @@ bubut búbút
 mosogatnivalo mosogatnivaló
 esernyojebe esernyőjébe
 barmihez bármihez
-szuperképessége szúpérképessége
 vesztartalek vésztartalék
 csöccse csöccsé
 vennenek vennének
@@ -12822,7 +12735,6 @@ buble búblé
 solyomra sólyomra
 nohabos nőhabos
 nohabok nőhabok
-szuperképességű szúpérképességű
 halotál halótál
 futurat fűtúrát
 telotok telótok
@@ -12848,7 +12760,6 @@ fontoos főntóős
 regenyekert regényekért
 rajzoraim rajzóráim
 nemzetipakot nemzetipakőt
-szupervizorok szúpérvízőrök
 erdemelnél érdemelnél
 elkepeszto elkepesztő
 furcsasaga furcsasága
@@ -13114,7 +13025,6 @@ fejü fejű
 feny fény
 szuzinak szűzinak
 beregelve beregélve
-szupererőért szúpérerőért
 rimekben rímekben
 fiatalit fiatalít
 femi fémi
@@ -13466,7 +13376,6 @@ sorozot sorozót
 hangoverben hangövérben
 sírasok sírások
 elmeseljuk elmeséljük
-szuperkepesseget szúpérkepésséget
 nagyimektol nagyiméktól
 osszekapcsolasokat összekapcsolásokat
 ocsemert öcsémért
@@ -13594,7 +13503,6 @@ elsetaltam elsétáltam
 ocsikemnek öcsikémnek
 szogekbol szögekből
 ivaszat ivászat
-férficeleb férficéleb
 sorozatkáim sorőzatkáim
 robertaval robertával
 hangositja hangosítja
@@ -13650,14 +13558,10 @@ zullesztik züllesztik
 szallo szálló
 szallj szállj
 szallt szállt
-szupererőt szúpérerőt
 webradio webrádió
 ferkot ferkót
 puccsolja puccsólja
 millio millió
-szupererőd szúpérerőd
-szupererőm szúpérerőm
-szupererős szúpérerős
 zonat zónát
 kozepsulit középsulit
 szalak szálak
@@ -14347,16 +14251,13 @@ forditasod fordításod
 valakinel valakinél
 forditasos fordításos
 pepicimnek pepicímnek
-szuperlézerével szúpérlézerével
 forditasok fordítások
 terhukre terhükre
 gothamet góthámét
 letezeseert létezéséért
 cuppogosan cuppogósan
 pupúteve púpútéve
-szupererok szúpérerők
 elalaztam elaláztam
-szupererom szúpérerőm
 olfalig ólfalig
 forditasat fordítását
 nullassal nullással
@@ -14587,7 +14488,6 @@ gegerak gegérák
 esok esők
 esos esős
 esot esőt
-szuperbankón szúpérbankón
 elkiabaltam elkiabáltam
 elrablói élrablói
 szerencsejuk szerencséjük
@@ -14740,7 +14640,6 @@ nevtablat névtáblát
 csabitoan csábítóan
 egocentrumban égőcentrumban
 karacsonyfaval karácsonyfával
-szupertacskót szúpértacskót
 meharit méhárit
 oltozkodsz öltözködsz
 értékvesztett értékvésztett
@@ -15049,7 +14948,6 @@ haloban halóban
 vecere vécére
 megfazott megfázott
 tipusra típusra
-nutellassal nútellással
 halobol halóból
 munkalkodók munkálkodók
 lelkunk lelkünk
@@ -15078,7 +14976,6 @@ tipusod típusod
 tipusom típusom
 kormánymegbizott kormánymegbízott
 pizsipartizunk pizsipartízünk
-celebszemle célebszemle
 turheto tűrhető
 raakadtak ráakadtak
 berugva berúgva
@@ -15223,7 +15120,6 @@ eszunkre eszünkre
 nyugdijazza nyugdíjazza
 stagnal stagnál
 berugás berúgás
-szuperplánt szúpérplánt
 öszkép őszkép
 köztü köztű
 ekdurranok ékdurranók
@@ -15466,7 +15362,6 @@ arnyekunk árnyékunk
 feltetel feltétel
 polost pólóst
 videóktol videóktól
-szuperhekkelés szúpérhekkélés
 visszaemlekezesekben visszaemlékezésekben
 cafolatokat cáfolatokat
 kolleganő kolléganő
@@ -15698,7 +15593,6 @@ apaskodik apáskodik
 borotvalkoztam borotválkoztam
 erettsegeig érettségéig
 autósportal autósportál
-szuperkamerás szúpérkamerás
 összehúzodás összehúzódás
 beregelt beregélt
 fulembe fülembe
@@ -15756,7 +15650,6 @@ befurodtem befürödtem
 legnagyszerubb legnagyszerűbb
 bünt bűnt
 gant gánt
-szupergazdagságot szúpérgazdagságot
 büne bűne
 orarendunk órarendünk
 gatorsnél gátőrsnél
@@ -16062,14 +15955,12 @@ lehajtava léhajtava
 megijesszuk megijesszük
 szemszogukbol szemszögükből
 elcsusznak elcsúsznak
-szuperbuli szúpérbuli
 balász bálász
 vonalzomat vonalzómat
 deritsd derítsd
 gnom gnóm
 kotegekre kötegekre
 polorol pólóról
-szuperbudi szúpérbudi
 irasodbol írásodból
 vilagunk világunk
 szinhazakban színházakban
@@ -16407,7 +16298,6 @@ szerzetesekrol szerzetesekről
 kutyauristenit kutyaúristenit
 gattis gáttis
 felhivas felhívás
-szuperközeli szúpérközéli
 kochen kochén
 nikot nikót
 talpraállás talpráállás
@@ -16849,7 +16739,6 @@ beutom beütöm
 fust fúst
 macsonak macsónak
 felkesziton félkészítőn
-szupernyugdíjat szúpérnyugdíjat
 furt fúrt
 orszokokkal őrszokókkal
 furu fürű
@@ -16957,7 +16846,6 @@ szerszama szerszáma
 megzabaltam megzabáltam
 bogrebol bögréből
 kirugást kirúgást
-szuperminiben szúpérminiben
 omegáról ómegáról
 ledontottem ledöntöttem
 ledontottek ledöntöttek
@@ -17398,7 +17286,6 @@ mazzara mázzára
 bejelol bejelöl
 vagytal vágytál
 vagytam vágytam
-médiacelebeknek médiacélebeknek
 horoszkopomat horoszkópomat
 horoszkopomba horoszkópomba
 keresztapu kérésztápú
@@ -17545,9 +17432,7 @@ mennyisegevel mennyiségével
 elkerem elkérem
 elkerek elkérek
 kártéritessel kártérítéssel
-celebfotói célebfotói
 sipakol sipákol
-celebfotók célebfotók
 visszaemlekszem visszaemlékszem
 kicsinaljon kicsináljon
 ráérös ráérős
@@ -17797,7 +17682,6 @@ fesut fésűt
 kedvunkert kedvünkért
 johetek jöhetek
 videohoz videóhoz
-szuperzsaruk szúpérzsaruk
 szimbolizalna szimbolizálna
 különlegességel különlegességél
 fizikaszertart fizikaszertárt
@@ -17987,7 +17871,6 @@ orarendet órarendet
 orarendem órarendem
 beszologatnak beszólogatnak
 lapozatok lapőzátok
-celebének célebének
 szemoldokerol szemöldökéről
 kivaras kivárás
 dontsenek döntsenek
@@ -18129,7 +18012,6 @@ hija híja
 villam villám
 kigyogyultam kigyógyultam
 hidi hídi
-celebélet célebélet
 müködés működés
 diszelegni díszelegni
 artalmú ártalmú
@@ -18349,7 +18231,6 @@ hoemberforma hóemberforma
 koromlakksznobsagom koromlakksznobságom
 teremtettunk teremtettünk
 kusztor küsztor
-szupercsajos szúpércsajos
 mindezekehez mindezekéhez
 kinagyitja kinagyítja
 hidegkomló hídégkomló
@@ -18474,8 +18355,6 @@ terrorfenyeget terrorfényeget
 enyhul enyhül
 jelzojuk jelzőjük
 fankert fánkért
-csodaszuper csodaszúpér
-celebünk célebünk
 egeszsegedre egészségedre
 nyugodjal nyugodjál
 fankent fánként
@@ -18664,7 +18543,6 @@ keresönk keresőnk
 zuzadat zúzádat
 ülön ülőn
 inszájder ínszájdér
-szuperrangadóval szúpérrangadóval
 eliszlamositott eliszlámosított
 hazorzom házőrzőm
 disznohusmentes disznóhúsmentes
@@ -18700,7 +18578,6 @@ fustol fústól
 szojanak szójának
 haboru háború
 ertelmesebb értelmesebb
-szupertávcső szúpértávcső
 behatarolni behatárolni
 szemrehányo szemrehányó
 osszetiporni összetiporni
@@ -19265,7 +19142,6 @@ saston sastón
 kigombolnam kigombolnám
 biztositékát biztosítékát
 simekben símékben
-szuperfémtől szúpérfémtől
 nevtelenek névtelenek
 nevtelenke névtelenke
 orarendben órarendben
@@ -19374,7 +19250,6 @@ eltunjon eltűnjön
 kozvilagitas közvilágítás
 inkel ínkel
 napodbol napodból
-celebparadicsom célebparadicsom
 esesbol esésből
 tovabbjutnak továbbjutnak
 furcsabbnal furcsábbnál
@@ -19558,7 +19433,6 @@ pokolfiu pokolfiú
 ertettelek értettelek
 modszerekkel módszerekkel
 kiprobálása kipróbálása
-szuperdöntőre szúpérdöntőre
 soroztetek söröztetek
 nélkul nélkül
 innam innám
@@ -20268,7 +20142,6 @@ fejlodni fejlődni
 pihenessel pihenéssel
 jeghideg jéghideg
 egyszerübb egyszerűbb
-szupertápláléka szúpértápláléka
 polómba pólómba
 hajszinemrol hajszínemről
 sajtószo sajtószó
@@ -20308,7 +20181,6 @@ inyem ínyem
 verekszok vérékszók
 multambol múltamból
 raalltam ráálltam
-szupernövényt szúpérnövényt
 kivagjak kivágjak
 rogyasig rogyásig
 kurtunk kürtünk
@@ -20380,7 +20252,6 @@ szemoldokszedo szemöldökszedő
 konyorogni könyörögni
 telitetleneknek telítetleneknek
 konyorogne könyörögne
-tanciztunk táncíztűnk
 kiralynohoz királynőhöz
 multamban múltamban
 kaparast kaparást
@@ -20443,7 +20314,6 @@ vetkoznek vetkőznek
 loginoljak lóginóljak
 noveszteshez növesztéshez
 etkezesevel étkezésével
-celebarcokat célebarcokat
 barárnője bárárnője
 otlete ötlete
 hűde hűdé
@@ -20668,7 +20538,6 @@ visszaszamolni visszaszámolni
 artokat ártókat
 szivezd szívezd
 csoboték csőboték
-szuperkütyü szúpérkütyü
 tanarunk tanárunk
 lazadnak lazádnak
 tamogatlak támogatlak
@@ -20694,7 +20563,6 @@ felmodja félmódja
 asszaddal asszáddal
 legduhosebb legdühösebb
 viktoria viktória
-szupertehenet szúpértehenet
 kagylora kagylóra
 vizholyagos vízhólyagos
 szivere szívére
@@ -20873,7 +20741,6 @@ kotette kötetté
 prezentaciora prezentációra
 leghat léghát
 legham léghám
-szupervízió szúpérvízió
 ketharmadat kétharmadát
 cimeben címében
 svedorszagbol svédországból
@@ -21440,7 +21307,6 @@ bemagolas bemagolás
 undoritóbb undorítóbb
 noszemelyek nőszemélyek
 visszaertunk visszaértünk
-szuperötletes szúpérötletes
 gyujtemenyemre gyűjteményemre
 videosoknak videósoknak
 hatashoz hatáshoz
@@ -21893,7 +21759,6 @@ csoknál csóknál
 stilesot stílesőt
 csoporttarsamhoz csoporttársamhoz
 rezgest rezgést
-szuperszett szúpérszett
 hatvanyozodnak hatványozódnak
 rosé rósé
 roja rója
@@ -22006,7 +21871,6 @@ hevereszek heverészek
 hasagi hasági
 allatsag állatság
 letoversről létóversről
-szuperhévre szúpérhévre
 kaldy káldy
 cserelnem cserélnem
 cserelnek cserélnek
@@ -22027,7 +21891,6 @@ felpör félpör
 kisérleteket kísérleteket
 ladytron ladytrón
 valásos válásos
-szuperszexi szúpérszexi
 tanarert tanárért
 hevereszve heverészve
 vagnom vágnom
@@ -22091,7 +21954,6 @@ izebe izébe
 enekelgetni énekelgetni
 bizonyitja bizonyítja
 vegzosnek végzősnek
-szuperdögös szúpérdögös
 karácsonyfadisz karácsonyfadísz
 zartkörű zártkörű
 kulditek külditek
@@ -22271,7 +22133,6 @@ elővizsgát élővizsgát
 dagaszto dagasztó
 lakossagon lakosságon
 valogatasa válogatása
-celebdekoltázs célebdekoltázs
 elfelejtodik elfelejtődik
 valogatast válogatást
 felnevetos felnevetős
@@ -22933,7 +22794,6 @@ felsoket felsőket
 öröl őröl
 emberkenek emberkének
 trofeat trófeát
-szupertévét szúpértévét
 szamítottal számítottal
 oregemberrel öregemberrel
 negativsagom negatívságom
@@ -23091,7 +22951,6 @@ nevezo nevező
 beallitasokra beállításokra
 tüzijátékkal tűzijátékkal
 allataim állataim
-celebgyerek célebgyerek
 növe nőve
 morickát mórickát
 nött nőtt
@@ -23115,8 +22974,6 @@ hatfafele hátfafele
 angyalkat angyalkát
 kauzalis kauzális
 felboritottam felborítottam
-szupertartós szúpértartós
-szuperhisztérika szúpérhisztérika
 sosat sósat
 nanának nánának
 kékszakállapot kékszakállapót
@@ -23159,7 +23016,6 @@ pontoznal pontoznál
 koltoim költőim
 csizmadat csizmádat
 hastagekről hastagékről
-szuperminiknél szúpérminiknél
 fogamtol fogamtól
 tukorben tükörben
 soran során
@@ -23353,7 +23209,6 @@ britkenek britkének
 megcafolom megcáfolom
 halasember halásember
 leaszarja léászárja
-szuperjacht szúpérjacht
 egesi égési
 csotanyok csótányok
 unkatesomeknak unkatesóméknak
@@ -23799,7 +23654,6 @@ győzelemert győzelemért
 peksuti péksuti
 felutban félútban
 belekop beleköp
-szupergrupp szúpérgrupp
 belekot beleköt
 kordaban kordában
 dello délló
@@ -23864,7 +23718,6 @@ deszu deszű
 federert féderért
 varazsolhatna varázsolhatna
 készunk készünk
-szuperzoom szúpérzoom
 korulottunk körülöttünk
 konyvsorozat könyvsorozat
 kerdezd kérdezd
@@ -24283,7 +24136,6 @@ uvegem üvegem
 uveget üveget
 uveges üveges
 klubbol klubból
-szuperlézerközpont szúpérlézerközpont
 terrorizalja terrorizálja
 kemiabol kémiából
 törpikéim tőrpikéim
@@ -25208,7 +25060,6 @@ tüzijátékozó tűzijátékozó
 sird sírd
 sirj sírj
 siri síri
-kémiatanci kémiatánci
 sise síse
 tisztaba tisztába
 tisztabb tisztább
@@ -25417,7 +25268,6 @@ filmröl filmről
 püffékel püffékél
 nagyvaradon nagyváradon
 sonos sónős
-szupergyorsvonatokon szúpérgyorsvonatokon
 hanghullam hanghullám
 egyenáron egyénáron
 szurkolas szurkolás
@@ -25877,7 +25727,6 @@ szovegemre szövegemre
 evosszegzoben évösszegzőben
 kisvasut kisvasút
 idejott idejött
-csucsszuper csúcsszúpér
 fokuszra fókuszra
 bedaralok bedarálok
 elvezhetot elvezhetőt
@@ -26224,7 +26073,6 @@ jonasé jónásé
 reklamozunk reklámozunk
 erosnek erősnek
 papasban papásban
-szuperpolitikusok szúpérpolitikusok
 kérdeseket kérdéseket
 pirint pírínt
 románcoltál románcóltál
@@ -26355,7 +26203,6 @@ fuggvenyhatarertekeken függvényhatárértekéken
 lencset lencsét
 tusfurdomnek tusfürdőmnek
 talaljátok találjátok
-szupergaranciája szúpérgaranciája
 tanulokent tanulóként
 ürességel ürességél
 meggyujtanom meggyújtanom
@@ -26586,7 +26433,6 @@ tablak táblák
 tablam táblám
 elinditasz elindítasz
 tablat táblát
-celebbabáit célebbabáit
 szivességből szívességből
 forfult fórfült
 sult sült
@@ -26644,7 +26490,6 @@ berben bérben
 tuzo tűző
 tabrol tabról
 alapjaraton alapjáraton
-szupernők szúpérnők
 konyvheten könyvhetén
 örökitsük örökítsük
 megoldodik megoldódik
@@ -26804,7 +26649,6 @@ turokepesseg túrókepésség
 elmenyemet élményemet
 mellbol mellből
 nyugdijrendszerre nyugdíjrendszerre
-szuperépítmény szúpérépítmény
 hiresseg hiresség
 lyukaszto lyukasztó
 lotenyeszto lótenyésztő
@@ -27850,7 +27694,6 @@ haborúskodást háborúskodást
 emlekezzenek emlékezzenek
 kabelcso kábelcső
 tercsik tercsík
-szuperkatona szúpérkatona
 kozeled közéled
 fejerol fejéről
 beruet bérűet
@@ -27960,7 +27803,6 @@ takaritsam takarítsam
 takaritsak takarítsak
 islanden islandén
 tetelekre tételekre
-szuperbíróságon szúpérbíróságon
 apara apára
 menstrualasukat menstruálásukat
 pozokban pózokban
@@ -28290,7 +28132,6 @@ terno ternó
 nemto nemtő
 csiklonak csiklónak
 terol téról
-testszuper testszúpér
 udit üdít
 uleserol üléséről
 karakterevel karakterével
@@ -28748,7 +28589,6 @@ mezeskalacsillat mézeskalácsillat
 realfalcon reálfalcon
 nemosokara nemősokara
 exbaratnoje exbarátnője
-szupergruppja szúpérgruppja
 fotozza fotózza
 pumpaval pumpával
 kanyadi kányádi
@@ -28906,7 +28746,6 @@ munkatarsakat munkatársakat
 felvetult felvetült
 sztarolod sztárolod
 pénztárgéppe pénztárgéppé
-szuperprojektor szúpérprojektor
 nöiesség nőiesség
 helyesiraskeptelen helyesírásképtelén
 tornal tornál
@@ -28925,7 +28764,6 @@ uzeneteknel üzeneteknél
 fotozas fotózás
 reszbol részből
 vasarban vasárban
-szuperkocsit szúpérkocsit
 tornek tőrnek
 eranak érának
 jotettekben jótettekben
@@ -29414,7 +29252,6 @@ csipőfogó csípőfogó
 utes ütés
 andreat andreát
 utem ütem
-szuperverda szúpérverda
 hulladékei hulladékéi
 szoftverfrissitest szoftverfrissítést
 glazurshopba glazúrshopba
@@ -29881,7 +29718,6 @@ genderháború géndérháború
 ulök ülök
 nemüt neműt
 egysegnek egységnek
-szupertechnika szúpértechnika
 gyárelkobzasig gyárelkobzásig
 hozzamerek hozzámerek
 felesborsó félésborsó
@@ -29971,7 +29807,6 @@ ujak újak
 telre télre
 telok telók
 telod telód
-szuperpatkányt szúpérpatkányt
 telos telós
 maganszervizben magánszervizben
 telom telóm
@@ -30121,7 +29956,6 @@ beajult beájult
 visszakuldte visszaküldte
 hidegpárásítót hídégpárásítót
 megvaltoztassanak megváltoztassanak
-szupertúra szúpértúra
 öntel öntél
 gyufacskas gyufácskás
 radioaltiv rádióaltív
@@ -30212,7 +30046,6 @@ ulne ülne
 ulni ülni
 hokielnok hokielnök
 segelyhivast segélyhívást
-szuperzöldsége szúpérzöldsége
 rafinaltan rafináltan
 godan godán
 szomszedsrac szomszédsrác
@@ -30415,7 +30248,6 @@ mehe méhe
 telefom telefőm
 nyugatinal nyugatinál
 mehi méhi
-szupersportautó szúpérsportautó
 furdetett fürdetett
 feldiszitjuk feldíszítjük
 utvonalat útvonalat
@@ -30896,7 +30728,6 @@ visszairtal visszaírtál
 nofone nőfőné
 totemallatom totemállatom
 veszelhetem vészelhetem
-szupervonatát szúpérvonatát
 lovage lovagé
 gondolko gondölkő
 bevetodok bevetődök
@@ -30906,7 +30737,6 @@ mennyrol mennyről
 dragabb drágább
 gondolaz gondoláz
 kepleteket képleteket
-szuperorgazmusnak szúpérorgazmusnak
 zsakbamacskat zsákbamacskát
 egesznapot égésznapot
 egesznapos égésznapos
@@ -31060,7 +30890,6 @@ sikerekban sikerékbán
 kirakatat kirakatát
 novellaim novelláim
 bejelentkezes bejelentkezés
-szuperautót szúpérautót
 terheskent terhesként
 pottyok pöttyök
 pottyos pöttyös
@@ -31158,7 +30987,6 @@ jottél jöttél
 kitennenek kitennének
 foreverrel fórévérrel
 coldam coldám
-szupermotor szúpérmotor
 vallszalagszakadasom vállszalagszakadásom
 tulmuvelt túlművelt
 huhogonc hűhógönc
@@ -31447,7 +31275,6 @@ buntibe büntibe
 somerhalder somérhaldér
 koncerteketeken koncerteketekén
 labtorlore lábtörlőre
-szuperbuszmegálló szúpérbuszmegálló
 ajándékodrol ajándékodról
 karacsonyozunk karácsonyozunk
 kajammal kajámmal
@@ -31654,7 +31481,6 @@ tejforralova tejforralóvá
 koszontod köszöntöd
 ujainkat újainkat
 listaja listája
-szuperélelmiszerekben szúpérélelmiszerekben
 hitteritonek hitterítőnek
 hevenu hévénű
 megnezetem megnézetem
@@ -31995,7 +31821,6 @@ arlemosó árlemosó
 segítségevel segítségével
 ovodást óvodást
 halalrol halálról
-szupertraffipaxokból szúpértraffipaxokból
 bandaba bandába
 memoriád memóriád
 izesítés ízesítés
@@ -32404,7 +32229,6 @@ kisértetes kísértetes
 halalfalo halálfaló
 hangpostaja hangpostája
 kihalasztad kihalásztad
-szuperfegyverbe szúpérfegyverbe
 feregnyulvany féregnyúlvány
 elutasitottak elutasítottak
 orokmozgoban örökmozgóban
@@ -32567,7 +32391,6 @@ levikem levikém
 pénissze pénisszé
 agymosos agymosós
 panikot pánikot
-izomceleb izomcéleb
 szetettel szétettél
 parovot páróvót
 dologkent dologként
@@ -32654,7 +32477,6 @@ tengerrol tengerről
 szeretkeztunk szeretkeztünk
 dialektusan dialektusán
 büntudat bűntudat
-szuperfegyverét szúpérfegyverét
 irasomat írásomat
 gyepreteper gyepréteper
 arenaban arénában
@@ -32720,7 +32542,6 @@ imagazinhoz imagazínhoz
 nézöknek nézőknek
 nevu nevű
 ujratanulom újratanulom
-szuperegészségesnek szúpéregészségesnek
 szetfeszitett szétfeszített
 valasztekomat választékomat
 vilagomban világomban
@@ -32768,7 +32589,6 @@ oregedett öregedett
 kopenyed köpenyed
 figyelmeztetom figyelmeztetőm
 arcson arcsón
-szuperzsiros szúpérzsíros
 jatékoké játékoké
 allatkert állatkert
 kapcsolatta kapcsolattá
@@ -33040,7 +32860,6 @@ haloinges hálóinges
 diplomahoz diplomához
 keringozo keringőző
 marfo marfő
-szupergép szúpérgép
 marfu marfű
 probababanak próbababának
 forrocsokiert forrócsokiért
@@ -33107,7 +32926,6 @@ kozepesen közepesen
 membár mémbár
 istentol istentől
 állitotta állította
-szuperhekusok szúpérhekusok
 jelezest jelezést
 tulelem túlélem
 tulelek túlélek
@@ -33131,7 +32949,6 @@ elcserelném elcserélném
 nemafilm némafilm
 ekkel ékkel
 sziriáé szíriáé
-szuperhév szúpérhév
 kettoktol kettőktől
 masit másít
 halalbol halálból
@@ -33170,7 +32987,6 @@ csipojenek csípőjének
 gerade gerádé
 osszefuthatok ősszéfúthatók
 fehernemukre fehérneműkre
-celebbulin célebbulin
 kortura kortúra
 autokrol autókról
 voolt vőólt
@@ -33332,7 +33148,6 @@ davidet dávidét
 atheni athéni
 vilagitasra világításra
 felhivlak felhívlak
-szupererőmnek szúpérerőmnek
 mozgolepcso mozgólépcső
 dollarert dollárért
 marsozás marsózás
@@ -33672,11 +33487,8 @@ tartozekokat tartozékokat
 madárpokot madárpókot
 megerzeseim megérzéseim
 szimulatort szimulátort
-szuperképességem szúpérképességem
-szuperképességet szúpérképességet
 fiunal fiúnál
 fiunak fiúnak
-szuperképességed szúpérképességed
 danul dánul
 kotelesege kötelesege
 elveszitenék elveszítenék
@@ -33783,7 +33595,6 @@ folotted fölötted
 sziriában szíriában
 lencsesin lencsesín
 kában kábán
-szuperszimulátor szúpérszimulátor
 lecsipek lecsípek
 pozicionak pozíciónak
 dombikam dómbikám
@@ -33820,7 +33631,6 @@ gorgettem görgettem
 kajalnak kajálnak
 legtunemenyesebb legtüneményesebb
 alagutjai alagútjai
-szuperero szúpérerő
 dalla dallá
 babazsurokat babazsúrokat
 likort likőrt
@@ -33908,7 +33718,6 @@ mondanivalojuk mondanivalójuk
 tűsarkuban tűsarkúban
 unoja unója
 hustermek hústermek
-szupererő szúpérerő
 kijatszottam kijátszottam
 mazas mázas
 biztositék biztosíték
@@ -34112,7 +33921,6 @@ multával múltával
 micskeit micskéit
 vonzasokba vonzásokba
 megnehezitik megnehezítik
-szuperjósok szúpérjósok
 kiegyenlitetlen kiegyenlítetlen
 kajaknal kajaknál
 elkapalnak elkapálnak
@@ -34745,7 +34553,6 @@ elfer elfér
 ovekenel övekénél
 temazaroban témazáróban
 tavolitani távolítani
-szuperakciós szúpérakciós
 muzeumban múzeumban
 tinive tinivé
 tipusuak típusúak
@@ -34958,7 +34765,6 @@ tonkolybuzas tönkölybúzás
 kinezni kinézni
 nezetnem nézetnem
 beleferek beleférek
-szupetraffipax szupétraffipax
 bucsuzzunk búcsúzzunk
 csokolgatta csókolgatta
 igazsagtalansagot igazságtalanságot
@@ -34982,7 +34788,6 @@ gyomorrontast gyomorrontást
 parkanyon párkányon
 engedelyezett engedélyezett
 reszletekben részletekben
-szuperálcája szúpérálcája
 hangulatu hangulatú
 elbuj elbúj
 lourie lóúrié
@@ -35708,7 +35513,6 @@ teloszamlat telószámlát
 tuzijatekoznak tűzijátékoznak
 megszokottnal megszokottnál
 nyafogast nyafogást
-szupernagyiknak szúpérnagyiknak
 benezte benézte
 belefernek beleférnek
 kanape kanapé
@@ -35915,7 +35719,6 @@ furdogolyoval fürdőgolyóval
 kutyaja kutyája
 délegyhaza délegyháza
 taskaval táskával
-celeboldalt céleboldalt
 acsívment ácsívmént
 rakosrendezotol rákosrendezőtől
 ugyannyira úgyannyira
@@ -36138,7 +35941,6 @@ szobajat szobáját
 legszemetebb legszemétebb
 jellemzesre jellemzésre
 hozzajuk hozzájuk
-szupervasút szúpérvasút
 szotaramban szótáramban
 kiskorodbol kiskorodból
 sulijabol sulijából
@@ -36331,9 +36133,7 @@ autogyar autógyár
 szomorkodassal szomorkodással
 tomeny tömény
 aszerelo ászérélő
-szuperérzékeny szúpérérzékeny
 megszivatta megszívatta
-szupertáplálék szúpértáplálék
 szivveresem szívverésem
 marvany márvány
 oldalszam oldalszám
@@ -36729,7 +36529,6 @@ teglalap téglalap
 mogotted mögötted
 szemoldokomre szemöldökömre
 mogottem mögöttem
-szuperállamból szúpérállamból
 atjott átjött
 felulvizsgalatba felülvizsgálatba
 száznegy száznégy
@@ -36781,7 +36580,6 @@ szoviccekkel szóviccekkel
 misszios missziós
 utanfutora utánfutóra
 lefolyonkat lefolyónkat
-szuperösszefogás szúpérösszefogás
 lepödjön lepődjön
 szerencsesnek szerencsésnek
 hatammal hátammal
@@ -37159,7 +36957,6 @@ kovesdre kövesdre
 kalapácsnyelit kalapácsnyélit
 tyukjat tyúkját
 vorosborban vörösborban
-szupercsinos szúpércsínos
 letököm létököm
 atkozok átkozok
 uldogelhessek üldögélhessek
@@ -37176,10 +36973,7 @@ helyisege helyisége
 levetele levétele
 felujitanak felújítanak
 egyetertesz egyetértesz
-szuperrangadók szúpérrangadók
-szuperrangadón szúpérrangadón
 elotagokrol előtagokról
-szuperrangadót szúpérrangadót
 idosebb idősebb
 ruhajukat ruhájukat
 barátsagunkat barátságunkat
@@ -37212,9 +37006,7 @@ szakitottak szakítottak
 szakitottal szakítottal
 szakitottam szakítottam
 tarlatvezetest tárlatvezetést
-futőcipőm fűtőcipőm
 felcsíki félcsíki
-kémiatancim kémiatancím
 kiszurta kiszúrta
 vegszavai végszavai
 piru pírú
@@ -37356,7 +37148,6 @@ kiallok kiállok
 kosznom kosznőm
 szalalkalis szalalkális
 adokartyank adókártyánk
-szupersportkocsi szúpérsportkocsi
 labfej lábfej
 likeban likéban
 valtoztathato változtatható
@@ -37424,7 +37215,6 @@ vizilabdasok vízilabdások
 vedooltason védőoltáson
 baromsagaival baromságaival
 labbit lábbit
-szupergépét szúpérgépét
 vedelmunk védelmünk
 teglabol téglából
 csorbai csorbái
@@ -37579,7 +37369,6 @@ toltve töltve
 tevekenysegek tevékenységek
 tevekenyseget tevékenységet
 nyelvkonyveiket nyelvkönyveiket
-celebként célebként
 hazudas hazudás
 studiosban stúdiósban
 huznak húznak
@@ -37871,7 +37660,6 @@ halalhorgesek halálhörgések
 torressel torréssel
 kolozsvarra kolozsvárra
 onkiszolgalo önkiszolgáló
-celebtársaik célebtársaik
 polgari polgári
 becsuljetek becsüljetek
 osszejon összejön
@@ -37933,7 +37721,6 @@ zuros zűrös
 fellepes fellepés
 leallitani leállítani
 prem prém
-szuperkombi szúpérkombi
 elmagyarazza elmagyarázza
 fozte főzte
 antifémöszök antifémőszök
@@ -38017,7 +37804,6 @@ megkerdezzem megkérdezzem
 sirdogálni sírdogálni
 allamtitkar államtitkár
 kiszivargott kiszivárgott
-celebvadász célebvadász
 erintesed érintésed
 leszallasrol lészállásról
 hazajovok hazajövök
@@ -38460,7 +38246,6 @@ jahvetoknál jahvétoknál
 tuzriasztos tűzriasztós
 tuzriasztot tűzriasztót
 osszesbe összesbe
-szuperkocka szúpérkocka
 labute lábúté
 kislanyanak kislányának
 ruhaproban ruhapróbán
@@ -38650,7 +38435,6 @@ talaljuk találjuk
 forrá fórrá
 szloveniaban szlovéniában
 legidegesitobb legidegesítőbb
-celeblány céleblány
 forul fórul
 számtala számtála
 ontudat öntudat
@@ -38879,15 +38663,12 @@ jaszain jászain
 osszefirkalni összefirkálni
 elözőéletemben előzőéletemben
 euróbarcára euróbárcára
-szuperigazolványról szúpérigazolványról
 szavahihetosegeben szavahihetőségében
 hethez héthez
 meloval melóval
 fizikatol fizikától
 megerkeznek megérkeznek
-agrárceleb agrárcéleb
 megerkeznem megérkeznem
-szuperélményekben szúpérélményekben
 panorámarontgenen panorámaröntgenen
 kakaotalkot kakaótálkőt
 kakaotalkon kakaótálkőn
@@ -39054,7 +38835,6 @@ szoftverunket szoftverunkét
 leirasom leírásom
 élneék élnéék
 besultem besültem
-szupervicces szúpérvicces
 vegigrohogtuk végigröhögtük
 modszerre módszerre
 bologat bólogat
@@ -39158,7 +38938,6 @@ remeny remény
 máju májú
 magantól magántól
 képzelőerom képzelőerőm
-celebfeleség célebfeleség
 talaltad találtad
 talaltal találtál
 talaltak találtak
@@ -39223,7 +39002,6 @@ anyumekat anyumékat
 hianyzool hiányzóól
 felevette felevetté
 koreatol koreától
-szuperkényelmes szúpérkényelmes
 szolnának szólnának
 szarazat szárazat
 tejbegrizt tejbegrízt
@@ -39405,8 +39183,6 @@ remesek rémesek
 noiros nőírós
 remesen rémesen
 legrealisabb legreálisabb
-ipadeken ipádékén
-ipadeket ipádékét
 fazonjat fazonját
 megdontottuk megdöntöttük
 szatyorbol szatyorból
@@ -39584,7 +39360,6 @@ atado átadó
 gazdaiva gazdaivá
 beszamolot beszámolót
 edenben édenben
-szuperpontos szúpérpontos
 kovettel követtel
 kovettem követtem
 beszamolod beszámolod
@@ -39898,7 +39673,6 @@ kakaosat kakaósat
 lackot lackót
 lackos lackós
 csalodast csalódást
-celebmenet célebmenet
 fesulom fésülöm
 magassagtol magasságtól
 predat prédát
@@ -40086,7 +39860,6 @@ boncolasat boncolását
 ajandekod ajándékod
 porszemeknel porszemeknél
 pillanak pillának
-celebparádéja célebparádéja
 rendezo rendező
 nativ natív
 szabadidonk szabadidőnk
@@ -40401,7 +40174,6 @@ igérkező ígérkező
 szeretoket szeretőket
 kivánt kívánt
 poétól póétól
-szuperautója szúpérautója
 emberválasztas emberválasztás
 pitet pitét
 pitem pitém
@@ -40517,7 +40289,6 @@ milanról milánról
 toltenelek töltenélek
 trehany trehány
 eroltetjuk erőltetjük
-szupernehézsúlyú szúpérnehézsúlyú
 megbeszelesekre megbeszélésekre
 belerohogott beleröhögött
 uriban úriban
@@ -40670,7 +40441,6 @@ putyinrol putyinról
 telepitessel telepítéssel
 feltoltenek feltöltenek
 rament ráment
-szupernagyi szúpérnagyi
 raduban rádúban
 orraeséseimmel őrráeséseimmel
 feltoltenem feltöltenem
@@ -41591,7 +41361,6 @@ kibeszelitek kibeszélitek
 vadaszpuskát vadászpuskát
 törbe tőrbe
 lógófülő lógófűlő
-szupercsinosak szúpércsínosak
 tukortojast tükörtojást
 kikoltozott kiköltözött
 megvalositok megvalósítok
@@ -41657,7 +41426,6 @@ surgosen sürgősen
 tozeget tőzeget
 zárosjeles zárősjeles
 kozepest közepest
-szuperruha szúpérruha
 leepulok leépülök
 lefoldelve leföldelve
 zarsz zársz
@@ -41672,7 +41440,6 @@ szuletesnapos születésnapos
 szuletesnapot születésnapot
 szuletesnapom születésnapom
 fütőértékkel fűtőértékkel
-szupernőkorszaknak szúpérnőkorszaknak
 tölem tőlem
 utolsónap útólsónap
 meghivo meghívó
@@ -42069,8 +41836,6 @@ cowboykodnak cowboykódnak
 megoldas megoldás
 molnarsara molnársara
 adokedvezmenyt adókedvezményt
-szupersampontól szúpérsampontól
-szuperfémet szúpérfémet
 mezesmadzag mézesmadzag
 unokahugi unokahúgi
 fenykardos fénykardos
@@ -42258,7 +42023,6 @@ beszaradt beszáradt
 mergeztek mérgeztek
 arival árival
 ellenorzest ellenőrzést
-szupercsillagparaszt szúpércsillagparaszt
 kiutalnam kiutalnám
 rafagyni ráfagyni
 terdnadragba térdnadrágba
@@ -42814,7 +42578,6 @@ szubkulturat szubkultúrát
 amenoról ámenőról
 gyanu gyanú
 tarisznyas tarisznyás
-szuperbörtön szúpérbörtön
 hulyesegeddel hülyeségeddel
 kölykok kölykök
 munkakö munkakő
@@ -42878,7 +42641,6 @@ oszintesegemmel őszinteségemmel
 islere isleré
 unnepetek ünnepetek
 zoldsegesnel zöldségesnél
-szuperautóval szúpérautóval
 tenyészprogramban tényészprogramban
 fakelogin fakelőgin
 eltűn éltűn
@@ -42951,7 +42713,6 @@ huzattam húzattam
 kerekvagasba kerékvágásba
 lékeselvesztett lékéselvésztett
 ranezni ránézni
-szuperrangadó szúpérrangadó
 tipusfeladatbol típusfeladatból
 ulohely ülőhely
 orazas órázás
@@ -43197,7 +42958,6 @@ elhatarozom elhatározom
 kitünni kitűnni
 gumicukorert gumicukorért
 osszeszedtunk összeszedtünk
-celeblagzikból céleblagzikból
 infoból infóból
 ertetlenkedtem értetlenkedtem
 fogalmazasokat fogalmazásokat
@@ -43594,7 +43354,6 @@ kokibol kokiból
 javareszt javarészt
 emanuelle emánuellé
 ajandekozzunk ajándékozzunk
-szuperautóját szúpérautóját
 trikolorosokat trikolórosokat
 furaleves fűrálevés
 matrixban mátrixban
@@ -43773,7 +43532,6 @@ torvenyeket törvényeket
 vizeses vízesés
 veszé vészé
 lessonon lessónőn
-celebnőkön célebnőkön
 punkunál punkúnál
 babakajat babakaját
 csuszkal csúszkál
@@ -43878,7 +43636,6 @@ szamoljuk számoljuk
 kepszerkesztovel képszerkesztővel
 sotetbe sötétbe
 oralis orális
-celebnőjét célebnőjét
 bunozes bűnözés
 sotetek sötétek
 sotetet sötétet
@@ -43952,7 +43709,6 @@ palcikaembert pálcikaembert
 elott előtt
 mediaevales médiaevales
 pallya pállya
-celebnőket célebnőket
 kinalat kínálat
 masert másért
 technocsávó technócsávó
@@ -44331,7 +44087,6 @@ nembírom nembíróm
 nembírok nembírók
 szulinapunkkor szülinapunkkor
 csucsulo csücsülő
-szuperhangulatos szúpérhangulatos
 pontozast pontozást
 orajuk órájuk
 küldön küldőn
@@ -44409,7 +44164,6 @@ orajat óráját
 eltajolva eltájolva
 hanyatlos hanyatlós
 elkényesztetve élkényésztetve
-szuperáras szúpéráras
 informalast informálást
 bringadat bringádat
 zsir zsír
@@ -45355,7 +45109,6 @@ elokeszitve előkészítve
 osztályfönőkin osztályfőnőkín
 fatylam fátylam
 eljatszotta eljátszotta
-szuperötlet szúpérötlet
 hanyasszag hányásszag
 rakerdez rákérdez
 kotelezoen kötelezően
@@ -46450,7 +46203,6 @@ csalodasomban csalódásomban
 csokimikulas csokimikulás
 diszités díszítés
 terjunk térjünk
-szupertáplálékot szúpértáplálékot
 szemelyisegteszt személyiségteszt
 túrórudival túrórúdival
 besut besüt
@@ -46497,7 +46249,6 @@ segitsünk segítsünk
 fotozasban fotózásban
 leforrazta leforrázta
 kitanulmanyozom kitanulmányozom
-szuperszörny szúpérszörny
 helyszineltem helyszíneltem
 elbirom elbírom
 elbirok elbírok
@@ -46569,7 +46320,6 @@ herosz hérosz
 szuzek szüzek
 szuzen szüzén
 szuzes szüzes
-celebpanoptikum célebpanoptikum
 ismerosen ismerősen
 ismerosei ismerősei
 agyonvagta agyonvágta
@@ -46655,7 +46405,6 @@ fultageszes fültageszes
 erettsegiztem érettségiztem
 jövőheten jövőhetén
 elveszitünk elveszítünk
-viaszcelebek viaszcélebek
 pultostortenet pultőstörténet
 megszegjuk megszegjük
 szórako szórakó
@@ -46878,7 +46627,6 @@ atleptuk átleptük
 jomagamat jómagamat
 autonak autónak
 munkasok munkások
-szupe szupé
 megjeleneserol megjelenéséről
 beleronditott belerondított
 milioszor miliőszőr
@@ -47085,7 +46833,6 @@ konyorognom könyörögnöm
 franciscora franciscóra
 munkaidöt munkaidőt
 kobee köbéé
-szupertraffipax szúpértraffipax
 allattemeto állattemető
 megszegese megszegése
 labellofüggőség lábellőfüggőség
@@ -47431,7 +47178,6 @@ latolélt latölélt
 gyomorgörcsel gyomorgörcsél
 meccsrol meccsről
 perverzioddal perverzióddal
-celebkolléga célebkolléga
 meretem méretem
 meretei méretei
 felvallalja felvállalja
@@ -47528,7 +47274,6 @@ atcsusztam átcsúsztam
 igazsag igazság
 hallasutanijaval hallásutánijával
 utalkozik utálkozik
-szuperexpressz szúpérexpressz
 baratait barátait
 chileig chiléig
 poggyaszos poggyászos
@@ -47539,7 +47284,6 @@ fuggni függni
 szopast szopást
 fajlokhoz fájlokhoz
 utalkozva utálkozva
-szuperbulija szúpérbulija
 bejeloleseket bejelöléseket
 barátnöim barátnőim
 ajultam ájultam
@@ -47804,7 +47548,6 @@ hadjarat hadjárat
 tarsalgok társalgok
 kozertes közértes
 nyelvtudomanyra nyelvtudományra
-tapizoosok tapizóősok
 szuken szűken
 filippino filippínó
 kikozositettek kiközösítettek
@@ -47860,7 +47603,6 @@ gyarhoz gyárhoz
 kezkremednek kézkrémednek
 ontári óntári
 szabikaval szabikával
-szupervonat szúpérvonat
 vicckiraly vicckirály
 panellakasban panellakásban
 leszedtuk leszedtük
@@ -47996,7 +47738,6 @@ diakot diákot
 diakok diákok
 diakom diákom
 almodik álmodik
-szupermeccsén szúpérmeccsén
 demonstracio demonstráció
 masodpercben másodpercben
 innivalos innivalós
@@ -48198,7 +47939,6 @@ médiak médiák
 kifejlodo kifejlődő
 bujasagtol bujaságtól
 dianak diának
-szuperbiztonságos szúpérbiztonságos
 dianas diánás
 noirsága nőírsága
 stilest stílest
@@ -48293,7 +48033,6 @@ produktivságból produktívságból
 megnehezitened megnehezítened
 betetdalok betétdalok
 varoos váróős
-szupermeccsen szúpérmeccsen
 varoon váróón
 bolonduva bolondúvá
 aggodott aggódott
@@ -48347,7 +48086,6 @@ gitarosok gitárosok
 konyvre könyvre
 közösképet közősképet
 sulyba súlyba
-szuperkarácsony szúpérkarácsony
 vanesszam vanesszám
 vanesszat vanesszát
 agyun agyún
@@ -48427,7 +48165,6 @@ előszülinap élőszülinap
 kepzelsz képzelsz
 kepzelte képzelte
 szivoszalas szívószálas
-szuperállam szúpérállam
 izleseben ízlésében
 szomorkodja szómórkódja
 bucsuztatnak búcsúztatnak
@@ -49104,7 +48841,6 @@ gumicsizmamba gumicsizmámba
 foltosbol foltosból
 behullamositani behullámosítani
 sztárbansztárt sztárbánsztárt
-szuperkommandó szúpérkommandó
 visitani visítani
 öregkikötő őrégkikötő
 kezeben kezében
@@ -49435,7 +49171,6 @@ nevtelent névtelent
 ajulnanak ájulnának
 kovesse kövesse
 akasztofa akasztófa
-szuperolaj szúpérolaj
 felajanlani felajánlani
 erdekli érdekli
 erdeklo érdeklő
@@ -49717,8 +49452,6 @@ talalod találod
 toprengofej toprengőfej
 siofokig siófokig
 peniszert péniszért
-nutellat nútéllat
-nutellas nútéllás
 talalna találna
 morzsaval morzsával
 megbeszelve megbeszélve
@@ -50469,7 +50202,6 @@ elkonyveljem elkönyveljem
 polomnak pólómnak
 cirkonium cirkónium
 szivemre szívemre
-szuperedzőjéről szúpéredzőjéről
 baratnőjének barátnőjének
 nemlistazott nemlistázott
 szetfogsz szétfogsz
@@ -50653,8 +50385,6 @@ alapmu alapmű
 fujasok fújások
 életke élétke
 rendeleseim rendeléseim
-celebcsajok célebcsajok
-celebcsajod célebcsajod
 zsidoval zsidóval
 hatsokat hátsókat
 kisgyerekerol kisgyerekéről
@@ -50983,7 +50713,6 @@ megvaltjuk megváltjuk
 kendioxid kéndioxid
 mallorcan mallorcán
 hóbol hóból
-szupervállalat szúpérvállalat
 hatsojuk hátsójuk
 capatol cápától
 zugasokat zúgásokat
@@ -51116,7 +50845,6 @@ fesulkodol fésülködöl
 fesulkodok fésülködök
 milyene milyené
 ellensegemet ellenségemet
-szuperluxus szúpérluxus
 fudból fúdból
 tujakat tujákat
 potolnivalom pótolnivalóm
@@ -51156,7 +50884,6 @@ furak furák
 idokben időkben
 szuperul szuperül
 reservedbe résérvedbe
-szupernő szúpérnő
 pepitaban pepitában
 gyújtózsinor gyújtózsinór
 buknek buknék
@@ -51326,7 +51053,6 @@ kirugja kirúgja
 pallasz pállasz
 hagatok hágatok
 pareszban párészbán
-szuperdiétája szúpérdiétája
 futar futár
 futas futás
 bebugyolalva bebugyolálva
@@ -51800,7 +51526,6 @@ szájuak szájúak
 evolucios evolúciós
 ingyenelok ingyenélők
 bontast bontást
-ipadtol ipádtól
 mulando mulandó
 onkepzesnek önképzésnek
 udvariassag udvariasság
@@ -51967,7 +51692,6 @@ fatalenak fatálénak
 rendorei rendőrei
 elzarkozom elzárkózom
 dolgoztal dolgoztál
-tancimat táncimát
 alkonyatbol alkonyatból
 orszagismeretes őrszagismeretes
 orszagismereten őrszagismereten
@@ -51980,7 +51704,6 @@ forditod fordítod
 leteltevel leteltével
 neznunk néznünk
 visszahuzom visszahúzom
-celebeket célebeket
 befernek beférnek
 jegszobor jégszobor
 megmutsek megműtsek
@@ -52266,7 +51989,6 @@ unatkozorobotok unatkozórobotok
 arnett árnett
 letepi letépi
 gyujtason gyújtáson
-szuperigazolvány szúpérigazolvány
 letere létére
 alkotasban alkotásban
 tinidisztópiává tinidísztópiává
@@ -52458,7 +52180,6 @@ kremest krémest
 honokozast honokozást
 kremert krémért
 akaszthato akasztható
-celebedre célebedre
 kelunk kelünk
 majdanig majdánig
 pervertmódon pervértmódon
@@ -52604,7 +52325,6 @@ kávezom kávézom
 lillakra lillákra
 vulgaris vulgáris
 attudjak áttudjak
-tancival táncival
 szalkarol szálkáról
 passzolot passzolót
 kislanyt kislányt
@@ -52698,10 +52418,8 @@ felfogasa felfogása
 szemuveg szemüveg
 gyogyszertarban gyógyszertárban
 befejezodott befejeződött
-szuperdögösen szúpérdögösen
 borszinevel borszínével
 bordazott bordázott
-szuperrendőr szúpérrendőr
 furdetsz fürdetsz
 kikonyokol kikönyököl
 rovidesen rövidesen
@@ -52727,7 +52445,6 @@ nyomtatvanyukat nyomtatványukat
 kardamommal kardámommal
 blogbejegyzest blogbejegyzést
 taskavasarlasnak táskavasárlásnak
-szuperélelmiszerek szúpérélelmiszerek
 panikkeltes pánikkeltés
 kisertes kísértés
 kisertet kísértet
@@ -52941,7 +52658,6 @@ lakasbol lakásból
 laztol láztól
 futashoz futáshoz
 nepuralmat népuralmat
-ipaddal ipáddal
 kozre közre
 szetragni szétrágni
 husimusik husiműsík
@@ -53633,7 +53349,6 @@ búcson búcsőn
 kucsera kucséra
 sajnalkozott sajnálkozott
 szaguldoznak száguldoznak
-szuperképesség szúpérképesség
 bevasarlos bevásárlós
 megdobbentet megdöbbentet
 megdobbentek megdöbbentek
@@ -53645,7 +53360,6 @@ idegzetueknek idegzetűeknek
 cuccut cuccút
 martinna martinná
 beprobalkozok bepróbálkozok
-szuperkepesseg szúpérkepésség
 beprobalkozom bepróbálkozom
 hosszútűrés hősszútűrés
 öreghegyi őréghegyi
@@ -53967,7 +53681,6 @@ döntö döntő
 nyomkodasaval nyomkodásával
 hekker hekkér
 vonzas vonzás
-szuperprocesszort szúpérprocesszort
 koves köves
 kovet követ
 kovel kővel
@@ -54193,7 +53906,6 @@ martintol martintól
 agrarra agrárra
 visszairsz visszaírsz
 leszokoban leszokóbán
-szupeer szupéér
 lazban lázban
 aluminiumból alumíniumból
 ilyenert ilyenért
@@ -54377,7 +54089,6 @@ olivazabáló olívazabáló
 helgaval helgával
 ilyenektol ilyenektől
 iranyelvekkel irányelvekkel
-szuperkönyvtárat szúpérkönyvtárat
 fesztivalra fesztiválra
 granit gránit
 ongyujto öngyújtó
@@ -54647,7 +54358,6 @@ szamlaert számláért
 enektanarnom énektanárnőm
 tarcsakat tárcsákat
 csákany csákány
-szuperverdák szúpérverdák
 toltened töltened
 toltenek töltenek
 toltenel töltenél
@@ -54923,7 +54633,6 @@ mosokapszula mosókapszula
 ertelmezni értelmezni
 fejfajast fejfájást
 ugyanarrol ugyanarról
-szuperkocsival szúpérkocsival
 vesztenivaloja vesztenivalója
 szolhattal szólhattál
 eletkeptelenek életképtelenek
@@ -55159,7 +54868,6 @@ fotosunk fotósunk
 csillamponiterror csillámpóniterror
 elöny előny
 megvaltast megváltást
-szupervagány szúpérvágány
 imadva imádva
 nolimit nőlimit
 uracskam uracskám
@@ -55260,10 +54968,8 @@ kirohogne kiröhögne
 osszefogottal összefogottal
 zafirkekben zafírkékben
 kirohogod kiröhögöd
-szupertraffipaxok szúpértraffipaxok
 hibaibol hibaiból
 elrétem élrétem
-szupertraffipaxot szúpértraffipaxot
 keninek kéninek
 kirohogom kiröhögöm
 vegighallgattad végighallgattad
@@ -55274,7 +54980,6 @@ köszönönöm köszönőnőm
 megeroltettem megerőltettem
 megeroltetted megerőltetted
 atdolgozasarol átdolgozásáról
-szuperatléta szúpératléta
 ovódás óvódás
 terkeprol térképről
 kemiadoganal kémiadogánál
@@ -55411,7 +55116,6 @@ idogepet időgépet
 anyagrol anyagról
 mozgasanak mozgásának
 afahéjas áfahéjas
-celebmárka célebmárka
 visszavágot visszavágót
 gulyast gulyást
 kirandulunk kirándulunk
@@ -55849,7 +55553,6 @@ fizikam fizikám
 kioltek kiöltek
 fizikat fizikát
 fizikas fizikás
-celebdisznó célebdisznó
 hulyének hülyének
 rosszmaju rosszmájú
 probaltam próbáltam
@@ -55870,7 +55573,6 @@ mindkettohoz mindkettőhöz
 bejelentö bejelentő
 colarol coláról
 porszívozok porszívózok
-szupertehen szúpértehén
 máriáert máriáért
 nyomogombot nyomógombot
 filmajanlo filmajánló
@@ -56788,7 +56490,6 @@ mindkettovel mindkettővel
 valoszinubb valószínűbb
 gergőke gergőké
 lejatszasrol lejátszásról
-tapipaddal tápipáddal
 beszelgeto beszélgető
 gatlasos gátlásos
 ismerkedtunk ismerkedtünk
@@ -57598,7 +57299,6 @@ pledecskenk plédecskénk
 beggaz béggaz
 osztalytarsaimra osztálytársaimra
 reklamozza reklámozza
-szuperautókat szúpérautókat
 fegyvertartas fegyvertartás
 ovezetbe övezetbe
 jegyautomatanal jegyautomatánál
@@ -57738,7 +57438,6 @@ jelentessel jelentessél
 videoja videója
 szegyentelenul szégyentelenül
 videoit videóit
-szupervihar szúpérvihar
 szemetnek szemétnek
 nyala nyála
 banom bánom
@@ -57806,7 +57505,6 @@ banat bánat
 anyagtol anyagtól
 banko bankó
 bebizonyitsam bebizonyítsam
-szupernyereményt szúpérnyereményt
 teleirnam teleírnám
 tablanknak táblánknak
 februartol februártól
@@ -57916,7 +57614,6 @@ eszte észté
 megbiznak megbíznak
 projektbeosztast projektbeosztást
 lepjel lepjél
-szuperpénz szúpérpénz
 cukorkat cukorkát
 eszkö észkő
 csavarodasok csavarodások
@@ -58123,7 +57820,6 @@ nemveszem nemvészem
 valtakoznak váltakoznak
 palotas palotás
 ízvilagot ízvilágot
-szuperegészséges szúpéregészséges
 infuzio infúzió
 palotam palotám
 forklór fórklór
@@ -58133,7 +57829,6 @@ korbenezni körbenézni
 megussza megússza
 sirjak sírjak
 sirjal sírjál
-celebcsapatok célebcsapatok
 posztorbáni posztőrbáni
 sirjat sírját
 rampában rámpában
@@ -58546,7 +58241,6 @@ megvaltoztattad megváltoztattad
 megvaltoztattam megváltoztattam
 megjegyzeseket megjegyzéseket
 erdekebe érdekébe
-szuperteam szúpérteam
 lenyulasokról lényulasokról
 tanitás tanítás
 mumustol mumustól
@@ -58854,7 +58548,6 @@ mindegyikuk mindegyikük
 tesztelesre tesztelésre
 frekvenciakat frekvenciákat
 meglassuk meglássuk
-szupertipp szúpértipp
 likvidalnom likvidálnom
 cimboram cimborám
 cimborak cimborák
@@ -59135,9 +58828,7 @@ koztetek köztetek
 facére facéré
 borocskat borocskát
 hajlandoak hajlandóak
-celebházasságot célebházasságot
 uszasbol úszásból
-celebházasságok célebházasságok
 kiegeszitett kiegészített
 visszamenoleg visszamenőleg
 betalalt betalált
@@ -59298,7 +58989,6 @@ gyumolcslevet gyümölcslevet
 tenyeremnyi tényéremnyi
 mindkettore mindkettőre
 dísziteniük díszíteniük
-szuperüveget szúpérüveget
 tiszavirag tiszavirág
 kórhazban kórházban
 egyenesito egyenesítő
@@ -59441,7 +59131,6 @@ katicat katicát
 odajohetsz odajöhetsz
 programhelyszint programhelyszínt
 betarsulnak betársulnak
-szupertart szúpértárt
 jegeso jégeső
 forgalmu forgalmú
 szurjon szúrjon
@@ -59745,7 +59434,6 @@ végigjatszás végigjátszás
 iszogatas iszogatás
 felevadfinalejat félévadfináléját
 jelzest jelzést
-szuperalapos szúpéralapos
 allergiavizsgalatanak allergiavizsgálatának
 haladjal haladjál
 hagymakra hagymákra
@@ -59803,7 +59491,6 @@ kardtol kardtól
 koztudottan köztudottan
 nutrend nútrend
 puskazasra puskázásra
-szupermenünk szúpérmenünk
 keveresebol keveréséből
 ferjemnek férjemnek
 boritottam borítottam
@@ -59920,7 +59607,6 @@ altal által
 allapota állapota
 folsetaltunk fölsétáltunk
 erzés érzés
-celebünkről célebünkről
 ránctalanitó ránctalanító
 alten altén
 arvaknak árváknak
@@ -60179,7 +59865,6 @@ szemelyiseged személyiséged
 szemelyisegem személyiségem
 szemelyisegek személyiségek
 szemelyiseget személyiséget
-szuperszar szúpérszár
 solóval sólóval
 valthatok válthatok
 enekelgetett énekelgetett
@@ -60375,7 +60060,6 @@ felmelegedese felmelegedése
 meghivással meghívással
 masodosztaly másodosztály
 szolitanak szólítanak
-szuperközpontban szúpérközpontban
 tetekkel tétekkel
 szerepjatek szerepjáték
 erettsegitetelt érettségitételt
@@ -60495,7 +60179,6 @@ karacsonyba karácsonyba
 ledontott ledöntött
 teteleimet tételeimet
 nezegetunk nézegetünk
-vegasszal végásszal
 elnefelejcsetek élnefelejcsetek
 karacsonyra karácsonyra
 tisztelom tisztelőm
@@ -60861,7 +60544,6 @@ spajzba spájzba
 eloiteletesen előítéletesen
 paranorman páranormán
 utitárs útitárs
-szupergyümölcs szúpérgyümölcs
 gondterelt gondtérélt
 eloiteletesek előítéletesek
 közont közónt
@@ -60893,7 +60575,6 @@ elronto elrontó
 parasportolóknak párasportolóknak
 kateelee kátééléé
 hajigal hajigál
-szupernehézsúly szúpérnehézsúly
 szalagtűzös szalagtűzős
 vezettunk vezettünk
 turelmetlenkedik türelmetlenkedik
@@ -61147,7 +60828,6 @@ párostánc párőstánc
 ontenek öntenek
 ontenem öntenem
 ezrenek ezrének
-szuperbacilus szúpérbacilus
 pozicio pozíció
 taszitotok taszítotok
 lefotozgatom léfotózgatóm
@@ -61169,7 +60849,6 @@ haladhatnank haladhatnánk
 utogettel ütögettél
 utogettem ütögettem
 lesoványodot lésoványodót
-szuperkórház szúpérkórház
 allampolgarok állampolgárok
 apritaná aprítaná
 felgyujtsam felgyújtsam
@@ -61182,7 +60861,6 @@ uttetlek üttetlek
 semmitevős semmitévős
 apritani aprítani
 rekordközeli rekordközéli
-szupernőnek szúpérnőnek
 önmegvalósít önmegválósít
 kuszan kuszán
 kuszak kuszák
@@ -61370,7 +61048,6 @@ kovetelesuk követelésük
 lehanyni lehányni
 vernes vernés
 lombardóról lombárdóról
-szuperkütyükkel szúpérkütyükkel
 matrabol mátrából
 viragokra virágokra
 mikulascsomagba mikuláscsomagba
@@ -61579,7 +61256,6 @@ rádióállom rádióállóm
 hamvasitos hamvásítós
 telefo telefő
 pianot pianót
-szuperféme szúpérfémé
 baratságnál barátságnál
 beszelnenk beszelnénk
 kivánságműsor kívánságműsor
@@ -62295,7 +61971,6 @@ sirénes sírénes
 vasarolgatas vásárolgatás
 malackak malackák
 kivimusorba kiviműsorba
-szupermentán szúpérmentán
 elvarnam elvárnám
 elvarnak elvárnak
 osszegzesbe összegzésbe
@@ -62437,9 +62112,6 @@ halszosz halszósz
 hirpercek hírpercek
 piroskockás pírőskockás
 harmadiknal harmadiknál
-ipaden ipádén
-ipadek ipádék
-ipadet ipádét
 nyiloban nyílóban
 tellót téllót
 baratsághoz barátsághoz
@@ -62466,8 +62138,6 @@ tanaraimat tanáraimat
 vendéglátósat vendéglátósát
 nimfas nimfás
 eszrevesznek észrevesznek
-ipadon ipádon
-ipadom ipadóm
 nezitek nézitek
 raszurom rászúrom
 kupolaja kupolája
@@ -62494,8 +62164,6 @@ melegtol melegtől
 ingadozo ingadozó
 tarsashaz társasház
 jarain járain
-tuzson tűzsón
-ipadra ipádra
 börtönbüntet börtönbűntét
 gyártástechnoló gyártástechnóló
 szemtöl szemtől
@@ -62705,7 +62373,6 @@ sutemenyek sütemények
 fosnek fősnek
 nagyszunet nagyszünet
 filmesiteni filmesíteni
-szuperhatásos szúpérhatásos
 gellere gelleré
 hattervilagitas háttérvilágítás
 instalok instálok
@@ -62723,7 +62390,6 @@ bekepzeld beképzeld
 bekepzeli beképzeli
 falodája falódája
 talalkozhassunk találkozhassunk
-szuperkoncertjéig szúpérkoncertjéig
 zenebuz zenebűz
 tűzmadarakos tűzmadárakós
 romannal románnal
@@ -62935,7 +62601,6 @@ eletkedv életkedv
 lejatszas lejátszás
 sotetebb sötétebb
 nyilvanosan nyilvánosan
-szupererőre szúpérerőre
 alexert alexért
 zajossziv zajősszív
 csokkentjuk csökkentjük
@@ -63368,7 +63033,6 @@ takaritasra takarításra
 dragasagomat drágaságomat
 diaknapunkhoz diáknapunkhoz
 kototuvel kötőtűvel
-szupermentáról szúpérmentáról
 tachografos tachográfos
 atertekelni átértékelni
 szekrenyunk szekrényünk
@@ -63566,7 +63230,6 @@ pizsifelsom pizsifélsom
 összeleszel ősszélészél
 kivanszorogni kivánszorogni
 felkomasan félkőmásán
-szupernagyításban szúpérnagyításban
 tapie tápié
 daridozom dáridózom
 libamajjal libamájjal
@@ -63797,8 +63460,6 @@ eloalhatott előalhatott
 rogozin rögózin
 idöbe időbe
 infotanartol infótanártól
-szuperlicences szúpérlicences
-szuperlicencet szúpérlicencet
 felvetel felvetél
 madarrajt madárrajt
 jotet jótét
@@ -63815,7 +63476,6 @@ jutassa jutássá
 meterorraj méterőrraj
 szexualpszichologus szexuálpszichológus
 euroról euróról
-szövegtanci szövegtánci
 megmasszirozta megmasszírozta
 levagunk levágunk
 barosso bárőssó
@@ -63890,7 +63550,6 @@ atalakitjak átalakítják
 számitógépek számítógépek
 bobiskol bóbiskol
 plakatról plakátról
-szuperhonlapja szúpérhonlapja
 egeszsegemnek egészségemnek
 haldoklo haldokló
 kommunikalnak kommunikálnak
@@ -63932,7 +63591,6 @@ szetbogtem szétbőgtem
 szocializalodott szocializálódott
 szigetszentmiklosrol szigetszentmiklósról
 hazak hazák
-szuperereje szúpérereje
 hazam hazám
 melegito melegítő
 hazad hazád
@@ -64475,7 +64133,6 @@ teljesitmenyu teljesítményű
 teljesitmenyt teljesítményt
 bogni bógni
 tankonyvunk tankönyvünk
-celebfotónk célebfotónk
 lanyokkal lányokkal
 gretat grétát
 kiirogattok kiírogattok
@@ -64645,7 +64302,6 @@ tehetseges tehetséges
 tehetsegem tehetségem
 tehetsegek tehetségek
 delösz délősz
-csúcsszuper csúcsszúpér
 buveszetet bűvészetet
 imadnom imádnom
 tobiasnak tóbiásnak
@@ -64867,7 +64523,6 @@ interessiere íntéréssíere
 dohanyzasrol dohányzásról
 kenyszeritette kényszerítette
 érzestelenítő érzéstelenítő
-szupertáplálékoknak szúpértáplálékoknak
 palinkabol pálinkából
 gondolkodig gondölkódig
 kierdemelte kiérdemelte
@@ -64938,7 +64593,6 @@ elasnam elásnám
 bolte bolté
 veszekedjunk veszekedjünk
 soloról sólóról
-szuperital szúpérital
 pajzsmirigyel pajzsmirigyél
 szelidít szelídít
 doktorur doktorűr
@@ -65398,13 +65052,11 @@ allasponttal állásponttal
 egyaltalán egyáltalán
 keplet képlet
 florasoos flórasóős
-szuperinfó szúpérinfó
 felreerthetoseg félreérthetőség
 becenev becenév
 emlekezem emlékezem
 emlekezel emlékezel
 emlekezes emlékezés
-szupererejük szúpérerejük
 takarodnal takarodnál
 imadtok imádtok
 fileszerverünkre filészerverünkre
@@ -65997,7 +65649,6 @@ kereszül kérészül
 megtennek megtennék
 koreaig koreáig
 koreaik koreáik
-celebéletet célebéletet
 repulokon repülőkön
 bokoltam bókoltam
 hizelkednek hízelkednek
@@ -66024,7 +65675,6 @@ beseket béseket
 halálkomoly halálkőmoly
 kiszolgalast kiszolgálást
 pakolasban pakolásban
-szupermenta szúpérmenta
 szepseg szépség
 gyujtesere gyűjtésére
 veredet véredet
@@ -66133,7 +65783,6 @@ kolthetnem költhetnem
 dijatadokat díjátadókat
 farsangrol farsangról
 felkoltotted felköltötted
-szupermenbe szúpérménbe
 dolgokert dolgokért
 nyugdijkorhatar nyugdíjkorhatár
 felkurom félkűröm
@@ -66506,7 +66155,6 @@ besenyo besenyő
 poenjai poénjai
 üdvozlet üdvözlet
 tanulando tanulandó
-szuperkerítést szúpérkerítést
 plutoról plútóról
 kiszaritom kiszárítom
 reszemnek részemnek
@@ -67010,7 +66658,6 @@ atragtad átrágtad
 utazásnet utazásnét
 baratomra barátomra
 eszcin észcin
-szupersikeres szúpérsikeres
 megszinezzuk megszínezzük
 fuzioja fúziója
 szinüeket színűeket
@@ -67053,7 +66700,6 @@ osszevesztel összevesztél
 szakkepzesi szakképzési
 hiányzotta hiányzottá
 szakkepzett szakképzett
-szupertinit szúpértinit
 torodtem törődtem
 szakkorre szakkörre
 szotarbol szótárból
@@ -67125,7 +66771,6 @@ hirhedt hírhedt
 manipulativ manipulatív
 vilagbajnoksagra világbajnokságra
 labellóval lábéllóval
-szuperbaktériumok szúpérbaktériumok
 kannibalt kannibált
 mappaban mappában
 moltens mólténs
@@ -67211,7 +66856,6 @@ felreertenek félreértenek
 mélynyomot mélynyomót
 tejkod tejkód
 vizszintesen vízszintesen
-szuperegyenruhát szúpéregyenruhát
 jardine jardiné
 szuleimtol szüleimtől
 oltozkodjon öltözködjön
@@ -67241,7 +66885,6 @@ felgyujtottak felgyújtottak
 jatszmazunk játszmázunk
 szofoso szófősó
 délutan délután
-szuperbörtönbe szúpérbörtönbe
 edesanyjatol édesanyjától
 regenyben regényben
 hibaimbol hibáimból
@@ -67424,7 +67067,6 @@ ellenallhatatlan ellenállhatatlan
 vashiany vashiány
 statisztikabol statisztikából
 eloreleptem előreleptem
-szuperhold szúpérhold
 állitsátok állítsátok
 vivokrol vivőkről
 kisetal kisétál
@@ -67457,7 +67099,6 @@ rekaekkal rékáékkal
 mostanaig mostanáig
 baklavaert baklávaért
 pelenkazta pelenkázta
-szuperkozmetikumokkal szúpérkozmetikumokkal
 interjuzom interjúzom
 balrog bálrög
 balrol balról
@@ -67502,7 +67143,6 @@ malmövel malmővel
 csoportvezeto csoportvezető
 csacsicsabi csacsicsábi
 kibirhato kibírható
-szupertrendi szúpértrendi
 togyarcu tőgyarcú
 intellektualisan intellektuálisan
 kifestettuk kifestettük
@@ -67826,7 +67466,6 @@ eszpresso észpréssó
 kenobijától kénobijától
 meninas méninas
 gabitol gabitól
-szuperkedvezményes szúpérkedvezményes
 okorbol ókorból
 filmnezes filmnézés
 megkeseruli megkeserüli
@@ -67923,7 +67562,6 @@ szökőkutjahoz szökőkútjához
 atcsalogatni átcsalogatni
 zsirafunk zsiráfunk
 temaeltereles témaelterelés
-szuperpuding szúpérpuding
 kollegiumban kollégiumban
 elelmiszer élelmiszer
 csapitalizmus csapitalízműs
@@ -68102,7 +67740,6 @@ pofatlanul pofátlanul
 kollegámmal kollégámmal
 blatte blatté
 kotelezni kötelezni
-szupertraktor szúpértraktor
 kotelezok kötelezők
 mikortol mikortól
 kotelezon kötelezőn
@@ -68711,7 +68348,6 @@ mihalyi mihályi
 kemrof kémrőf
 eljatszom eljátszom
 eljatszok eljátszok
-szuperbaktériumokat szúpérbaktériumokat
 meggyogyult meggyógyult
 szuleimert szüleimért
 félle féllé
@@ -68790,7 +68426,6 @@ mindket mindkét
 ingázásbol ingázásból
 meghalotta meghalottá
 szuletesem születésem
-szupertréner szúpértréner
 magatokbak magátokbak
 doriban dóriban
 szuletesed születésed
@@ -69035,7 +68670,6 @@ kenocs kenőcs
 eljenek éljenek
 micimacko micimackó
 loginre lóginre
-szuperkönnyű szúpérkönnyű
 terrorelle terroréllé
 csulkom csülköm
 csuri csűri
@@ -69244,8 +68878,6 @@ sokaknal sokaknál
 poban póban
 babasiras babasírás
 hiszterikusan hisztérikusan
-szupertehetséget szúpértehetséget
-szupertehetséges szúpértehetséges
 mezejen mezején
 csigamra csigámra
 dobveroit dobverőit
@@ -69295,7 +68927,6 @@ osztondijat ösztöndíjat
 kiséretébe kíséretébe
 eladosrac eladósrác
 hajacskam hajacskám
-szuperpremier szúpérpremier
 baratommal barátommal
 lettus léttus
 adottsaggal adottsággal
@@ -69327,7 +68958,6 @@ hulyesegeinket hülyeségeinket
 osztondijra ösztöndíjra
 multja múltja
 reklamoktol reklámoktól
-szupercápa szúpércápa
 torpedoként torpedóként
 vezetoszar vezetőszár
 berejtozunk berejtőzünk
@@ -69976,7 +69606,6 @@ turelmem türelmem
 polot pólót
 turelmet türelmet
 turelmes türelmes
-celebbuli célebbuli
 tulgondoljak túlgondoljak
 partea pártea
 pofikajat pofikáját
@@ -70063,7 +69692,6 @@ felsotested felsőtested
 megbantalak megbántalak
 ekezettel ekézettel
 ertelmuk értelmük
-szupergyorsitas szúpérgyorsítás
 apukaja apukája
 életkével élétkével
 ösvenyein ösvényein
@@ -70211,7 +69839,6 @@ studiózni stúdiózni
 növén nővén
 növér nővér
 musorokat műsorokat
-szuperlazac szúpérlazac
 musorokba műsorokba
 csipszeket csipszéket
 aldasnak áldásnak
@@ -70458,7 +70085,6 @@ jojjunk jöjjünk
 talalkozhatok találkozhatok
 rogerrel rögérrel
 opciok opciók
-szuperprogram szúpérprogram
 valnanak válnának
 megbamul megbámul
 felidegelt félidegélt
@@ -70588,10 +70214,7 @@ mikrookonomia mikroökonómia
 gyarbol gyárból
 beszerzes beszerzés
 fickok fickók
-tapipadom tápipadóm
-tapipadon tápipádon
 onsajnaltatas ónsajnáltatás
-szuperlátványos szúpérlátványos
 balmokat bálmókát
 egbolt égbolt
 gyumolcsoset gyümölcsöset
@@ -70955,7 +70578,6 @@ ajandekunk ajándékunk
 bodydat bódydat
 elerkeztem elérkeztem
 sorhat sorhát
-szuperanyagot szúpéranyagot
 napfenyt napfényt
 kezugyessegem kézügyességem
 ruhige rühige
@@ -71066,7 +70688,6 @@ kelenföldet kelenföldét
 joideig jóidéig
 buszat buszát
 musortol műsortól
-szuperegészségesen szúpéregészségesen
 loder lódér
 izesitsd izésítsd
 nyomorekhoz nyomorékhoz
@@ -71334,7 +70955,6 @@ ruzsozza rúzsozza
 nagydijra nagydíjra
 autosportot autósportot
 legdöbbentő légdöbbentő
-celebpárja célebpárja
 tarsasagkerulo társaságkerülő
 bogracsbol bográcsból
 kinezelodsz kinézelődsz
@@ -71396,7 +71016,6 @@ kunyerálot kunyerálót
 csiripelesbe csiripelésbe
 konyvemnek könyvemnek
 gorgetni görgetni
-szupercsatára szúpércsatára
 vedelemrol védelemről
 muveszkedett művészkedett
 taskámbol táskámból
@@ -71472,7 +71091,6 @@ smaroltal smároltál
 smaroltam smároltam
 szivét szívét
 csongetni csöngetni
-nutellazol nútéllázól
 lokomotiv lokomotív
 formáju formájú
 leamortizalnak leamortizálnak
@@ -71736,7 +71354,6 @@ agynemut ágyneműt
 madein mádéin
 hiradot híradót
 hiradon híradón
-szupercukiság szúpércukiság
 haziorvosa háziorvosa
 onmagadra önmagadra
 hajfestessel hajfestéssel
@@ -71893,7 +71510,6 @@ vegosszeget végösszeget
 perecsenyi perecsényi
 szenrendre szénrendre
 tegyel tegyél
-szupernövény szúpérnövény
 vegkepp végképp
 erzeki érzéki
 izomlazam izomlázam
@@ -71926,7 +71542,6 @@ vilagvaros világváros
 nézönél nézőnél
 maganeletunk magánéletünk
 smaroljak smároljak
-szuperjáték szúpérjáték
 gyorben győrben
 szamlagyarat számlagyárat
 forintert forintért
@@ -72128,7 +71743,6 @@ eletedet életedet
 eleteden életeden
 szilveszterezes szilveszterezés
 szepsegeben szépségében
-szupernépstadion szúpérnépstadion
 tettovalas téttóválás
 hataridonaplos határidőnaplós
 hataridonaplom határidőnaplóm
@@ -72319,7 +71933,6 @@ rumnaplo rumnapló
 bekiabalja bekiabálja
 vallalhato vállalható
 rohangalosan rohangálósan
-szuperhalradar szúpérhalradar
 belüről belűről
 szingliadorol szingliadóról
 echonomist echónőmist
@@ -72348,7 +71961,6 @@ targyakat tárgyakat
 kivanosabbak kívánósabbak
 lebenul lebénul
 feltakaritotta feltakarította
-szupergyerek szúpérgyerek
 kiatkoznak kiátkoznak
 előkészitőről előkészítőről
 egyetemröl egyetemről
@@ -72884,7 +72496,6 @@ szomszed szomszéd
 folyatosan folyatósan
 telefonbeszelgetesek telefonbeszélgetések
 cicanadrag cicanadrág
-szupergyorsaságra szúpérgyorsaságra
 idegesito idegesítő
 idegesiti idegesíti
 idegesitö idegesítő
@@ -73165,7 +72776,6 @@ orátok órátok
 nepszeruek népszerűek
 polusin pólusin
 papurt papúrt
-szupermeno szúpérmenő
 unalmassa unalmassá
 libafosatom libafosatóm
 repulosajt repülősajt
@@ -73178,7 +72788,6 @@ fesulkodesig fésülködésig
 rozsdas rozsdás
 atöltözni átöltözni
 latinbol latinból
-szupermenő szúpérmenő
 tamadta támadta
 töröcskeit törőcskéit
 fanokrol fanőkről
@@ -73276,7 +72885,6 @@ atvittek átvittek
 kikivánkozott kikívánkozott
 cicaztam cicáztam
 ketret kétrét
-celebtetkók célebtetkók
 nyeleven nyéléven
 tanulasokba tanulásokba
 kiállitják kiállítják
@@ -73478,7 +73086,6 @@ gyurva gyúrva
 gyurus gyűrűs
 gyurut gyűrűt
 gyuruk gyűrűk
-szupermatt szúpérmatt
 babatalalkozo babatalálkozó
 uborkatu uborkatű
 billentyuzeteden billentyűzeteden
@@ -73960,7 +73567,6 @@ furdoviz fürdővíz
 korhazbol kórházból
 itelet ítélet
 renderképe rendérképe
-tanciba tánciba
 bufogtem büfögtem
 belekontarkodni belekontárkodni
 itelek ítélek
@@ -74724,7 +74330,6 @@ elsotol elsőtől
 eltoltottuk eltöltöttük
 fejletepos fejletépős
 erdemjegy érdemjegy
-szuperpanoramas szúpérpanorámás
 elkisertuk elkísértük
 tünne tűnne
 osztalyabol osztályából
@@ -75193,7 +74798,6 @@ pinteresttel pintéresttel
 moringáról móringáról
 mukormod műkörmöd
 elvaszom elvaszóm
-szupertermészetes szúpértermészetes
 leszolitom leszólítom
 nekifutnek nekifutnék
 magabol magából
@@ -75206,7 +74810,6 @@ szorakozást szórakozást
 tünők tűnők
 üléshúzatot üléshúzatót
 hatravan hátravan
-szupertámogatásból szúpértámogatásból
 anyanyelvunk anyanyelvünk
 nemérdekel nemérdekél
 masikra másikra
@@ -75301,7 +74904,6 @@ kabátbant kabátbánt
 masikig másikig
 gallo galló
 szolocukrot szőlőcukrot
-szupergyorsaságú szúpérgyorsaságú
 hutomagnes hűtőmágnes
 kesznek késznek
 íronak írónak
@@ -75413,7 +75015,6 @@ ellokom ellököm
 ellokok ellökök
 tulhajszolom túlhajszolom
 lelkesedest lelkesedést
-szuperrepülő szúpérrepülő
 írokat írókat
 apro apró
 készitsünk készítsünk
@@ -75541,13 +75142,11 @@ kondibajaros kondibajárős
 brosurat brosúrát
 ardo ardó
 hibaztatja hibáztatja
-szuperkatonák szúpérkatonák
 bevásárlóköpontba bevásárlókőpontba
 aras arás
 elfocista élfocista
 araz aráz
 szeliditheto szelídíthető
-szuperkatonát szúpérkatonát
 készülödnek készülődnek
 alukalj alukálj
 genderelmélet géndérelmélet
@@ -75689,7 +75288,6 @@ kezunkben kezünkben
 idoddel időddel
 kancellaroknal kancellároknál
 buuren búúrén
-szupergyümölcshöz szúpérgyümölcshöz
 turulnal turulnál
 megallapitottam megállapítottam
 gyogyulhat gyógyulhat
@@ -76486,7 +76084,6 @@ angyalel angyalél
 kiszemeltjenek kiszemeltjének
 baratkozo barátkozó
 bizosítótól bízósítótól
-szuperkoncert szúpérkoncert
 leskelodik leskelődik
 müvelődési művelődési
 bagoztam bagóztam
@@ -76599,7 +76196,6 @@ atmennem átmennem
 ükörsima ükőrsima
 horrortool horrortóól
 csotores csőtórés
-szupersorozat szúpérsorozat
 delutanunk délutánunk
 szineztem színeztem
 szófosasa szófősasa
@@ -76717,7 +76313,6 @@ halgatjak halgátjak
 ebredoket ébredőket
 allithasson állíthasson
 otletelek ötletelek
-szupermanus szúpérmanus
 gyerekkorombol gyerekkoromból
 beirattam beírattam
 jegkiralyno jégkirálynő
@@ -76852,7 +76447,6 @@ muzsikat muzsikát
 masikfelen másikfélén
 rendezvenyrol rendezvényről
 kiszavazo kiszavazó
-szuperdöntőhöz szúpérdöntőhöz
 elcsevegem élcsévegém
 kolazero kólazéró
 kartyavar kártyavar
@@ -78287,7 +77881,6 @@ szivod szívod
 arnyvadaszokkal árnyvadaszókkal
 derekpantja derékpántja
 rugjon rúgjon
-szupercsatája szúpércsatája
 édesitsd édesítsd
 jellemzest jellemzést
 szörözi szőrözi
@@ -78487,7 +78080,6 @@ kinom kínom
 veranak verának
 kinon kínon
 kinok kínok
-szuperkaja szúpérkaja
 konyveimet könyveimet
 vokálozik vőkálózik
 elökészülök előkészülök
@@ -78611,7 +78203,6 @@ kerest kérést
 folyondarba folyondárba
 kereso kereső
 angliabol angliából
-szupertelefon szúpértelefon
 keretu keretű
 torpenek törpének
 melleallok melléállok
@@ -78934,7 +78525,6 @@ szepsegversenyrol szépségversenyről
 vilagomba világomba
 tantargy tantárgy
 vilagomat világomat
-szuperellenálló szúpérellenálló
 szerbiahoz szerbiához
 vegigvinni végigvinni
 lanyrol lányról
@@ -79013,7 +78603,6 @@ uristenke úristenke
 szajfennyel szájfénnyel
 kiallo kiálló
 szervalok szerválok
-szuperképességeim szúpérképességeim
 kiallt kiállt
 erettem érettem
 generacionkrol generációnkról
@@ -79107,7 +78696,6 @@ bekovetsz bekövetsz
 villanyoltas villanyoltás
 nezettseget nézettséget
 vilagossa világossá
-celebritással célebritással
 belföldipihenés bélföldipihenés
 óratipusok óratípusok
 idezest idézést
@@ -79169,7 +78757,6 @@ kiakra kiákra
 lepozolás lepózolás
 panini páníni
 babonasak babonásak
-szupermutált szúpérműtált
 uldozesi üldözési
 gyeremek gyéremék
 testalkatu testalkatú
@@ -79601,7 +79188,6 @@ ezerbol ezerből
 talalkozhat találkozhat
 pianino pianínó
 szurkallak szurkállak
-szuperklip szúpérklip
 rocktóberben rocktóbérben
 raguso ragusó
 feleves felevés
