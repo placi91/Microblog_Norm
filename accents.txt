@@ -19169,7 +19169,6 @@ elmentük élméntűk
 elhült elhűlt
 somlósi somlósí
 pofara pofára
-szupercuki szúpercüki
 keresztesóméknál kérésztesóméknál
 ebresztoim ébresztőim
 tanciskola tánciskola
@@ -24169,7 +24168,6 @@ hasfajastol hasfájástól
 berhazakba bérházakba
 ezelottit ezelőttit
 kihagyas kihagyás
-szupergonoszok szúpergőnőszók
 atlaga átlaga
 elesitve élesítve
 finem finém
@@ -27552,7 +27550,6 @@ feltoltodes feltöltődés
 mergesen mérgesen
 bunyozik bunyózik
 terrembe térrémbe
-szuperétel szupérétél
 lefujja lefújja
 természetke térmészétke
 kiflijet kiflijét
@@ -33164,11 +33161,7 @@ majorannás majoránnás
 masat másat
 maszasit mászásit
 mocsokbol mocsokból
-dagat dágát
 megprobaltatas megpróbáltatás
-marso marsó
-szupermen szúpermen
-marto mártó
 allitmanyat állítmányát
 dagen dágén
 megerdemeltetek megérdemeltetek
@@ -35850,7 +35843,6 @@ nagylelkusege nagylelkűsége
 tiltot tiltót
 tilton tiltón
 atrohan átrohan
-szuperempatikus szupérémpatikus
 kielégithet kielégíthet
 alvosejk alvósejk
 fizeteskiegeszites fizetéskiegészítés
@@ -37650,10 +37642,8 @@ nezelődők nézelődők
 vizsgaszabalyzat vizsgaszabályzat
 tevekenysegre tevékenységre
 zabalhatnank zabálhatnánk
-szuperlovak szúperlővak
 rezar rézár
 kénoszt kénőszt
-lovefool lóvéfőól
 kaszalni kaszálni
 nemleszel nemlészél
 megszaggatnam megszaggatnám
@@ -51178,17 +51168,12 @@ aldodtal áldódtál
 csufság csúfság
 agyféltekes agyféltekés
 oneletrajzot önéletrajzot
-celebek célebek
-celebem célebem
-celebes célebes
-celebet célebet
 furia fúria
 kacsoh kacsóh
 furge fürge
 lekotesre lekötésre
 varosozni városozni
 sütötökkrémleves sütőtökkrémleves
-celebbé célebbé
 furit fürit
 furin fürin
 furja fúrja
@@ -51220,7 +51205,6 @@ inaktiv inaktív
 zsidokra zsidókra
 furni fúrni
 smaroltunk smároltunk
-celebné célebné
 alagut alagút
 kemiat kémiát
 kemian kémián
@@ -51228,8 +51212,6 @@ kemiam kémiám
 kemiai kémiai
 kivanatos kívánatos
 hazasitva hazásítva
-celebnő célebnő
-szuperhő szúpérhő
 fizikamhoz fizikámhoz
 terkepemet térképemet
 csokoltam csókoltam
@@ -51637,7 +51619,6 @@ celom célom
 celor célőr
 raketak rakéták
 jatszik játszik
-celeb céleb
 zsíroskenyértúra zsírőskenyértúra
 ruhamhoz ruhámhoz
 atvanszorogni átvánszorogni
@@ -51937,7 +51918,6 @@ tudománye tudományé
 hetvegeket hétvégéket
 okumenikusok ökumenikusok
 sporolnom spórolnom
-celebekre célebekre
 utorengés utórengés
 témam témám
 kovacsev kovácsév
@@ -52025,7 +52005,6 @@ angoltanaromnak angoltanáromnak
 megadast megadást
 legrajongobb legrajongóbb
 konturt kontúrt
-szuperak szupérák
 szuperal szuperál
 szuperlativuszokban szuperlatívuszokban
 számitasz számítasz
@@ -53941,7 +53920,6 @@ dobvero dobverő
 problemank problémánk
 anomalisát anomálisát
 demoját demóját
-szuperételt szupérétélt
 anomalisán anomálisán
 hatteremen hátteremen
 valoszinuseggel valószínűséggel
@@ -54289,7 +54267,6 @@ oltozetben öltözetben
 vagd vágd
 vagj vágj
 vagi vági
-szuperm szúperm
 vago vágó
 müsöröm műsöröm
 zongorárol zongoráról
@@ -70437,10 +70414,7 @@ gyulolte gyűlölte
 papírtanyerbol papírtányérból
 telefenom telefenőm
 nyujtanak nyújtanak
-szuperételek szupérétélek
 tombnel tömbnél
-kenvédes kénvédés
-simonyiba símonyiba
 évszadban évszádban
 jatszodna játszódna
 jatszodni játszódni
@@ -72933,9 +72907,7 @@ timinel timinél
 idegesitő idegesítő
 túrórudihoz túrórúdihoz
 jatekert játékért
-vazeg vázég
 iroasztalnal íróasztalnál
-szupermini szúpermíni
 fajsulyos fajsúlyos
 korbejarnam körbejárnám
 adasaban adásában
