@@ -19,6 +19,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.Map.Entry;
 import java.util.SortedSet;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,7 +27,7 @@ import java.util.regex.Pattern;
 public class GetWordsFromTweet {
 
 	public static void main(String[] args) {
-		HashMap<String, Integer> words = new HashMap<>();
+		Map<String, Integer> words = new TreeMap<>();
 		int s = 1;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("tweets_pruned_accents_lemmas_put.txt"));
@@ -41,7 +42,7 @@ public class GetWordsFromTweet {
 						continue;
 					}
 					if (word.matches("[A-ZÍÉÁŰÚŐÓÜÖ]+")) {
-						if (word.length() < 4) {
+						if (word.length() < 3) {
 							continue;
 						}
 						if (words.containsKey(word)) {
@@ -54,6 +55,9 @@ public class GetWordsFromTweet {
 			}
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words.txt"), "UTF8"));
 			for (Entry<String, Integer> out : words.entrySet()) {
+				if(out.getValue() < 5) {
+					continue;
+				}
 				bw.write(out.getKey() + " " + out.getValue());
 		    	bw.newLine();
 			}

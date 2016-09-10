@@ -34,11 +34,12 @@ public class PruneTweets {
 			HashMap<String, String> lemmas = new HashMap<>();
 			while ((line = br.readLine()) != null) {
 				String[] parts = line.split("\t");
-				if(parts[2].equals("WARNING") || (parts[0].equals(parts[2]) && parts.length == 3)) {
+				String p0 = parts[0].trim(), p2 = parts[2].trim(); 
+				if(p2.equals("WARNING") || (p0.equals(p2) && parts.length == 3)) {
 					continue;
 				}
-				if(!parts[0].equals(parts[2])) {
-					lemmas.put(parts[0], parts[2]);
+				if(!p0.equals(p2)) {
+					lemmas.put(p0, p2);
 				}
 			}
 			br.close();

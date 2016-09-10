@@ -22,15 +22,16 @@ public class SetOOVFrequency {
 			String line;
 			while ((line = br.readLine()) != null) {
 					String[] parts = line.split(" ");
-					int freq = Integer.parseInt(parts[1]);
-					if(freq >= 30) {
+					int freq = Integer.parseInt(parts[1].trim());
+					if(freq >= 10) {
 						freqWords.put(parts[0], freq);
 					}
 			}
 			br = new BufferedReader(new FileReader("oov.txt"));
 			while ((line = br.readLine()) != null) {
-				if(freqWords.containsKey(line) && line.length() > 3) {
-					oov.add(new Word(line, freqWords.get(line)));
+				String oovWord = line.trim();
+				if(freqWords.containsKey(oovWord) && oovWord.length() >= 3) {
+					oov.add(new Word(oovWord, freqWords.get(oovWord)));
 				}
 
 			}
