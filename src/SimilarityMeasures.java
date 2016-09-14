@@ -4,7 +4,8 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -23,7 +24,7 @@ public class SimilarityMeasures {
 		Pattern pattern = Pattern.compile("[a-z]"); // \\p{IsAlphabetic}+ [a-zíéáűüúöőó]{3}
 		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("paths"));
+			BufferedReader br = new BufferedReader(new FileReader("paths_lemmas_put"));
 			HashMap<String, HashSet<String>> clusters = new HashMap<>();
 			HashSet<String> clusterSet = new HashSet<>();
 			String line;
@@ -38,8 +39,30 @@ public class SimilarityMeasures {
 				cluster.add(parts[1]);
 			}
 			br.close();
+			
+			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.lemmas"));
+			HashMap<String, String> lemmas = new HashMap<>();
+			while ((line = br.readLine()) != null) {
+				String[] parts = line.split("\t");
+				String p0 = parts[0].trim(), p2 = parts[2].trim(); 
+				if(p2.equals("WARNING") || (p0.equals(p2) && parts.length == 3)) {
+					continue;
+				}
+				if(!p0.equals(p2)) {
+					lemmas.put(p0, p2);
+				}
+			}
+			br.close();
+	
+			br = new BufferedReader(new FileReader("accents.txt"));
+			HashMap<String, String> accents = new HashMap<>();
+			while ((line = br.readLine()) != null) {
+				String[] parts = line.split(" ");
+				accents.put(parts[0], parts[1]);
+			}
+			br.close();
 
-			br = new BufferedReader(new FileReader("tweets_pruned_accents_lemmas_put.txt"));
+			br = new BufferedReader(new FileReader("tweets_pruned_lemmas_put.txt"));
 			while ((line = br.readLine()) != null) {
 				System.out.println(s++);
 				String[] parts = line.split(" ");
@@ -56,7 +79,7 @@ public class SimilarityMeasures {
 					Word w;
 					if (words.containsKey(word)) {
 						w = words.get(word);
-						w.setFrequent(w.getFrequent() + 1);
+						w.setFrequency(w.getFrequency() + 1);
 					} else {
 						words.put(word, new Word(word, 1));
 						w = words.get(word);
@@ -69,6 +92,12 @@ public class SimilarityMeasures {
 							String leftWord = parts[left];
 							m = pattern.matcher(leftWord);
 							if((m.find() && leftWord.length() >= 2) || leftWord.contains(":")) {
+								if (accents.containsKey(leftWord)) {
+									leftWord = accents.get(leftWord);
+								}
+								if (lemmas.containsKey(leftWord)) {
+									//leftWord = lemmas.get(leftWord);
+								}
 								if (!contextWords.containsKey(leftWord)) {
 									Integer wordNumber = new Integer(contextWords.size());
 									w.addContext(wordNumber);
@@ -86,6 +115,12 @@ public class SimilarityMeasures {
 							String rightWord = parts[right];
 							m = pattern.matcher(rightWord);
 							if((m.find() && rightWord.length() >= 2) || rightWord.contains(":")) {
+								if (accents.containsKey(rightWord)) {
+									rightWord = accents.get(rightWord);
+								}
+								if (lemmas.containsKey(rightWord)) {
+									//rightWord = lemmas.get(rightWord);
+								}
 								if (!contextWords.containsKey(rightWord)) {
 									Integer wordNumber = new Integer(contextWords.size());
 									w.addContext(wordNumber);
@@ -108,7 +143,7 @@ public class SimilarityMeasures {
 
 			HashMap<String, Word> oovWords = new HashMap<>();
 			HashMap<String, Boolean> test = new HashMap<>();
-			br = new BufferedReader(new FileReader("oov.txt"));
+			br = new BufferedReader(new FileReader("oov_lemmas_put.txt"));
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
 				oovWords.put(line.trim(), new Word(false));
@@ -131,7 +166,10 @@ public class SimilarityMeasures {
 			HashMap<String, Word> OVwords = new HashMap<>();
 			HashMap<String, HashMap<String, Word>> IVwords = new HashMap<>();
 			for (Entry<String, Word> w : words.entrySet()) {
-				if (!oovWords.containsKey(w.getKey())) {
+				if(w.getValue().getFrequency() < 5) {
+					continue;
+				}
+				if (!oovWords.containsKey(w.getKey()) && w.getKey().matches("[a-zíéáöőóúűü]+")) {
 					String cname = null;
 					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
 						if (c.getValue().contains(w.getKey())) {
@@ -151,7 +189,7 @@ public class SimilarityMeasures {
 						}
 					}
 
-				} else if (oovWords.get(w.getKey()).isCommon()) {
+				} else if (oovWords.containsKey(w.getKey()) && oovWords.get(w.getKey()).isCommon()) {
 					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
 						if (c.getValue().contains(w.getKey())) {
 							w.getValue().setCluster(c.getKey());
@@ -178,30 +216,35 @@ public class SimilarityMeasures {
 			int correctJacPairs = 0;
 			int correctAnglePairs = 0;
 			
-			Word[] maxJaccard = new Word[5];
-			Word[] minAngles = new Word[5];
 			
 			for (Entry<String, Word> out : OVwords.entrySet()) {
-				String cluster = out.getValue().getCluster();
-				if (cluster == null) {
+				Word oov = out.getValue();
+				String clusterOOV = oov.getCluster();
+				if (clusterOOV == null) {
 					continue;
 				}
-				Word oov = out.getValue();
-				Set<Integer> oovContext = new HashSet<>();
-				oovContext.addAll(oov.getContextSet());
+				Set<Integer> oovContext = oov.getContextSet();
 				
+				ArrayList<Word> maxJaccard = new ArrayList<>();
+				ArrayList<Word> minAngles = new ArrayList<>();
 				initWords(maxJaccard);
 				initWords(minAngles);
 				
-				for (Entry<String, HashMap<String, Word>> c : IVwords.entrySet()) {
-					int ham = hamming(c.getKey().toCharArray(), cluster.toCharArray());
-					double a = 1.0;
-					if (ham > 4 || ham == -1) {
+				for (Entry<String, HashMap<String, Word>> cIV : IVwords.entrySet()) {
+					String clusterIV = cIV.getKey();
+					int ham = hamming(clusterIV.toCharArray(), clusterOOV.toCharArray());
+					double a = 1.0, b = 1.0;
+					if (ham > 2 || ham == -1) {
 						continue;
 					}
-					if (ham != 0)
-						continue;//a = 1.0 / (((double) 1.0 + ham));
-					HashMap<String, Word> inVocWords = IVwords.get(c.getKey());
+					if (ham != 0) {
+						//a = 1.0 / ((double) 1.0 + ham);
+						//b = 1.0 * ((double) 1.0 + ham);
+					}
+					if(!clusterOOV.equals(clusterIV)) {
+						continue;
+					}
+					HashMap<String, Word> inVocWords = cIV.getValue();
 					for (Entry<String, Word> in : inVocWords.entrySet()) {
 						Word iv = in.getValue();
 						System.out.println(s++ + " oov " + out.getKey());
@@ -231,38 +274,48 @@ public class SimilarityMeasures {
 							double oovFreq = oov.getContextFrequency(commonWord);
 							double ivFreq = iv.getContextFrequency(commonWord);
 							product += oovFreq  * ivFreq ; 
-							lengthOOV += oovFreq * oovFreq;
+						}
+						for (Integer ivContextWord : ivContext) {
+							double ivFreq = iv.getContextFrequency(ivContextWord);
 							lengthIV += ivFreq * ivFreq;
+						}
+						for (Integer oovContextWord : oovContext) {
+							double oovFreq = oov.getContextFrequency(oovContextWord);
+							lengthOOV += oovFreq * oovFreq;
 						}
 						lengthOOV = Math.sqrt(lengthOOV);
 						lengthIV = Math.sqrt(lengthIV);
 						double angle = Math.acos(product / (lengthIV * lengthOOV));
 						
-
 						ivContext.addAll(oovContext);
 						double jaccard = ((double) common.size()) / ivContext.size();
 						jaccard = a * jaccard;
+						angle = b * angle;
 						System.out.println("jaccard: " + jaccard);
 						System.out.println("angle: " + angle);
-						ivContext.clear();
-						common.clear();
 						
-						if (angle < minAngles[4].getAngle()) {
-							minAngles[4].setAngle(angle);
-							minAngles[4].setWord(iv.getWord());
+						if (angle < minAngles.get(minAngles.size()-1).getAngle()) {
+							Word w = new Word(iv.getWord());
+							w.setAngle(angle);
+							if(minAngles.size() == 30)
+								minAngles.remove(minAngles.size()-1);
+							minAngles.add(w);
 						}
 						
-						if (jaccard > maxJaccard[4].getJaccard()) {
-							maxJaccard[4].setJaccard(jaccard);
-							maxJaccard[4].setWord(iv.getWord());
+						if (jaccard > maxJaccard.get(maxJaccard.size()-1).getJaccard()) {
+							Word w = new Word(iv.getWord());
+							w.setJaccard(jaccard);
+							if(maxJaccard.size() == 30)
+								maxJaccard.remove(maxJaccard.size()-1);
+							maxJaccard.add(w);
 						}
-						Arrays.sort(maxJaccard, new Comparator<Word>() {
+						Collections.sort(maxJaccard, new Comparator<Word>() {
 							@Override
 							public int compare(Word arg0, Word arg1) {
 								return Double.compare(arg1.getJaccard(), arg0.getJaccard());
 							}
 						});
-						Arrays.sort(minAngles, new Comparator<Word>() {
+						Collections.sort(minAngles, new Comparator<Word>() {
 							@Override
 							public int compare(Word arg0, Word arg1) {
 								return Double.compare(arg0.getAngle(), arg1.getAngle());
@@ -273,57 +326,62 @@ public class SimilarityMeasures {
 				}
 
 				z = 1;
-				HashSet<String> pairs = out.getValue().getPairs();
+				
+				Collections.sort(minAngles, new Comparator<Word>() {
+					@Override
+					public int compare(Word arg0, Word arg1) {
+						return Integer.compare(lcs(arg1.getWord().toCharArray(), oov.getWord().toCharArray()), lcs(arg0.getWord().toCharArray(), oov.getWord().toCharArray()));
+					}
+				});
+				Collections.sort(maxJaccard, new Comparator<Word>() {
+					@Override
+					public int compare(Word arg0, Word arg1) {
+						return Integer.compare(lcs(arg1.getWord().toCharArray(), oov.getWord().toCharArray()), lcs(arg0.getWord().toCharArray(), oov.getWord().toCharArray()));
+					}
+				});
+				
+				HashSet<String> pairs = oov.getPairs();
 				boolean correctJaccard = false, correctAngle = false;
 				bw.write(out.getKey());
 				bw.write("\tJaccard");
 				System.out.println("Jaccard");
-				int k = 0;
-				for (int i = 0; i < maxJaccard.length; ++i) {
-					Word word = maxJaccard[i];
+				for (int i = 0; i < 4; ++i) {
+					Word word = maxJaccard.get(i);
 					bw.write("\t" + word.getWord() + "\t" + word.getJaccard());
 					System.out.println("\t" + word.getWord() + "\t" + word.getJaccard());
 					for (String pair : pairs) {
-						if (word.getWord().contains(pair) && !correctJaccard) {
+						if (word.getWord().equals(pair)) {
 							correctJaccard = true;
-							k = i;
 						} 						
 					}
 				}
 				if (correctJaccard) {
 					bw.write("\tcorrect");
-					int score = 5 - k;
-					correctJacPairs += score;
+					correctJacPairs++;
 				} else {
 					bw.write("\twrong");						
 				}
 				bw.newLine();
-				k = 0;
 				System.out.println("Angle");
 				bw.write("\t\tAngle");
-				for (int i = 0; i < minAngles.length; ++i) {
-					Word word = minAngles[i];
+				for (int i = 0; i < 4; ++i) {
+					Word word = minAngles.get(i);
 					bw.write("\t" + word.getWord() + "\t" + word.getAngle());
 					System.out.println("\t" + word.getWord() + "\t" + word.getAngle());
 					for (String pair : pairs) {
-						if (word.getWord().contains(pair) && !correctAngle) {
+						if (word.getWord().equals(pair)) {
 							correctAngle = true;
-							k = i;
 						} 						
 					};
 				}
 				if (correctAngle) {
 					bw.write("\tcorrect");
-					int score = 5 - k;
-					correctAnglePairs += score;
+					correctAnglePairs++;
 				} else {
 					bw.write("\twrong");						
 				}
 				bw.newLine();
 				bw.flush();
-				oovContext.clear();
-				resetWords(maxJaccard);
-				resetWords(minAngles);
 			}
 			int notFound = 0;
 			for (Entry<String, Boolean> w : test.entrySet()) {
@@ -332,7 +390,7 @@ public class SimilarityMeasures {
 					notFound++;
 				}
 			}
-			double testSize = ((double)(test.entrySet().size()-notFound))*5.0;
+			double testSize = (double)(test.entrySet().size()-notFound);
 			double scoreJaccard = ((double)correctJacPairs) / testSize * 100;
 			double scoreAngle = ((double)correctAnglePairs) / testSize * 100;
 			System.out.println("Test size: " + testSize);
@@ -351,24 +409,21 @@ public class SimilarityMeasures {
 
 	public static int hamming(char[] left, char[] right) {
 		int distance = 0;
-		if(Math.abs(left.length - right.length) > 6) {
-			return -1;
-		}
-		if (left.length != right.length) {
-			//distance = 1;
-		}
 		int length = left.length < right.length ? left.length : right.length;
-		for (int i = 0; i < length; i++) {
+		for (int i = length - 1; i >= 0; i--) {
 			if (left[i] != right[i]) {
-				distance++;
+				if(i >= length - 3)
+					distance++;
+				else
+					return -1;
 			}
 		}
 		return distance;
 	}
 
-	public static void initWords(Word[] words) {
-		for (int i = 0; i < words.length; i++) {
-			words[i] = new Word();
+	public static void initWords(ArrayList<Word> words) {
+		for (int i = 0; i < 4; i++) {
+			words.add(new Word());
 		}
 	}
 	
@@ -380,4 +435,26 @@ public class SimilarityMeasures {
 		}
 	}
 	
+	public static int lcs(char[] A, char[] B) {
+		int[][] LCS = new int[A.length + 1][B.length + 1];
+		for (int i = 0; i <= B.length; i++) {
+			LCS[0][i] = 0;
+		}
+
+		for (int i = 0; i <= A.length; i++) {
+			LCS[i][0] = 0;
+		}
+
+		for (int i = 1; i <= A.length; i++) {
+			for (int j = 1; j <= B.length; j++) {
+				if (A[i - 1] == B[j - 1]) {
+					LCS[i][j] = LCS[i - 1][j - 1] + 1;
+				} else {
+					LCS[i][j] = Math.max(LCS[i - 1][j], LCS[i][j - 1]);
+				}
+			}
+		}
+		return LCS[A.length][B.length];
+	}
+    
 }

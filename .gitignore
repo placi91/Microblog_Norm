@@ -70,3 +70,9 @@ Temporary Items
 /tweets.txt~
 /words.txt
 /paths
+/most_common_oov_accents_lemmas_put.txt
+/most_common_oov_lemmas_put.txt
+/oov_accents_lemmas_put.txt
+/oov_lemmas_put.txt
+/paths_accents_lemmas_put
+/paths_lemmas_put

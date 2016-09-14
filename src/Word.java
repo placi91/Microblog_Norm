@@ -8,7 +8,7 @@ public class Word {
 	private String cluster = null;
 	private HashSet<String> pairs = null;
 	private boolean isCommon;
-	private int frequent;
+	private int frequency;
 	private double jaccard = 0.0;
 	private double angle = 1000.0;
 	private HashMap<Integer, Integer> contextSet = new HashMap<>();
@@ -17,9 +17,13 @@ public class Word {
 		this.word = "empty";
 	}
 	
-	public Word(String word, int frequent) {
+	public Word(String word) {
 		this.word = word;
-		this.frequent = frequent;
+	}
+	
+	public Word(String word, int frequency) {
+		this.word = word;
+		this.frequency = frequency;
 	}
 	
 	public Word(boolean isCommon, HashSet<String> pairs) {
@@ -63,12 +67,12 @@ public class Word {
 		this.word = word;
 	}
 
-	public int getFrequent() {
-		return frequent;
+	public int getFrequency() {
+		return frequency;
 	}
 
-	public void setFrequent(int frequent) {
-		this.frequent = frequent;
+	public void setFrequency(int frequency) {
+		this.frequency = frequency;
 	}
 
 	public double getJaccard() {
@@ -113,7 +117,7 @@ public class Word {
 
 	@Override
 	public String toString() {
-		return "Word [word=" + word + ", frequent=" + frequent + ", jaccard="
+		return "Word [word=" + word + ", frequency=" + frequency + ", jaccard="
 				+ jaccard +  ", angle=" + angle + ", contextSet=" + contextSet + "]";
 	}
 }

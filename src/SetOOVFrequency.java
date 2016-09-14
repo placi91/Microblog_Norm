@@ -39,11 +39,11 @@ public class SetOOVFrequency {
 			Collections.sort(oov, new Comparator<Word>() {
 				@Override
 				public int compare(Word arg0, Word arg1) {
-					return arg1.getFrequent() - arg0.getFrequent();
+					return arg1.getFrequency() - arg0.getFrequency();
 				}
 			});
 			for (Word word : oov) {
-				bw.write(word.getWord() + " " + word.getFrequent());
+				bw.write(word.getWord() + " " + word.getFrequency());
 			    bw.newLine();
 				
 			}
