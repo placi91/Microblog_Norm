@@ -15,209 +15,75 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SimilarityMeasures {
+	
+	private static int correctJacPairs = 0, correctAnglePairs = 0, correctJacWPairs = 0, correctDicePairs = 0;
 
 	public static void main(String[] args) {
-
-		HashMap<String, Integer> contextWords = new HashMap<>();
-		HashMap<String, Word> words = new HashMap<>();
 		
-		Pattern pattern = Pattern.compile("[a-z]"); // \\p{IsAlphabetic}+ [a-zíéáűüúöőó]{3}
-		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("paths_lemmas_put"));
-			HashMap<String, HashSet<String>> clusters = new HashMap<>();
-			HashSet<String> clusterSet = new HashSet<>();
+			int s = 1;
+			BufferedReader br = new BufferedReader(new FileReader("vectorspace/word_vectors.txt"));
+			
+			HashMap<String, Word> OOVwords = new HashMap<>();
+			HashMap<String, HashSet<Word>> IVwords = new HashMap<>();
+			
 			String line;
 			while ((line = br.readLine()) != null) {
+				System.out.println(s++);
 				String[] parts = line.split("\t");
-				clusterSet.add(parts[1]);
-				String clusterName = parts[0];
-				if (!clusters.containsKey(clusterName)) {
-					clusters.put(clusterName, new HashSet<String>());
+				String wordString = parts[0];
+				int frequency = Integer.parseInt(parts[1]);
+				String cluster = parts[2];
+				String type = parts[3];
+				Word word = new Word(wordString, type, cluster, frequency);
+				HashMap<Integer, Integer> contextMap = new HashMap<>();
+				for (int i = 4; i < parts.length; i+=2) {
+					int contextNum = Integer.parseInt(parts[i]);
+					int contextFreq = Integer.parseInt(parts[i + 1]);
+					contextMap.put(contextNum, contextFreq);
 				}
-				HashSet<String> cluster = clusters.get(clusterName);
-				cluster.add(parts[1]);
+				word.setContextMap(contextMap);
+				if (type.equals("IV")) {
+					HashSet<Word> clusterWords;
+					if (IVwords.containsKey(cluster)) {
+						clusterWords = IVwords.get(cluster);
+						clusterWords.add(word);
+					} else {
+						clusterWords = new HashSet<>();
+						clusterWords.add(word);
+						IVwords.put(cluster, clusterWords);
+					}
+				} else if(type.equals("OOV")) {
+					OOVwords.put(wordString, word);
+				}
 			}
 			br.close();
 			
-			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.lemmas"));
-			HashMap<String, String> lemmas = new HashMap<>();
-			while ((line = br.readLine()) != null) {
-				String[] parts = line.split("\t");
-				String p0 = parts[0].trim(), p2 = parts[2].trim(); 
-				if(p2.equals("WARNING") || (p0.equals(p2) && parts.length == 3)) {
-					continue;
-				}
-				if(!p0.equals(p2)) {
-					lemmas.put(p0, p2);
-				}
-			}
-			br.close();
-	
-			br = new BufferedReader(new FileReader("accents.txt"));
-			HashMap<String, String> accents = new HashMap<>();
-			while ((line = br.readLine()) != null) {
-				String[] parts = line.split(" ");
-				accents.put(parts[0], parts[1]);
-			}
-			br.close();
-
-			br = new BufferedReader(new FileReader("tweets_pruned_lemmas_put.txt"));
-			while ((line = br.readLine()) != null) {
-				System.out.println(s++);
-				String[] parts = line.split(" ");
-				for (int i = 0; i < parts.length; ++i) {
-					String word = parts[i].trim();
-					if (word.isEmpty() || word.startsWith("#") || word.startsWith("@") || word.contains("http")) {
-						continue;
-					}
-					Matcher m = pattern.matcher(word);
-					if (!m.find()|| word.length() < 3 || !clusterSet.contains(word)) {
-						continue;
-					}
-					
-					Word w;
-					if (words.containsKey(word)) {
-						w = words.get(word);
-						w.setFrequency(w.getFrequency() + 1);
-					} else {
-						words.put(word, new Word(word, 1));
-						w = words.get(word);
-					}
-					int left = i - 1, right = i + 1;
-					int lengthLeft = 0;
-					int lengthRight = 0;
-					while ((left >= 0 || right < parts.length)) {
-						if (left >= 0 && !parts[left].isEmpty() && lengthLeft <= 4) {
-							String leftWord = parts[left];
-							m = pattern.matcher(leftWord);
-							if((m.find() && leftWord.length() >= 2) || leftWord.contains(":")) {
-								if (accents.containsKey(leftWord)) {
-									leftWord = accents.get(leftWord);
-								}
-								if (lemmas.containsKey(leftWord)) {
-									//leftWord = lemmas.get(leftWord);
-								}
-								if (!contextWords.containsKey(leftWord)) {
-									Integer wordNumber = new Integer(contextWords.size());
-									w.addContext(wordNumber);
-									contextWords.put(leftWord, wordNumber);
-								} else if (!w.containsContext(contextWords.get(leftWord))) {
-									w.addContext(contextWords.get(leftWord));
-								} else {
-									w.updateContext(contextWords.get(leftWord));
-								}
-							}
-							if(leftWord.length() >= 2)
-								++lengthLeft;
-						}
-						if (right < parts.length && !parts[right].isEmpty() && lengthRight <= 4) {
-							String rightWord = parts[right];
-							m = pattern.matcher(rightWord);
-							if((m.find() && rightWord.length() >= 2) || rightWord.contains(":")) {
-								if (accents.containsKey(rightWord)) {
-									rightWord = accents.get(rightWord);
-								}
-								if (lemmas.containsKey(rightWord)) {
-									//rightWord = lemmas.get(rightWord);
-								}
-								if (!contextWords.containsKey(rightWord)) {
-									Integer wordNumber = new Integer(contextWords.size());
-									w.addContext(wordNumber);
-									contextWords.put(rightWord, wordNumber);
-								} else if (!w.containsContext(contextWords.get(rightWord))) {
-									w.addContext(contextWords.get(rightWord));
-								} else {
-									w.updateContext(contextWords.get(rightWord));
-								}
-							}
-							if(rightWord.length() >= 2)
-								++lengthRight;
-						}
-						++right;
-						--left;
-					}
-				}
-			}
-			br.close();
-
-			HashMap<String, Word> oovWords = new HashMap<>();
-			HashMap<String, Boolean> test = new HashMap<>();
-			br = new BufferedReader(new FileReader("oov_lemmas_put.txt"));
-			while ((line = br.readLine()) != null) {
-				line = line.toLowerCase();
-				oovWords.put(line.trim(), new Word(false));
-			}
-			br.close();
-
+			HashSet<String> test = new HashSet<>();
 			br = new BufferedReader(new FileReader("test.txt"));
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
 				String[] parts = line.split(" ");
+				String testString = parts[0].trim();
 				HashSet<String> pairs = new HashSet<>();
 				for (int j = 1; j < parts.length; j++) {
 					pairs.add(parts[j].trim());
 				}
-				oovWords.put(parts[0].trim(), new Word(true, pairs));
-				test.put(parts[0].trim(), true);
+				if(OOVwords.containsKey(testString)) {
+					Word testWord = OOVwords.get(testString);
+					testWord.setPairs(pairs);
+				}
+				test.add(testString);
 			}
 			br.close();
-			
-			HashMap<String, Word> OVwords = new HashMap<>();
-			HashMap<String, HashMap<String, Word>> IVwords = new HashMap<>();
-			for (Entry<String, Word> w : words.entrySet()) {
-				if(w.getValue().getFrequency() < 5) {
-					continue;
-				}
-				if (!oovWords.containsKey(w.getKey()) && w.getKey().matches("[a-zíéáöőóúűü]+")) {
-					String cname = null;
-					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
-						if (c.getValue().contains(w.getKey())) {
-							cname = c.getKey();
-							break;
-						}
-					}
-					HashMap<String, Word> clusterWords;
-					if (cname != null) {
-						if (IVwords.containsKey(cname)) {
-							clusterWords = IVwords.get(cname);
-							clusterWords.put(w.getKey(), w.getValue());
-						} else {
-							clusterWords = new HashMap<>();
-							clusterWords.put(w.getKey(), w.getValue());
-							IVwords.put(cname, clusterWords);
-						}
-					}
 
-				} else if (oovWords.containsKey(w.getKey()) && oovWords.get(w.getKey()).isCommon()) {
-					for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
-						if (c.getValue().contains(w.getKey())) {
-							w.getValue().setCluster(c.getKey());
-							break;
-						}
-					}
-					HashSet<String> pairs = oovWords.get(w.getKey()).getPairs();
-					if (pairs != null) {
-						w.getValue().setPairs(pairs);
-					}
-					OVwords.put(w.getKey(), w.getValue());
-				}
-			}
-			words.clear();
-			clusters.clear();
-			oovWords.clear();
-			System.gc();
-
-			System.out.println("Writing to jaccard.txt");
+			System.out.println("Writing to similarity.txt");
 			BufferedWriter bw = new BufferedWriter(
 					new OutputStreamWriter(new FileOutputStream("similarity.txt"), "UTF-8"));
 			s = 1;
 			int z = 1;
-			int correctJacPairs = 0;
-			int correctAnglePairs = 0;
 			
-			
-			for (Entry<String, Word> out : OVwords.entrySet()) {
+			for (Entry<String, Word> out : OOVwords.entrySet()) {
 				Word oov = out.getValue();
 				String clusterOOV = oov.getCluster();
 				if (clusterOOV == null) {
@@ -226,78 +92,61 @@ public class SimilarityMeasures {
 				Set<Integer> oovContext = oov.getContextSet();
 				
 				ArrayList<Word> maxJaccard = new ArrayList<>();
+				ArrayList<Word> maxJaccardWeight = new ArrayList<>();
+				ArrayList<Word> maxDice = new ArrayList<>();
 				ArrayList<Word> minAngles = new ArrayList<>();
 				initWords(maxJaccard);
+				initWords(maxJaccardWeight);
+				initWords(maxDice);
 				initWords(minAngles);
 				
-				for (Entry<String, HashMap<String, Word>> cIV : IVwords.entrySet()) {
+				for (Entry<String, HashSet<Word>> cIV : IVwords.entrySet()) {
 					String clusterIV = cIV.getKey();
 					int ham = hamming(clusterIV.toCharArray(), clusterOOV.toCharArray());
 					double a = 1.0, b = 1.0;
-					if (ham > 2 || ham == -1) {
+					if (ham > 3 || ham == -1) {
 						continue;
 					}
 					if (ham != 0) {
 						//a = 1.0 / ((double) 1.0 + ham);
 						//b = 1.0 * ((double) 1.0 + ham);
-					}
-					if(!clusterOOV.equals(clusterIV)) {
 						continue;
 					}
-					HashMap<String, Word> inVocWords = cIV.getValue();
-					for (Entry<String, Word> in : inVocWords.entrySet()) {
-						Word iv = in.getValue();
+					HashSet<Word> inVocWords = cIV.getValue();
+					for (Word iv : inVocWords) {
 						System.out.println(s++ + " oov " + out.getKey());
-						System.out.println(z++ + " iv " + in.getKey());
+						System.out.println(z++ + " iv " + iv.getWord());
 						double size;
 						if (oovContext.size() < iv.getContextSet().size()) {
 							size = ((double) oovContext.size()) / iv.getContextSet().size();
 						} else {
 							size = ((double) iv.getContextSet().size()) / oovContext.size();
 						}
-						if (size <= 0.02) {
-							continue;
+						if (size <= 0.001) {
+							//continue;
 						}
-						Set<Integer> ivContext = new HashSet<>();
-						Set<Integer> common = new HashSet<>();
-						ivContext.addAll(iv.getContextSet());
-						common.addAll(oovContext);
-						common.retainAll(ivContext);
-						if (common.size() < 2) {
-							continue;
-						}
+
 						System.out.println(s++ + " oov " + out.getKey());
-						System.out.println(z++ + " iv " + in.getKey());
+						System.out.println(z++ + " iv " + iv.getWord());
 						
-						double product = 0.0, lengthOOV = 0.0, lengthIV = 0.0;
-						for (Integer commonWord : common) {
-							double oovFreq = oov.getContextFrequency(commonWord);
-							double ivFreq = iv.getContextFrequency(commonWord);
-							product += oovFreq  * ivFreq ; 
+						Set<Integer> ivContext = iv.getContextSet();
+						Set<Integer> common = new HashSet<>(ivContext);
+						common.retainAll(oovContext);
+						if(common.size() == 0) {
+							continue;
 						}
-						for (Integer ivContextWord : ivContext) {
-							double ivFreq = iv.getContextFrequency(ivContextWord);
-							lengthIV += ivFreq * ivFreq;
-						}
-						for (Integer oovContextWord : oovContext) {
-							double oovFreq = oov.getContextFrequency(oovContextWord);
-							lengthOOV += oovFreq * oovFreq;
-						}
-						lengthOOV = Math.sqrt(lengthOOV);
-						lengthIV = Math.sqrt(lengthIV);
-						double angle = Math.acos(product / (lengthIV * lengthOOV));
 						
-						ivContext.addAll(oovContext);
-						double jaccard = ((double) common.size()) / ivContext.size();
-						jaccard = a * jaccard;
-						angle = b * angle;
-						System.out.println("jaccard: " + jaccard);
-						System.out.println("angle: " + angle);
+						double jaccard = WordSimilarity.jaccard(ivContext, oovContext, common);
+						double angle = WordSimilarity.cosine(ivContext, oovContext, common, oov, iv);
+						double jaccardWeight = WordSimilarity.jaccardWeight(ivContext, oovContext, common, oov, iv);
+						double dice = WordSimilarity.dice(ivContext, oovContext, common, oov, iv);
+						//jaccard = a * jaccard;
+						//angle = b * angle;
 						
 						if (angle < minAngles.get(minAngles.size()-1).getAngle()) {
 							Word w = new Word(iv.getWord());
 							w.setAngle(angle);
-							if(minAngles.size() == 30)
+							if(minAngles.size() == 5)
 								minAngles.remove(minAngles.size()-1);
 							minAngles.add(w);
 						}
@@ -305,14 +154,40 @@ public class SimilarityMeasures {
 						if (jaccard > maxJaccard.get(maxJaccard.size()-1).getJaccard()) {
 							Word w = new Word(iv.getWord());
 							w.setJaccard(jaccard);
-							if(maxJaccard.size() == 30)
+							if(maxJaccard.size() == 5)
 								maxJaccard.remove(maxJaccard.size()-1);
 							maxJaccard.add(w);
+						}
+						if (jaccardWeight > maxJaccardWeight.get(maxJaccardWeight.size()-1).getJaccardWeight()) {
+							Word w = new Word(iv.getWord());
+							w.setJaccardWeight(jaccardWeight);
+							if(maxJaccardWeight.size() == 5)
+								maxJaccardWeight.remove(maxJaccardWeight.size()-1);
+							maxJaccardWeight.add(w);
+						}
+						if (dice > maxDice.get(maxDice.size()-1).getDice()) {
+							Word w = new Word(iv.getWord());
+							w.setDice(dice);
+							if(maxDice.size() == 5)
+								maxDice.remove(maxDice.size()-1);
+							maxDice.add(w);
 						}
 						Collections.sort(maxJaccard, new Comparator<Word>() {
 							@Override
 							public int compare(Word arg0, Word arg1) {
 								return Double.compare(arg1.getJaccard(), arg0.getJaccard());
+							}
+						});
+						Collections.sort(maxJaccardWeight, new Comparator<Word>() {
+							@Override
+							public int compare(Word arg0, Word arg1) {
+								return Double.compare(arg1.getJaccardWeight(), arg0.getJaccardWeight());
+							}
+						});
+						Collections.sort(maxDice, new Comparator<Word>() {
+							@Override
+							public int compare(Word arg0, Word arg1) {
+								return Double.compare(arg1.getDice(), arg0.getDice());
 							}
 						});
 						Collections.sort(minAngles, new Comparator<Word>() {
@@ -326,78 +201,66 @@ public class SimilarityMeasures {
 				}
 
 				z = 1;
-				
+				char[] oovCharArray = oov.getWord().toCharArray();
 				Collections.sort(minAngles, new Comparator<Word>() {
 					@Override
 					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(lcs(arg1.getWord().toCharArray(), oov.getWord().toCharArray()), lcs(arg0.getWord().toCharArray(), oov.getWord().toCharArray()));
+						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray), 
+								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
 					}
 				});
 				Collections.sort(maxJaccard, new Comparator<Word>() {
 					@Override
 					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(lcs(arg1.getWord().toCharArray(), oov.getWord().toCharArray()), lcs(arg0.getWord().toCharArray(), oov.getWord().toCharArray()));
+						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
+								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
+					}
+				});
+				Collections.sort(maxJaccardWeight, new Comparator<Word>() {
+					@Override
+					public int compare(Word arg0, Word arg1) {
+						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
+								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
+					}
+				});
+				Collections.sort(maxDice, new Comparator<Word>() {
+					@Override
+					public int compare(Word arg0, Word arg1) {
+						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
+								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
 					}
 				});
 				
 				HashSet<String> pairs = oov.getPairs();
-				boolean correctJaccard = false, correctAngle = false;
+				boolean correctJaccard = false, correctAngle = false, correctJacWeight = false, correctDice = false;
 				bw.write(out.getKey());
-				bw.write("\tJaccard");
-				System.out.println("Jaccard");
-				for (int i = 0; i < 4; ++i) {
-					Word word = maxJaccard.get(i);
-					bw.write("\t" + word.getWord() + "\t" + word.getJaccard());
-					System.out.println("\t" + word.getWord() + "\t" + word.getJaccard());
-					for (String pair : pairs) {
-						if (word.getWord().equals(pair)) {
-							correctJaccard = true;
-						} 						
-					}
-				}
-				if (correctJaccard) {
-					bw.write("\tcorrect");
-					correctJacPairs++;
-				} else {
-					bw.write("\twrong");						
-				}
-				bw.newLine();
-				System.out.println("Angle");
-				bw.write("\t\tAngle");
-				for (int i = 0; i < 4; ++i) {
-					Word word = minAngles.get(i);
-					bw.write("\t" + word.getWord() + "\t" + word.getAngle());
-					System.out.println("\t" + word.getWord() + "\t" + word.getAngle());
-					for (String pair : pairs) {
-						if (word.getWord().equals(pair)) {
-							correctAngle = true;
-						} 						
-					};
-				}
-				if (correctAngle) {
-					bw.write("\tcorrect");
-					correctAnglePairs++;
-				} else {
-					bw.write("\twrong");						
-				}
-				bw.newLine();
+				printResults("jaccard", maxJaccard, correctJaccard, pairs, bw);
+				printResults("jaccardWeight", maxJaccardWeight, correctJacWeight, pairs, bw);
+				printResults("dice", maxDice, correctDice, pairs, bw);
+				printResults("angle", minAngles, correctAngle, pairs, bw);
 				bw.flush();
 			}
 			int notFound = 0;
-			for (Entry<String, Boolean> w : test.entrySet()) {
-				if(!OVwords.containsKey(w.getKey())) {
-					System.err.println(w.getKey());
+			for (String t : test) {
+				if(!OOVwords.containsKey(t)) {
+					System.err.println(t);
 					notFound++;
 				}
 			}
-			double testSize = (double)(test.entrySet().size()-notFound);
+			double testSize = (double)(test.size()-notFound);
 			double scoreJaccard = ((double)correctJacPairs) / testSize * 100;
+			double scoreJaccardW = ((double)correctJacWPairs) / testSize * 100;
+			double scoreDice = ((double)correctDicePairs) / testSize * 100;
 			double scoreAngle = ((double)correctAnglePairs) / testSize * 100;
 			System.out.println("Test size: " + testSize);
 			System.out.println("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs);
+			System.out.println("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs);
+			System.out.println("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs);
 			System.out.println("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs);
 			bw.write("Test size: " + testSize + "\n");
 			bw.write("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs + "\n");
+			bw.write("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs + "\n");
+			bw.write("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs + "\n");
 			bw.write("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs);
 			bw.close();
 
@@ -422,7 +285,7 @@ public class SimilarityMeasures {
 	}
 
 	public static void initWords(ArrayList<Word> words) {
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 5; i++) {
 			words.add(new Word());
 		}
 	}
@@ -435,26 +298,47 @@ public class SimilarityMeasures {
 		}
 	}
 	
-	public static int lcs(char[] A, char[] B) {
-		int[][] LCS = new int[A.length + 1][B.length + 1];
-		for (int i = 0; i <= B.length; i++) {
-			LCS[0][i] = 0;
-		}
-
-		for (int i = 0; i <= A.length; i++) {
-			LCS[i][0] = 0;
-		}
-
-		for (int i = 1; i <= A.length; i++) {
-			for (int j = 1; j <= B.length; j++) {
-				if (A[i - 1] == B[j - 1]) {
-					LCS[i][j] = LCS[i - 1][j - 1] + 1;
-				} else {
-					LCS[i][j] = Math.max(LCS[i - 1][j], LCS[i][j - 1]);
+	public static void printResults(String simType, ArrayList<Word> bestWords, boolean isCorrect, HashSet<String> pairs, BufferedWriter bw) {
+		try {
+			bw.write("\t" + simType);
+			System.out.println(simType);
+			for (int i = 0; i < 5; ++i) {
+				Word word = bestWords.get(i);
+				String wString = word.getWord();
+				double result = 0.0;
+				if (simType.equals("jaccard")) {
+					result = word.getJaccard();
+				} else if (simType.equals("jaccardWeight")) {
+					result = word.getJaccardWeight();
+				} else if (simType.equals("dice")) {
+					result = word.getDice();
+				} else if (simType.equals("angle")) {
+					result = word.getAngle();
+				}
+				bw.write("\t" + wString + "\t" + result);
+				System.out.println("\t" + wString + "\t" + result);
+				if (pairs.contains(wString)) {
+					isCorrect = true;
 				}
 			}
+			if (isCorrect) {
+				bw.write("\tcorrect");
+				if (simType.equals("jaccard")) {
+					correctJacPairs++;
+				} else if (simType.equals("jaccardWeight")) {
+					correctJacWPairs++;
+				} else if (simType.equals("dice")) {
+					correctDicePairs++;
+				} else if (simType.equals("angle")) {
+					correctAnglePairs++;
+				}
+			} else {
+				bw.write("\twrong");
+			}
+			bw.newLine();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		return LCS[A.length][B.length];
 	}
     
 }
