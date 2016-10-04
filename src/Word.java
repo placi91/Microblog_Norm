@@ -14,6 +14,7 @@ public class Word {
 	private double jaccardWeight = 0.0;
 	private double dice = 0.0;
 	private double angle = 1000.0;
+	private double euclidean = 1000.0;
 	private HashMap<Integer, Integer> contextMap = new HashMap<>();
 
 	public Word() {
@@ -122,6 +123,14 @@ public class Word {
 
 	public void setAngle(double angle) {
 		this.angle = angle;
+	}
+
+	public double getEuclidean() {
+		return euclidean;
+	}
+
+	public void setEuclidean(double euclidean) {
+		this.euclidean = euclidean;
 	}
 
 	public String getCluster() {

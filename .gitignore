@@ -76,3 +76,10 @@ Temporary Items
 /oov_lemmas_put.txt
 /paths_accents_lemmas_put
 /paths_lemmas_put
+/vectorspace/
+/stopwords1.txt
+/stopwords2.txt
+/test_diff_cluster.txt
+/test_same_cluster.txt
+/test2.txt
+/tweets_pruned_lemmas_put.txt

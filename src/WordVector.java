@@ -4,13 +4,9 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -54,6 +50,13 @@ public class WordVector {
 			while ((line = br.readLine()) != null) {
 				String[] parts = line.split(" ");
 				accents.put(parts[0].trim(), parts[1].trim());
+			}
+			br.close();
+			
+			br = new BufferedReader(new FileReader("stopwords1.txt"));
+			HashSet<String> stopwords = new HashSet<>();
+			while ((line = br.readLine()) != null) {
+				stopwords.add(line.trim());
 			}
 			br.close();
 

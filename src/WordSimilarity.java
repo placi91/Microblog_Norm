@@ -30,52 +30,75 @@ public class WordSimilarity {
 	}
 	
 	public static double jaccardWeight(Set<Integer> ivContext, Set<Integer> oovContext, Set<Integer> common, Word oov, Word iv) {
-		double jaccardWeight1 = 0.0, jaccardWeight2 = 0.0;
+		double numerator = 0.0, denominator = 0.0;
 		for (Integer commonWord : common) {
 			double oovFreq = oov.getContextFrequency(commonWord);
 			double ivFreq = iv.getContextFrequency(commonWord);
-			jaccardWeight1 += Math.min(oovFreq, ivFreq);
-			jaccardWeight2 += Math.max(oovFreq, ivFreq);
+			numerator += Math.min(oovFreq, ivFreq);
+			denominator += Math.max(oovFreq, ivFreq);
 		}
 		Set<Integer> asymmetric = new HashSet<>(ivContext);
 		asymmetric.removeAll(oovContext);
 		for (Integer ivContextWord : asymmetric) {
 			double ivFreq = iv.getContextFrequency(ivContextWord);
-			jaccardWeight2 += ivFreq;
+			denominator += ivFreq;
 		}
 		asymmetric.clear();
 		asymmetric.addAll(oovContext);
 		asymmetric.removeAll(ivContext);
 		for (Integer oovContextWord : asymmetric) {
 			double oovFreq = oov.getContextFrequency(oovContextWord);
-			jaccardWeight2 += oovFreq;
+			denominator += oovFreq;
 		}
-		return jaccardWeight1 / jaccardWeight2;
+		return numerator / denominator;
 	}
 	
 	public static double dice(Set<Integer> ivContext, Set<Integer> oovContext, Set<Integer> common, Word oov, Word iv) {
-		double dice1 = 0.0, dice2 = 0.0;
+		double numerator = 0.0, denominator = 0.0;
 		for (Integer commonWord : common) {
 			double oovFreq = oov.getContextFrequency(commonWord);
 			double ivFreq = iv.getContextFrequency(commonWord);
-			dice1 += Math.min(oovFreq, ivFreq);
-			dice2 += oovFreq + ivFreq;
+			numerator += Math.min(oovFreq, ivFreq);
+			denominator += oovFreq + ivFreq;
 		}
-		dice1 = 2 * dice1;
+		numerator = 2 * numerator;
 		Set<Integer> asymmetric = new HashSet<>(ivContext);
 		asymmetric.removeAll(oovContext);
 		for (Integer ivContextWord : asymmetric) {
 			double ivFreq = iv.getContextFrequency(ivContextWord);
-			dice2 += ivFreq;
+			denominator += ivFreq;
 		}
 		asymmetric.clear();
 		asymmetric.addAll(oovContext);
 		asymmetric.removeAll(ivContext);
 		for (Integer oovContextWord : asymmetric) {
 			double oovFreq = oov.getContextFrequency(oovContextWord);
-			dice2 += oovFreq;
+			denominator += oovFreq;
 		}
-		return dice1 / dice2;
+		return numerator / denominator;
+	}
+	
+	public static double euclidean(Set<Integer> ivContext, Set<Integer> oovContext, Set<Integer> common, Word oov, Word iv) {
+		double sum = 0.0;
+		for (Integer commonWord : common) {
+			double oovFreq = oov.getContextFrequency(commonWord);
+			double ivFreq = iv.getContextFrequency(commonWord);
+			sum += (oovFreq - ivFreq) * (oovFreq - ivFreq);
+		}
+		Set<Integer> asymmetric = new HashSet<>(ivContext);
+		asymmetric.removeAll(oovContext);
+		for (Integer ivContextWord : asymmetric) {
+			double ivFreq = iv.getContextFrequency(ivContextWord);
+			sum += ivFreq * ivFreq;
+		}
+		asymmetric.clear();
+		asymmetric.addAll(oovContext);
+		asymmetric.removeAll(ivContext);
+		for (Integer oovContextWord : asymmetric) {
+			double oovFreq = oov.getContextFrequency(oovContextWord);
+			sum += oovFreq * oovFreq;
+		}
+		return Math.sqrt(sum);
 	}
 	
 	public static int lcs(char[] a, char[] b) {

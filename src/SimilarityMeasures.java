@@ -16,7 +16,9 @@ import java.util.regex.Pattern;
 
 public class SimilarityMeasures {
 	
-	private static int correctJacPairs = 0, correctAnglePairs = 0, correctJacWPairs = 0, correctDicePairs = 0;
+	private static int correctJacPairs = 0, correctAnglePairs = 0;
+	private static int correctJacWPairs = 0, correctDicePairs = 0;
+	private static int correctEuPairs = 0;
 
 	public static void main(String[] args) {
 		
@@ -95,10 +97,12 @@ public class SimilarityMeasures {
 				ArrayList<Word> maxJaccardWeight = new ArrayList<>();
 				ArrayList<Word> maxDice = new ArrayList<>();
 				ArrayList<Word> minAngles = new ArrayList<>();
+				ArrayList<Word> minEuclidean = new ArrayList<>();
 				initWords(maxJaccard);
 				initWords(maxJaccardWeight);
 				initWords(maxDice);
 				initWords(minAngles);
+				initWords(minEuclidean);
 				
 				for (Entry<String, HashSet<Word>> cIV : IVwords.entrySet()) {
 					String clusterIV = cIV.getKey();
@@ -140,104 +144,40 @@ public class SimilarityMeasures {
 						double angle = WordSimilarity.cosine(ivContext, oovContext, common, oov, iv);
 						double jaccardWeight = WordSimilarity.jaccardWeight(ivContext, oovContext, common, oov, iv);
 						double dice = WordSimilarity.dice(ivContext, oovContext, common, oov, iv);
+						double euclidean = WordSimilarity.euclidean(ivContext, oovContext, common, oov, iv);
 						//jaccard = a * jaccard;
 						//angle = b * angle;
 						
-						if (angle < minAngles.get(minAngles.size()-1).getAngle()) {
-							Word w = new Word(iv.getWord());
-							w.setAngle(angle);
-							if(minAngles.size() == 5)
-								minAngles.remove(minAngles.size()-1);
-							minAngles.add(w);
-						}
+						addResult(minAngles, "angle", angle, iv.getWord());
+						addResult(maxJaccard, "jaccard", jaccard, iv.getWord());
+						addResult(maxJaccardWeight, "jaccardWeight", jaccardWeight, iv.getWord());
+						addResult(maxDice, "dice", dice, iv.getWord());
+						addResult(minEuclidean, "eu", euclidean, iv.getWord());
 						
-						if (jaccard > maxJaccard.get(maxJaccard.size()-1).getJaccard()) {
-							Word w = new Word(iv.getWord());
-							w.setJaccard(jaccard);
-							if(maxJaccard.size() == 5)
-								maxJaccard.remove(maxJaccard.size()-1);
-							maxJaccard.add(w);
-						}
-						if (jaccardWeight > maxJaccardWeight.get(maxJaccardWeight.size()-1).getJaccardWeight()) {
-							Word w = new Word(iv.getWord());
-							w.setJaccardWeight(jaccardWeight);
-							if(maxJaccardWeight.size() == 5)
-								maxJaccardWeight.remove(maxJaccardWeight.size()-1);
-							maxJaccardWeight.add(w);
-						}
-						if (dice > maxDice.get(maxDice.size()-1).getDice()) {
-							Word w = new Word(iv.getWord());
-							w.setDice(dice);
-							if(maxDice.size() == 5)
-								maxDice.remove(maxDice.size()-1);
-							maxDice.add(w);
-						}
-						Collections.sort(maxJaccard, new Comparator<Word>() {
-							@Override
-							public int compare(Word arg0, Word arg1) {
-								return Double.compare(arg1.getJaccard(), arg0.getJaccard());
-							}
-						});
-						Collections.sort(maxJaccardWeight, new Comparator<Word>() {
-							@Override
-							public int compare(Word arg0, Word arg1) {
-								return Double.compare(arg1.getJaccardWeight(), arg0.getJaccardWeight());
-							}
-						});
-						Collections.sort(maxDice, new Comparator<Word>() {
-							@Override
-							public int compare(Word arg0, Word arg1) {
-								return Double.compare(arg1.getDice(), arg0.getDice());
-							}
-						});
-						Collections.sort(minAngles, new Comparator<Word>() {
-							@Override
-							public int compare(Word arg0, Word arg1) {
-								return Double.compare(arg0.getAngle(), arg1.getAngle());
-							}
-						});
+						sortResults(minAngles, "angle");
+						sortResults(maxJaccard, "jaccard");
+						sortResults(maxJaccardWeight, "jaccardWeight");
+						sortResults(maxDice, "dice");
+						sortResults(minEuclidean, "eu");
 					}
 
 				}
 
 				z = 1;
 				char[] oovCharArray = oov.getWord().toCharArray();
-				Collections.sort(minAngles, new Comparator<Word>() {
-					@Override
-					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray), 
-								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
-					}
-				});
-				Collections.sort(maxJaccard, new Comparator<Word>() {
-					@Override
-					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
-								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
-					}
-				});
-				Collections.sort(maxJaccardWeight, new Comparator<Word>() {
-					@Override
-					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
-								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
-					}
-				});
-				Collections.sort(maxDice, new Comparator<Word>() {
-					@Override
-					public int compare(Word arg0, Word arg1) {
-						return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
-								WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
-					}
-				});
+				rankWordsBylcs(minAngles, oovCharArray);
+				rankWordsBylcs(maxJaccard, oovCharArray);
+				rankWordsBylcs(maxJaccardWeight, oovCharArray);
+				rankWordsBylcs(maxDice, oovCharArray);
+				rankWordsBylcs(minEuclidean, oovCharArray);
 				
 				HashSet<String> pairs = oov.getPairs();
-				boolean correctJaccard = false, correctAngle = false, correctJacWeight = false, correctDice = false;
 				bw.write(out.getKey());
-				printResults("jaccard", maxJaccard, correctJaccard, pairs, bw);
-				printResults("jaccardWeight", maxJaccardWeight, correctJacWeight, pairs, bw);
-				printResults("dice", maxDice, correctDice, pairs, bw);
-				printResults("angle", minAngles, correctAngle, pairs, bw);
+				printResults("jaccard", maxJaccard, pairs, bw);
+				printResults("jaccardWeight", maxJaccardWeight, pairs, bw);
+				printResults("dice", maxDice, pairs, bw);
+				printResults("angle", minAngles, pairs, bw);
+				printResults("eu", minEuclidean, pairs, bw);
 				bw.flush();
 			}
 			int notFound = 0;
@@ -252,16 +192,19 @@ public class SimilarityMeasures {
 			double scoreJaccardW = ((double)correctJacWPairs) / testSize * 100;
 			double scoreDice = ((double)correctDicePairs) / testSize * 100;
 			double scoreAngle = ((double)correctAnglePairs) / testSize * 100;
+			double scoreEu = ((double)correctEuPairs) / testSize * 100;
 			System.out.println("Test size: " + testSize);
 			System.out.println("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs);
 			System.out.println("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs);
 			System.out.println("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs);
 			System.out.println("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs);
+			System.out.println("Euclidean score: " + scoreEu + " correct pairs: " + correctEuPairs);
 			bw.write("Test size: " + testSize + "\n");
 			bw.write("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs + "\n");
 			bw.write("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs + "\n");
 			bw.write("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs + "\n");
-			bw.write("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs);
+			bw.write("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs + "\n");
+			bw.write("Euclidean score: " + scoreEu + " correct pairs: " + correctEuPairs);
 			bw.close();
 
 		} catch (IOException e) {
@@ -298,8 +241,9 @@ public class SimilarityMeasures {
 		}
 	}
 	
-	public static void printResults(String simType, ArrayList<Word> bestWords, boolean isCorrect, HashSet<String> pairs, BufferedWriter bw) {
+	public static void printResults(String simType, ArrayList<Word> bestWords, HashSet<String> pairs, BufferedWriter bw) {
 		try {
+			boolean isCorrect = false;
 			bw.write("\t" + simType);
 			System.out.println(simType);
 			for (int i = 0; i < 5; ++i) {
@@ -314,6 +258,8 @@ public class SimilarityMeasures {
 					result = word.getDice();
 				} else if (simType.equals("angle")) {
 					result = word.getAngle();
+				} else if (simType.equals("eu")) {
+					result = word.getEuclidean();
 				}
 				bw.write("\t" + wString + "\t" + result);
 				System.out.println("\t" + wString + "\t" + result);
@@ -331,6 +277,8 @@ public class SimilarityMeasures {
 					correctDicePairs++;
 				} else if (simType.equals("angle")) {
 					correctAnglePairs++;
+				} else if (simType.equals("eu")) {
+					correctEuPairs++;
 				}
 			} else {
 				bw.write("\twrong");
@@ -339,6 +287,76 @@ public class SimilarityMeasures {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void rankWordsBylcs(ArrayList<Word> simType, char[] oovCharArray) {
+		Collections.sort(simType, new Comparator<Word>() {
+			@Override
+			public int compare(Word arg0, Word arg1) {
+				return Integer.compare(WordSimilarity.lcs(arg1.getWord().toCharArray(), oovCharArray),
+						WordSimilarity.lcs(arg0.getWord().toCharArray(), oovCharArray));
+			}
+		});
+	}
+	
+	public static void sortResults(ArrayList<Word> similarity, String simType) {
+		Collections.sort(similarity, new Comparator<Word>() {
+			@Override
+			public int compare(Word arg0, Word arg1) {
+				if (simType.equals("jaccard")) {
+					return Double.compare(arg1.getJaccard(), arg0.getJaccard());
+				} else if (simType.equals("jaccardWeight")) {
+					return Double.compare(arg1.getJaccardWeight(), arg0.getJaccardWeight());
+				} else if (simType.equals("dice")) {
+					return Double.compare(arg1.getDice(), arg0.getDice());
+				} else if (simType.equals("angle")) {
+					return Double.compare(arg0.getAngle(), arg1.getAngle());
+				} else {
+					return Double.compare(arg0.getEuclidean(), arg1.getEuclidean());
+				}
+			}
+		});	
+	}
+	
+	public static void addResult(ArrayList<Word> similarity, String simType, double result, String iv) {
+		double last = 0.0;
+		if (simType.equals("jaccard")) {
+			last = similarity.get(similarity.size()-1).getJaccard();
+		} else if (simType.equals("jaccardWeight")) {
+			last = similarity.get(similarity.size()-1).getJaccardWeight();
+		} else if (simType.equals("dice")) {
+			last = similarity.get(similarity.size()-1).getDice();
+		} else if (simType.equals("angle")) {
+			last = similarity.get(similarity.size()-1).getAngle();
+		} else if (simType.equals("eu")) {
+			last = similarity.get(similarity.size()-1).getEuclidean();
+		}
+		if ((simType.equals("angle") || simType.equals("eu")) && result < last) {
+			Word w = new Word(iv);
+			if (simType.equals("angle")) {
+				w.setAngle(result);
+			} else if (simType.equals("eu")) {
+				w.setEuclidean(result);
+			}
+			if(similarity.size() == 60) {
+				similarity.remove(similarity.size()-1);
+			}
+			similarity.add(w);
+		} else if (result > last) {
+			Word w = new Word(iv);
+			if (simType.equals("jaccard")) {
+				w.setJaccard(result);
+			} else if (simType.equals("jaccardWeight")) {
+				w.setJaccardWeight(result);
+			} else if (simType.equals("dice")) {
+				w.setDice(result);
+			} 
+			if(similarity.size() == 60) {
+				similarity.remove(similarity.size()-1);
+			}
+			similarity.add(w);
+		}
+
 	}
     
 }
