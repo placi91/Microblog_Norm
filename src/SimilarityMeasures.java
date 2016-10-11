@@ -17,14 +17,16 @@ import java.util.regex.Pattern;
 public class SimilarityMeasures {
 	
 	private static int correctJacPairs = 0, correctAnglePairs = 0;
+	private static int correctJacPairsW = 0, correctAnglePairsW = 0;
 	private static int correctJacWPairs = 0, correctDicePairs = 0;
-	private static int correctEuPairs = 0;
+	private static int correctJacWPairsW = 0, correctDicePairsW = 0;
+	private static int correctEuPairs = 0, correctEuPairsW = 0;
 
 	public static void main(String[] args) {
 		
 		try {
 			int s = 1;
-			BufferedReader br = new BufferedReader(new FileReader("vectorspace/word_vectors.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("vectorspace/word_vectors_ignore_stopw.txt"));
 			
 			HashMap<String, Word> OOVwords = new HashMap<>();
 			HashMap<String, HashSet<Word>> IVwords = new HashMap<>();
@@ -133,18 +135,15 @@ public class SimilarityMeasures {
 						System.out.println(s++ + " oov " + out.getKey());
 						System.out.println(z++ + " iv " + iv.getWord());
 						
-						Set<Integer> ivContext = iv.getContextSet();
-						Set<Integer> common = new HashSet<>(ivContext);
-						common.retainAll(oovContext);
-						if(common.size() == 0) {
+						WordSimilarity wordSimilarity = new WordSimilarity(oov,iv);
+						if(wordSimilarity.getCommon().isEmpty()) {
 							continue;
 						}
-						
-						double jaccard = WordSimilarity.jaccard(ivContext, oovContext, common);
-						double angle = WordSimilarity.cosine(ivContext, oovContext, common, oov, iv);
-						double jaccardWeight = WordSimilarity.jaccardWeight(ivContext, oovContext, common, oov, iv);
-						double dice = WordSimilarity.dice(ivContext, oovContext, common, oov, iv);
-						double euclidean = WordSimilarity.euclidean(ivContext, oovContext, common, oov, iv);
+						double jaccard = wordSimilarity.jaccard();
+						double angle = wordSimilarity.cosine();
+						double jaccardWeight = wordSimilarity.jaccardWeight();
+						double dice = wordSimilarity.dice();
+						double euclidean = wordSimilarity.euclidean();
 						//jaccard = a * jaccard;
 						//angle = b * angle;
 						
@@ -171,34 +170,45 @@ public class SimilarityMeasures {
 				rankWordsBylcs(maxDice, oovCharArray);
 				rankWordsBylcs(minEuclidean, oovCharArray);
 				
-				HashSet<String> pairs = oov.getPairs();
 				bw.write(out.getKey());
-				printResults("jaccard", maxJaccard, pairs, bw);
-				printResults("jaccardWeight", maxJaccardWeight, pairs, bw);
-				printResults("dice", maxDice, pairs, bw);
-				printResults("angle", minAngles, pairs, bw);
-				printResults("eu", minEuclidean, pairs, bw);
+				printResults("jaccard", maxJaccard, bw, oov);
+				printResults("jaccardWeight", maxJaccardWeight, bw, oov);
+				printResults("dice", maxDice, bw, oov);
+				printResults("angle", minAngles, bw, oov);
+				printResults("eu", minEuclidean, bw, oov);
 				bw.flush();
 			}
-			int notFound = 0;
+			int notFound = 0, testFreq = 0;
 			for (String t : test) {
 				if(!OOVwords.containsKey(t)) {
 					System.err.println(t);
 					notFound++;
+				} else {
+					testFreq += OOVwords.get(t).getFrequency();
 				}
 			}
 			double testSize = (double)(test.size()-notFound);
 			double scoreJaccard = ((double)correctJacPairs) / testSize * 100;
+			double wScoreJaccard = ((double)correctJacPairsW) / testFreq * 100;
 			double scoreJaccardW = ((double)correctJacWPairs) / testSize * 100;
+			double wScoreJaccardW = ((double)correctJacWPairsW) / testFreq * 100;
 			double scoreDice = ((double)correctDicePairs) / testSize * 100;
+			double wScoreDice = ((double)correctDicePairsW) / testFreq * 100;
 			double scoreAngle = ((double)correctAnglePairs) / testSize * 100;
+			double wScoreAngle = ((double)correctAnglePairsW) / testFreq * 100;
 			double scoreEu = ((double)correctEuPairs) / testSize * 100;
+			double wScoreEu = ((double)correctEuPairsW) / testFreq * 100;
 			System.out.println("Test size: " + testSize);
 			System.out.println("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs);
+			//System.out.println("Jaccard score weight: " + wScoreJaccard);
 			System.out.println("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs);
+			//System.out.println("Jaccard Weight score weight: " + wScoreJaccardW);
 			System.out.println("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs);
+			//System.out.println("Dice score weight: " + wScoreDice);
 			System.out.println("Angle score: " + scoreAngle + " correct pairs: " + correctAnglePairs);
+			//System.out.println("Angle score weight: " + wScoreAngle);
 			System.out.println("Euclidean score: " + scoreEu + " correct pairs: " + correctEuPairs);
+			//System.out.println("Euclidean score weight: " + wScoreEu);
 			bw.write("Test size: " + testSize + "\n");
 			bw.write("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs + "\n");
 			bw.write("Jaccard Weight score: " + scoreJaccardW + " correct pairs: " + correctJacWPairs + "\n");
@@ -241,8 +251,9 @@ public class SimilarityMeasures {
 		}
 	}
 	
-	public static void printResults(String simType, ArrayList<Word> bestWords, HashSet<String> pairs, BufferedWriter bw) {
+	public static void printResults(String simType, ArrayList<Word> bestWords, BufferedWriter bw, Word oov) {
 		try {
+			HashSet<String> pairs = oov.getPairs();
 			boolean isCorrect = false;
 			bw.write("\t" + simType);
 			System.out.println(simType);
@@ -271,14 +282,19 @@ public class SimilarityMeasures {
 				bw.write("\tcorrect");
 				if (simType.equals("jaccard")) {
 					correctJacPairs++;
+					correctJacPairsW += oov.getFrequency();
 				} else if (simType.equals("jaccardWeight")) {
 					correctJacWPairs++;
+					correctJacWPairsW += oov.getFrequency();
 				} else if (simType.equals("dice")) {
 					correctDicePairs++;
+					correctDicePairsW += oov.getFrequency();
 				} else if (simType.equals("angle")) {
 					correctAnglePairs++;
+					correctAnglePairsW += oov.getFrequency();
 				} else if (simType.equals("eu")) {
 					correctEuPairs++;
+					correctEuPairsW += oov.getFrequency();
 				}
 			} else {
 				bw.write("\twrong");

@@ -16,6 +16,7 @@ public class Word {
 	private double angle = 1000.0;
 	private double euclidean = 1000.0;
 	private HashMap<Integer, Integer> contextMap = new HashMap<>();
+	private HashMap<Integer, Double> contextMapDouble = new HashMap<>();
 
 	public Word() {
 		this.word = "empty";
@@ -74,12 +75,13 @@ public class Word {
 		return contextMap.containsKey(word);
 	}
 	
-	
-	
 	public HashMap<Integer, Integer> getContextMap() {
 		return contextMap;
 	}	
 	
+	public HashMap<Integer, Double> getContextMapDouble() {
+		return contextMapDouble;
+	}
 	
 	public void setContextMap(HashMap<Integer, Integer> contextMap) {
 		this.contextMap = contextMap;

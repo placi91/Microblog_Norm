@@ -7,10 +7,13 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WordVector {
+public class WordVectorSpace {
+	
+	private static double log2 = Math.log(2);
 
 	public static void main(String[] args) {
 
@@ -53,7 +56,7 @@ public class WordVector {
 			}
 			br.close();
 			
-			br = new BufferedReader(new FileReader("stopwords1.txt"));
+			br = new BufferedReader(new FileReader("stopwords.txt"));
 			HashSet<String> stopwords = new HashSet<>();
 			while ((line = br.readLine()) != null) {
 				stopwords.add(line.trim());
@@ -85,7 +88,8 @@ public class WordVector {
 					int left = i - 1, right = i + 1;
 					int lengthLeft = 0, lengthRight = 0;
 					while ((left >= 0 || right < parts.length)) {
-						if (left >= 0 && !parts[left].isEmpty() && lengthLeft <= 4) {
+						if (left >= 0 && !parts[left].isEmpty() && lengthLeft <= 4
+								&& !stopwords.contains(parts[left])) {
 							String leftWord = parts[left];
 							m = pattern.matcher(leftWord);
 							if((m.find() || leftWord.contains(":")) && leftWord.length() >= 2) {
@@ -101,11 +105,11 @@ public class WordVector {
 								} else {
 									w.updateContext(contextWords.get(leftWord));
 								}
-							}
-							if(leftWord.length() >= 2)
 								++lengthLeft;
+							}
 						}
-						if (right < parts.length && !parts[right].isEmpty() && lengthRight <= 4) {
+						if (right < parts.length && !parts[right].isEmpty() && lengthRight <= 4
+								&& !stopwords.contains(parts[right])) {
 							String rightWord = parts[right];
 							m = pattern.matcher(rightWord);
 							if((m.find() || rightWord.contains(":")) && rightWord.length() >= 2) {
@@ -121,9 +125,8 @@ public class WordVector {
 								} else {
 									w.updateContext(contextWords.get(rightWord));
 								}
-							}
-							if(rightWord.length() >= 2)
 								++lengthRight;
+							}
 						}
 						++right;
 						--left;
@@ -166,6 +169,8 @@ public class WordVector {
 						word.setType("OOV");
 						words2.put(wordString, word);
 					}
+				} else {
+					System.err.println(wordString);
 				}
 
 			}
@@ -176,28 +181,63 @@ public class WordVector {
 
 			System.out.println("Writing to word vectors.txt");
 			BufferedWriter bw = new BufferedWriter(
-					new OutputStreamWriter(new FileOutputStream("vectorspace/word_vectors.txt"), "UTF-8"));			
+					new OutputStreamWriter(new FileOutputStream("vectorspace/pmmi_word_vectors_ignore_stopw.txt"), "UTF-8"));			
+			
+			double allFreq = 0;
+			for (Entry<String, Word> w : words2.entrySet()) {
+				Word word = w.getValue();
+				Set<Integer> context = word.getContextSet();
+				for (Integer contextWord : context) {
+					allFreq += word.getContextFrequency(contextWord);
+				}
+			}
 			
 			for (Entry<String, Word> w : words2.entrySet()) {
 				String wordString = w.getKey();
 				Word word = w.getValue();
+				Set<Integer> context = word.getContextSet();
+				if(context.isEmpty())
+					continue;
+				double wordRow = 0.0;
+				for (Integer contextWord : context) {
+					wordRow += word.getContextFrequency(contextWord);
+				}
+				wordRow /= allFreq;
+				for (Integer contextWord : context) {
+					double cell = word.getContextFrequency(contextWord) / allFreq;
+					double contextCol = 0.0;
+					for (Entry<String, Word> w2 : words2.entrySet()) {
+						Word word2 = w.getValue();
+						if(word2.getContextSet().contains(contextWord)) {
+							contextCol += word2.getContextFrequency(contextWord);
+						}
+					}
+					contextCol /= allFreq;
+					cell = Math.log(cell / (wordRow * contextCol));
+					cell = Math.max(cell, 0);
+					word.getContextMapDouble().put(contextWord, cell);
+				}
+				
 				bw.write(wordString + "\t" + word.getFrequency() + "\t" + word.getCluster() + "\t" + word.getType());
-				HashMap<Integer, Integer> contextMap = word.getContextMap();
-				for (Entry<Integer, Integer> contextWord : contextMap.entrySet()) {
+				HashMap<Integer, Double> contextMap = word.getContextMapDouble();
+				for (Entry<Integer, Double> contextWord : contextMap.entrySet()) {
 					Integer contextNum = contextWord.getKey();
-					Integer contextFreq = contextWord.getValue();
+					Double contextFreq = contextWord.getValue();
 					bw.write("\t" + contextNum + "\t" + contextFreq);
 				}
 				bw.newLine();
 				bw.flush();
 			}
-			
 			bw.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public static double log2(double a) {
+		return Math.log(a) / log2;
 	}
     
 }
