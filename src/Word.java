@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Word {
 
 	private String word;
@@ -10,13 +11,15 @@ public class Word {
 	private HashSet<String> pairs = null;
 	private boolean isCommon;
 	private int frequency;
+	double editDistance = 10000.0;
+	double lcs = 0.0;
 	private double jaccard = 0.0;
 	private double jaccardWeight = 0.0;
 	private double dice = 0.0;
-	private double angle = 1000.0;
-	private double euclidean = 1000.0;
+	private double cosine = 0.0;
+	private double euclidean = 10000.0;
 	private HashMap<Integer, Integer> contextMap = new HashMap<>();
-	private HashMap<Integer, Double> contextMapDouble = new HashMap<>();
+	HashMap<String, Integer> contextMapString = new HashMap<>();
 
 	public Word() {
 		this.word = "empty";
@@ -79,10 +82,6 @@ public class Word {
 		return contextMap;
 	}	
 	
-	public HashMap<Integer, Double> getContextMapDouble() {
-		return contextMapDouble;
-	}
-	
 	public void setContextMap(HashMap<Integer, Integer> contextMap) {
 		this.contextMap = contextMap;
 	}
@@ -119,12 +118,12 @@ public class Word {
 		this.jaccard = jaccard;
 	}
 	
-	public double getAngle() {
-		return angle;
+	public double getCosine() {
+		return cosine;
 	}
 
-	public void setAngle(double angle) {
-		this.angle = angle;
+	public void setCosine(double angle) {
+		this.cosine = angle;
 	}
 
 	public double getEuclidean() {
@@ -170,7 +169,7 @@ public class Word {
 	@Override
 	public String toString() {
 		return "Word [word=" + word + ", frequency=" + frequency + ", jaccard="
-				+ jaccard +  ", angle=" + angle + ", contextSet=" + contextMap + "]";
+				+ jaccard +  ", cosine=" + cosine + ", contextSet=" + contextMap + "]";
 	}
 }
 

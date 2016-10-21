@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -54,7 +55,7 @@ public class WordSimilarity {
 			double ivFreq = iv.getContextFrequency(commonWord);
 			product += oovFreq  * ivFreq;
 		}
-		return Math.acos(product / (lengthIV * lengthOOV));
+		return product / (lengthIV * lengthOOV);
 	}
 	
 	public double jaccardWeight() {
@@ -134,6 +135,45 @@ public class WordSimilarity {
 			}
 		}
 		return lcs[a.length][b.length];
+	}
+	
+    private static int minimum(int a, int b, int c) {                            
+        return Math.min(Math.min(a, b), c);                                      
+    }                                                                            
+                                                                                 
+    public static int editDistance(CharSequence lhs, CharSequence rhs) {      
+        int[][] distance = new int[lhs.length() + 1][rhs.length() + 1];        
+                                                                                 
+        for (int i = 0; i <= lhs.length(); i++)                                 
+            distance[i][0] = i;                                                  
+        for (int j = 1; j <= rhs.length(); j++)                                 
+            distance[0][j] = j;                                                  
+                                                                                 
+        for (int i = 1; i <= lhs.length(); i++)                                 
+            for (int j = 1; j <= rhs.length(); j++)                             
+                distance[i][j] = minimum(                                        
+                        distance[i - 1][j] + 1,                                  
+                        distance[i][j - 1] + 1,                                  
+                        distance[i - 1][j - 1] + ((lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1));
+                                                                                 
+        return distance[lhs.length()][rhs.length()];                           
+    }
+	
+	public static void main(String[] args) {
+		Word oov = new Word("oov");
+		HashMap<Integer, Integer> c = oov.getContextMap();
+		c.put(0, 20);
+		c.put(1, 10);
+		c.put(2, 4);
+		c.put(3, 1);
+		Word iv = new Word("iv");
+		c = iv.getContextMap();
+		c.put(2, 10);
+		c.put(3, 3);
+		c.put(4, 5);
+		WordSimilarity w = new WordSimilarity(oov, iv);
+		System.out.println(w.jaccardWeight());
+		System.out.println(w.jaccardWeight());
 	}
 	
 }
