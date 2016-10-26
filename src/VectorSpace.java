@@ -140,7 +140,7 @@ public class VectorSpace {
 			}
 			br.close();
 			
-			br = new BufferedReader(new FileReader("most_common_oov_lemmas_put.txt"));
+			/*br = new BufferedReader(new FileReader("most_common_oov_lemmas_put.txt"));
 			while ((line = br.readLine()) != null) {
 				String[] parts = line.split(" ");
 				String oov = parts[0].toLowerCase().trim();
@@ -148,9 +148,9 @@ public class VectorSpace {
 					System.err.println(oov.toUpperCase());
 				oovWords.get(oov).setCommon(true);
 			}
-			br.close();
+			br.close();*/
 			
-			br = new BufferedReader(new FileReader("test.txt"));
+			br = new BufferedReader(new FileReader("test_same_cluster.txt"));
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
 				String[] parts = line.split(" ");
@@ -184,7 +184,7 @@ public class VectorSpace {
 			oovWords.clear();
 			System.gc();
 
-			String file = "all_word_vectors_ignore_stopw.txt";
+			String file = "word_sameclust_vectors_ignore_stopw.txt";
 			System.out.println("Writing to " + file);
 			System.out.println(words2.size());
 			BufferedWriter bw = new BufferedWriter(

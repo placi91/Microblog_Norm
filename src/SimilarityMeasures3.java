@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class SimilarityMeasures {
+public class SimilarityMeasures3 {
 
 	private static String vectorspace = "word_vectors_ignore_stopw.txt";
 
@@ -26,13 +26,10 @@ public class SimilarityMeasures {
 	private static int jacDCG = 0, cosineDCG = 0, euDCG = 0;
 	private static int jacWeightDCG = 0, diceDCG = 0;
 	private static int editDCG = 0, lcsDCG = 0;
-	private static int n = 25;
-	private static int[] jacPairs = new int[n], cosinePairs = new int[n], jacWPairs = new int[n];
-	private static int[] dicePairs = new int[n], euPairs = new int[n], editPairs = new int[n];
-	private static int[] lcsPairs = new int[n];
-
+	
 	private static double log2 = Math.log(2);
 	
+
 	public static void main(String[] args) {
 
 		try {
@@ -210,36 +207,12 @@ public class SimilarityMeasures {
 			bw.write("Cosine score: " + scoreCosine + " correct pairs: " + correctCosinePairs + "\n");
 			bw.write("Euclidean score: " + scoreEu + " correct pairs: " + correctEuPairs + "\n");
 			
-			System.out.print("jaccard cutoff ");
-			printCutoff(jacPairs);
-			System.out.print("jaccard weight cutoff ");
-			printCutoff(jacWPairs);
-			System.out.print("dice cutoff ");
-			printCutoff(dicePairs);
-			System.out.print("cosine cutoff ");
-			printCutoff(cosinePairs);
-			System.out.print("eu cutoff ");
-			printCutoff(euPairs);
-			System.out.print("edit cutoff ");
-			printCutoff(editPairs);
-			System.out.print("lcs cutoff ");
-			printCutoff(lcsPairs);
-			
 			bw.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-	}
-	
-	public static void printCutoff(int[] a) {
-		int sum = 0;
-		for (int i = 0; i < a.length; i++) {
-			sum += a[i];
-			System.out.print(sum + " ");
-		}
-		System.out.println();
 	}
 	
 	public static double log2(double a) {
@@ -261,7 +234,7 @@ public class SimilarityMeasures {
 	}
 
 	public static void initWords(ArrayList<Word> words) {
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 1; i++) {
 			words.add(new Word());
 		}
 	}
@@ -302,40 +275,32 @@ public class SimilarityMeasures {
 			}
 			if (isCorrect) {
 				bw.write("\tcorrect");
-				int i = rank - 2;
 				if (simType.equals("jaccard")) {
 					correctJacPairs++;
-					jacPairs[i/2]++;
 					jacCG += oov.getFrequency();
 					jacDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("jaccardWeight")) {
 					correctJacWPairs++;
-					jacWPairs[i/2]++;
 					jacWeightCG += oov.getFrequency();
 					jacWeightDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("dice")) {
 					correctDicePairs++;
-					dicePairs[i/2]++;
 					diceCG += oov.getFrequency();
 					diceDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("cosine")) {
 					correctCosinePairs++;
-					cosinePairs[i/2]++;
 					cosineCG += oov.getFrequency();
 					cosineDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("eu")) {
 					correctEuPairs++;
-					euPairs[i/2]++;
 					euCG += oov.getFrequency();
 					euDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("edit")) {
 					correctEditPairs++;
-					editPairs[i/2]++;
 					editCG += oov.getFrequency();
 					editDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("lcs")) {
 					correctLcsPairs++;
-					lcsPairs[i/2]++;
 					lcsCG += oov.getFrequency();
 					lcsDCG += oov.getFrequency() / log2(rank);
 				}
@@ -407,7 +372,7 @@ public class SimilarityMeasures {
 				} else if (simType.equals("edit")) {
 					w.setEditDistance(result);
 				} 
-				if (similarity.size() == 50) {
+				if (similarity.size() == 1) {
 					similarity.remove(similarity.size() - 1);
 				}
 				similarity.add(w);
@@ -425,7 +390,7 @@ public class SimilarityMeasures {
 			} else if (simType.equals("lcs")) {
 				w.setLcs(result);
 			}
-			if (similarity.size() == 50) {
+			if (similarity.size() == 1) {
 				similarity.remove(similarity.size() - 1);
 			}
 			similarity.add(w);

@@ -41,11 +41,22 @@ public class CheckWordsInClusters {
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
 				String[] parts = line.split(" ");
+				String testString = parts[0].trim();
 				HashSet<String> pairs = new HashSet<>();
+				
 				for (int j = 1; j < parts.length; j++) {
 					pairs.add(parts[j].trim());
 				}
-				test.put(parts[0].trim(), new Word(true, pairs));
+				Word testWord = new Word(true, pairs);
+				for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
+					String clusterName = c.getKey();
+					HashSet<String> cWords = c.getValue();
+					if(cWords.contains(testString)) {
+						testWord.setCluster(clusterName);
+						break;
+					}
+				}
+				test.put(testString, testWord);
 			}
 			br.close();
 
@@ -54,11 +65,11 @@ public class CheckWordsInClusters {
 			BufferedWriter writeDiffCluster = new BufferedWriter(
 					new OutputStreamWriter(new FileOutputStream("test_diff_cluster.txt"), "UTF-8"));
 			
-			
 			int clusterPairs = 0;
 			for (Entry<String, Word> t : test.entrySet()) {
 				Word testWord = t.getValue();
 				String testString = t.getKey();
+				String tCluster = testWord.getCluster();
 				
 				if(!clusterSet.contains(testString)) {
 					System.err.println("Not in cluster: " + testString);
@@ -66,15 +77,19 @@ public class CheckWordsInClusters {
 				boolean inCluster = false;
 				HashSet<String> pairs = testWord.getPairs();
 				for (Entry<String, HashSet<String>> c : clusters.entrySet()) {
-					HashSet<String> clusterWords = c.getValue();
-					if (clusterWords.contains(testString)) {
-						for (String pair : pairs) {
-							if (clusterWords.contains(pair)) {
-								inCluster = true;
-							} 						
-						}
-						break;
+					String innerCluster = c.getKey();
+					int ham = SimilarityMeasures.hamming(innerCluster.toCharArray(), tCluster.toCharArray());
+					if (ham > 0 || ham == -1) {
+						continue;
 					}
+					HashSet<String> clusterWords = c.getValue();
+					for (String pair : pairs) {
+						if (clusterWords.contains(pair)) {
+							inCluster = true;
+						}
+					}
+					if(inCluster) 
+						break;
 				}
 				if (inCluster) {
 					writeSameCluster.write(testString.toUpperCase());

@@ -160,20 +160,9 @@ public class WordSimilarity {
     }
 	
 	public static void main(String[] args) {
-		Word oov = new Word("oov");
-		HashMap<Integer, Integer> c = oov.getContextMap();
-		c.put(0, 20);
-		c.put(1, 10);
-		c.put(2, 4);
-		c.put(3, 1);
-		Word iv = new Word("iv");
-		c = iv.getContextMap();
-		c.put(2, 10);
-		c.put(3, 3);
-		c.put(4, 5);
-		WordSimilarity w = new WordSimilarity(oov, iv);
-		System.out.println(w.jaccardWeight());
-		System.out.println(w.jaccardWeight());
+		System.out.println(SimilarityMeasures.log2(1));
+		System.out.println(SimilarityMeasures.log2(2));
+		System.out.println(SimilarityMeasures.log2(3));
 	}
 	
 }

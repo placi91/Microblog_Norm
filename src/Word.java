@@ -11,8 +11,8 @@ public class Word {
 	private HashSet<String> pairs = null;
 	private boolean isCommon;
 	private int frequency;
-	double editDistance = 10000.0;
-	double lcs = 0.0;
+	private double editDistance = 10000.0;
+	private double lcs = 0.0;
 	private double jaccard = 0.0;
 	private double jaccardWeight = 0.0;
 	private double dice = 0.0;
@@ -48,22 +48,6 @@ public class Word {
 	
 	public Word(boolean isCommon) {
 		this.isCommon = isCommon;
-	}
-
-	public double getDice() {
-		return dice;
-	}
-
-	public void setDice(double dice) {
-		this.dice = dice;
-	}
-
-	public double getJaccardWeight() {
-		return jaccardWeight;
-	}
-
-	public void setJaccardWeight(double jaccardWeight) {
-		this.jaccardWeight = jaccardWeight;
 	}
 
 	public void addContext(Integer word) {
@@ -118,6 +102,22 @@ public class Word {
 		this.jaccard = jaccard;
 	}
 	
+	public double getDice() {
+		return dice;
+	}
+
+	public void setDice(double dice) {
+		this.dice = dice;
+	}
+
+	public double getJaccardWeight() {
+		return jaccardWeight;
+	}
+
+	public void setJaccardWeight(double jaccardWeight) {
+		this.jaccardWeight = jaccardWeight;
+	}
+	
 	public double getCosine() {
 		return cosine;
 	}
@@ -132,6 +132,22 @@ public class Word {
 
 	public void setEuclidean(double euclidean) {
 		this.euclidean = euclidean;
+	}
+
+	public double getEditDistance() {
+		return editDistance;
+	}
+
+	public void setEditDistance(double editDistance) {
+		this.editDistance = editDistance;
+	}
+
+	public double getLcs() {
+		return lcs;
+	}
+
+	public void setLcs(double lcs) {
+		this.lcs = lcs;
 	}
 
 	public String getCluster() {
