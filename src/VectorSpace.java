@@ -20,7 +20,7 @@ public class VectorSpace {
 		Pattern pattern = Pattern.compile("[a-z]");
 		int s = 1;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("paths_lemmas_put"));
+			BufferedReader br = new BufferedReader(new FileReader("paths"));
 			HashMap<String, String> clusters = new HashMap<>();
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -31,20 +31,6 @@ public class VectorSpace {
 			}
 			br.close();
 			
-			br = new BufferedReader(new FileReader("hun_tweets_2015_10_2016_02.lemmas"));
-			HashMap<String, String> lemmas = new HashMap<>();
-			while ((line = br.readLine()) != null) {
-				String[] parts = line.split("\t");
-				String p0 = parts[0].trim(), p2 = parts[2].trim(); 
-				if(p2.equals("WARNING") || (p0.equals(p2) && parts.length == 3)) {
-					continue;
-				}
-				if(!p0.equals(p2)) {
-					lemmas.put(p0, p2);
-				}
-			}
-			br.close();
-	
 			br = new BufferedReader(new FileReader("accents.txt"));
 			HashMap<String, String> accents = new HashMap<>();
 			while ((line = br.readLine()) != null) {
@@ -140,7 +126,7 @@ public class VectorSpace {
 			}
 			br.close();
 			
-			/*br = new BufferedReader(new FileReader("most_common_oov_lemmas_put.txt"));
+			br = new BufferedReader(new FileReader("most_common_oov_lemmas_put.txt"));
 			while ((line = br.readLine()) != null) {
 				String[] parts = line.split(" ");
 				String oov = parts[0].toLowerCase().trim();
@@ -148,9 +134,9 @@ public class VectorSpace {
 					System.err.println(oov.toUpperCase());
 				oovWords.get(oov).setCommon(true);
 			}
-			br.close();*/
+			br.close();
 			
-			br = new BufferedReader(new FileReader("test_same_cluster.txt"));
+			br = new BufferedReader(new FileReader("test.txt"));
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
 				String[] parts = line.split(" ");
@@ -184,7 +170,7 @@ public class VectorSpace {
 			oovWords.clear();
 			System.gc();
 
-			String file = "word_sameclust_vectors_ignore_stopw.txt";
+			String file = "all_word_vectors.txt";
 			System.out.println("Writing to " + file);
 			System.out.println(words2.size());
 			BufferedWriter bw = new BufferedWriter(

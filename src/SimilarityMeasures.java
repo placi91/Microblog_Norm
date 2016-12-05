@@ -14,7 +14,8 @@ import java.util.Set;
 
 public class SimilarityMeasures {
 
-	private static String vectorspace = "word_vectors_ignore_stopw.txt";
+	private static String vectorspace = "word_sameclust_vectors.txt";
+	private static String testFile = "test_same_cluster.txt";
 
 	private static int correctJacPairs = 0, correctCosinePairs = 0;
 	private static int correctJacWPairs = 0, correctDicePairs = 0;
@@ -26,10 +27,6 @@ public class SimilarityMeasures {
 	private static int jacDCG = 0, cosineDCG = 0, euDCG = 0;
 	private static int jacWeightDCG = 0, diceDCG = 0;
 	private static int editDCG = 0, lcsDCG = 0;
-	private static int n = 25;
-	private static int[] jacPairs = new int[n], cosinePairs = new int[n], jacWPairs = new int[n];
-	private static int[] dicePairs = new int[n], euPairs = new int[n], editPairs = new int[n];
-	private static int[] lcsPairs = new int[n];
 
 	private static double log2 = Math.log(2);
 	
@@ -76,10 +73,7 @@ public class SimilarityMeasures {
 				for (Entry<String, HashSet<Word>> cIV : IVwords.entrySet()) {
 					String clusterIV = cIV.getKey();
 					int ham = hamming(clusterIV.toCharArray(), clusterOOV.toCharArray());
-					if (ham > 3 || ham == -1) {
-						continue;
-					}
-					if (ham != 0) {
+					if (ham > 0 || ham == -1) {
 						continue;
 					}
 					HashSet<Word> inVocWords = cIV.getValue();
@@ -129,12 +123,12 @@ public class SimilarityMeasures {
 				++oovNum;
 				ivNum = 1;
 				
-				/*char[] oovCharArray = oov.getWord().toCharArray();
+				char[] oovCharArray = oov.getWord().toCharArray();
 				rankWordsBylcs(maxCosines, oovCharArray);
 				rankWordsBylcs(maxJaccard, oovCharArray);
 				rankWordsBylcs(maxJaccardWeight, oovCharArray);
 				rankWordsBylcs(maxDice, oovCharArray);
-				rankWordsBylcs(minEuclidean, oovCharArray);*/
+				rankWordsBylcs(minEuclidean, oovCharArray);
 
 				bw.write(out.getKey());
 				printResults("jaccard", maxJaccard, bw, oov);
@@ -203,27 +197,28 @@ public class SimilarityMeasures {
 			System.out.println("Lcs score CG: " + scoreLcsCG);
 			System.out.println("Lcs score DCG: " + scoreLcsDCG);
 			
-			bw.write("Test size: " + testSize + "\n");
 			bw.write("Jaccard score: " + scoreJaccard + " correct pairs: " + correctJacPairs + "\n");
+			bw.write("Jaccard score CG: " + scoreJacCG + "\n");
+			bw.write("Jaccard score DCG: " + scoreJacDCG + "\n");
 			bw.write("Jaccard Weight score: " + scoreJacW + " correct pairs: " + correctJacWPairs + "\n");
+			bw.write("Jaccard Weight score CG: " +scoreJacWCG + "\n");
+			bw.write("Jaccard Weight score DCG: " +scoreJacWDCG + "\n");
 			bw.write("Dice score: " + scoreDice + " correct pairs: " + correctDicePairs + "\n");
+			bw.write("Dice score CG: " + scoreDiceCG + "\n");
+			bw.write("Dice score DCG: " + scoreDiceDCG + "\n");
 			bw.write("Cosine score: " + scoreCosine + " correct pairs: " + correctCosinePairs + "\n");
+			bw.write("Cosine score CG: " + scoreCosineCG + "\n");
+			bw.write("Cosine score DCG: " + scoreCosineDCG + "\n");
 			bw.write("Euclidean score: " + scoreEu + " correct pairs: " + correctEuPairs + "\n");
+			bw.write("Euclidean score CG: " + scoreEuCG + "\n");
+			bw.write("Euclidean score DCG: " + scoreEuDCG + "\n");
+			bw.write("Edit distance score: " + scoreEdit + " correct pairs: " + correctEditPairs + "\n");
+			bw.write("Edit distance score CG: " + scoreEditCG + "\n");
+			bw.write("Edit distance score DCG: " + scoreEditDCG + "\n");
+			bw.write("Lcs score: " + scoreLcs + " correct pairs: " + correctLcsPairs + "\n");
+			bw.write("Lcs score CG: " + scoreLcsCG + "\n");
+			bw.write("Lcs score DCG: " + scoreLcsDCG);
 			
-			System.out.print("jaccard cutoff ");
-			printCutoff(jacPairs);
-			System.out.print("jaccard weight cutoff ");
-			printCutoff(jacWPairs);
-			System.out.print("dice cutoff ");
-			printCutoff(dicePairs);
-			System.out.print("cosine cutoff ");
-			printCutoff(cosinePairs);
-			System.out.print("eu cutoff ");
-			printCutoff(euPairs);
-			System.out.print("edit cutoff ");
-			printCutoff(editPairs);
-			System.out.print("lcs cutoff ");
-			printCutoff(lcsPairs);
 			
 			bw.close();
 
@@ -231,15 +226,6 @@ public class SimilarityMeasures {
 			e.printStackTrace();
 		}
 
-	}
-	
-	public static void printCutoff(int[] a) {
-		int sum = 0;
-		for (int i = 0; i < a.length; i++) {
-			sum += a[i];
-			System.out.print(sum + " ");
-		}
-		System.out.println();
 	}
 	
 	public static double log2(double a) {
@@ -270,10 +256,10 @@ public class SimilarityMeasures {
 		try {
 			HashSet<String> pairs = oov.getPairs();
 			boolean isCorrect = false;
-			int rank = -1;
+			int rank = 0;
 			bw.write("\t" + simType);
 			System.out.println(simType);
-			for (int i = 0; i < bestWords.size(); ++i) {
+			for (int i = 0; i < 5; ++i) {
 				Word word = bestWords.get(i);
 				String wString = word.getWord();
 				double result = 0.0;
@@ -294,10 +280,9 @@ public class SimilarityMeasures {
 				}
 				bw.write("\t" + wString + "\t" + result);
 				System.out.println("\t" + wString + "\t" + result);
-				if (pairs.contains(wString)) {
+				if (pairs.contains(wString) && !isCorrect) {
 					isCorrect = true;
 					rank = i + 2;
-					break;
 				}
 			}
 			if (isCorrect) {
@@ -305,37 +290,30 @@ public class SimilarityMeasures {
 				int i = rank - 2;
 				if (simType.equals("jaccard")) {
 					correctJacPairs++;
-					jacPairs[i/2]++;
 					jacCG += oov.getFrequency();
 					jacDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("jaccardWeight")) {
 					correctJacWPairs++;
-					jacWPairs[i/2]++;
 					jacWeightCG += oov.getFrequency();
 					jacWeightDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("dice")) {
 					correctDicePairs++;
-					dicePairs[i/2]++;
 					diceCG += oov.getFrequency();
 					diceDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("cosine")) {
 					correctCosinePairs++;
-					cosinePairs[i/2]++;
 					cosineCG += oov.getFrequency();
 					cosineDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("eu")) {
 					correctEuPairs++;
-					euPairs[i/2]++;
 					euCG += oov.getFrequency();
 					euDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("edit")) {
 					correctEditPairs++;
-					editPairs[i/2]++;
 					editCG += oov.getFrequency();
 					editDCG += oov.getFrequency() / log2(rank);
 				} else if (simType.equals("lcs")) {
 					correctLcsPairs++;
-					lcsPairs[i/2]++;
 					lcsCG += oov.getFrequency();
 					lcsDCG += oov.getFrequency() / log2(rank);
 				}
@@ -474,7 +452,7 @@ public class SimilarityMeasures {
 
 	public static void loadTest(HashSet<String> test, HashMap<String, Word> OOVwords) {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("test.txt"));
+			BufferedReader br = new BufferedReader(new FileReader(testFile));
 			String line;
 			while ((line = br.readLine()) != null) {
 				line = line.toLowerCase();
